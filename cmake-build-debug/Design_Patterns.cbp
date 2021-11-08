@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6"/>
+	<Project>
+		<Option title="Design_Patterns"/>
+		<Option makefile_is_custom="1"/>
+		<Option compiler="gcc"/>
+		<Option virtualFolders="CMake Files\;"/>
+		<Build>
+			<Target title="all">
+				<Option working_dir="/mnt/c/Users/Ishe/Desktop/Ishe/1. COS 214 - Software Modelling/Project/Design Patterns/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/mnt/c/Users/Ishe/Desktop/Ishe/1.\ COS\ 214\ -\ Software\ Modelling/Project/Design\ Patterns/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/mnt/c/Users/Ishe/Desktop/Ishe/1.\ COS\ 214\ -\ Software\ Modelling/Project/Design\ Patterns/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/mnt/c/Users/Ishe/Desktop/Ishe/1.\ COS\ 214\ -\ Software\ Modelling/Project/Design\ Patterns/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/mnt/c/Users/Ishe/Desktop/Ishe/1.\ COS\ 214\ -\ Software\ Modelling/Project/Design\ Patterns/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="rebuild_cache">
+				<Option working_dir="/mnt/c/Users/Ishe/Desktop/Ishe/1. COS 214 - Software Modelling/Project/Design Patterns/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/mnt/c/Users/Ishe/Desktop/Ishe/1.\ COS\ 214\ -\ Software\ Modelling/Project/Design\ Patterns/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/mnt/c/Users/Ishe/Desktop/Ishe/1.\ COS\ 214\ -\ Software\ Modelling/Project/Design\ Patterns/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/mnt/c/Users/Ishe/Desktop/Ishe/1.\ COS\ 214\ -\ Software\ Modelling/Project/Design\ Patterns/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/mnt/c/Users/Ishe/Desktop/Ishe/1.\ COS\ 214\ -\ Software\ Modelling/Project/Design\ Patterns/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="edit_cache">
+				<Option working_dir="/mnt/c/Users/Ishe/Desktop/Ishe/1. COS 214 - Software Modelling/Project/Design Patterns/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/mnt/c/Users/Ishe/Desktop/Ishe/1.\ COS\ 214\ -\ Software\ Modelling/Project/Design\ Patterns/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/mnt/c/Users/Ishe/Desktop/Ishe/1.\ COS\ 214\ -\ Software\ Modelling/Project/Design\ Patterns/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/mnt/c/Users/Ishe/Desktop/Ishe/1.\ COS\ 214\ -\ Software\ Modelling/Project/Design\ Patterns/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/mnt/c/Users/Ishe/Desktop/Ishe/1.\ COS\ 214\ -\ Software\ Modelling/Project/Design\ Patterns/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="Design_Patterns">
+				<Option output="/mnt/c/Users/Ishe/Desktop/Ishe/1. COS 214 - Software Modelling/Project/Design Patterns/cmake-build-debug/Design_Patterns" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/mnt/c/Users/Ishe/Desktop/Ishe/1. COS 214 - Software Modelling/Project/Design Patterns/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/include/c++/9"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/9"/>
+					<Add directory="/usr/include/c++/9/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/9/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/mnt/c/Users/Ishe/Desktop/Ishe/1.\ COS\ 214\ -\ Software\ Modelling/Project/Design\ Patterns/cmake-build-debug/Makefile&quot;  VERBOSE=1 Design_Patterns"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/mnt/c/Users/Ishe/Desktop/Ishe/1.\ COS\ 214\ -\ Software\ Modelling/Project/Design\ Patterns/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/mnt/c/Users/Ishe/Desktop/Ishe/1.\ COS\ 214\ -\ Software\ Modelling/Project/Design\ Patterns/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/mnt/c/Users/Ishe/Desktop/Ishe/1.\ COS\ 214\ -\ Software\ Modelling/Project/Design\ Patterns/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="Design_Patterns/fast">
+				<Option output="/mnt/c/Users/Ishe/Desktop/Ishe/1. COS 214 - Software Modelling/Project/Design Patterns/cmake-build-debug/Design_Patterns" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/mnt/c/Users/Ishe/Desktop/Ishe/1. COS 214 - Software Modelling/Project/Design Patterns/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/include/c++/9"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/9"/>
+					<Add directory="/usr/include/c++/9/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/9/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/mnt/c/Users/Ishe/Desktop/Ishe/1.\ COS\ 214\ -\ Software\ Modelling/Project/Design\ Patterns/cmake-build-debug/Makefile&quot;  VERBOSE=1 Design_Patterns/fast"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/mnt/c/Users/Ishe/Desktop/Ishe/1.\ COS\ 214\ -\ Software\ Modelling/Project/Design\ Patterns/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/mnt/c/Users/Ishe/Desktop/Ishe/1.\ COS\ 214\ -\ Software\ Modelling/Project/Design\ Patterns/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/mnt/c/Users/Ishe/Desktop/Ishe/1.\ COS\ 214\ -\ Software\ Modelling/Project/Design\ Patterns/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+		</Build>
+		<Unit filename="/mnt/c/Users/Ishe/Desktop/Ishe/1. COS 214 - Software Modelling/Project/Design Patterns/CrewDragon.cpp">
+			<Option target="Design_Patterns"/>
+		</Unit>
+		<Unit filename="/mnt/c/Users/Ishe/Desktop/Ishe/1. COS 214 - Software Modelling/Project/Design Patterns/CrewDragon.h">
+			<Option target="Design_Patterns"/>
+		</Unit>
+		<Unit filename="/mnt/c/Users/Ishe/Desktop/Ishe/1. COS 214 - Software Modelling/Project/Design Patterns/CrewDragonCreator.cpp">
+			<Option target="Design_Patterns"/>
+		</Unit>
+		<Unit filename="/mnt/c/Users/Ishe/Desktop/Ishe/1. COS 214 - Software Modelling/Project/Design Patterns/CrewDragonCreator.h">
+			<Option target="Design_Patterns"/>
+		</Unit>
+		<Unit filename="/mnt/c/Users/Ishe/Desktop/Ishe/1. COS 214 - Software Modelling/Project/Design Patterns/Dragon.cpp">
+			<Option target="Design_Patterns"/>
+		</Unit>
+		<Unit filename="/mnt/c/Users/Ishe/Desktop/Ishe/1. COS 214 - Software Modelling/Project/Design Patterns/Dragon.h">
+			<Option target="Design_Patterns"/>
+		</Unit>
+		<Unit filename="/mnt/c/Users/Ishe/Desktop/Ishe/1. COS 214 - Software Modelling/Project/Design Patterns/DragonCreator.cpp">
+			<Option target="Design_Patterns"/>
+		</Unit>
+		<Unit filename="/mnt/c/Users/Ishe/Desktop/Ishe/1. COS 214 - Software Modelling/Project/Design Patterns/DragonCreator.h">
+			<Option target="Design_Patterns"/>
+		</Unit>
+		<Unit filename="/mnt/c/Users/Ishe/Desktop/Ishe/1. COS 214 - Software Modelling/Project/Design Patterns/FalconHeavy.cpp">
+			<Option target="Design_Patterns"/>
+		</Unit>
+		<Unit filename="/mnt/c/Users/Ishe/Desktop/Ishe/1. COS 214 - Software Modelling/Project/Design Patterns/FalconHeavy.h">
+			<Option target="Design_Patterns"/>
+		</Unit>
+		<Unit filename="/mnt/c/Users/Ishe/Desktop/Ishe/1. COS 214 - Software Modelling/Project/Design Patterns/FalconHeavyCreator.cpp">
+			<Option target="Design_Patterns"/>
+		</Unit>
+		<Unit filename="/mnt/c/Users/Ishe/Desktop/Ishe/1. COS 214 - Software Modelling/Project/Design Patterns/FalconHeavyCreator.h">
+			<Option target="Design_Patterns"/>
+		</Unit>
+		<Unit filename="/mnt/c/Users/Ishe/Desktop/Ishe/1. COS 214 - Software Modelling/Project/Design Patterns/FalconNine.cpp">
+			<Option target="Design_Patterns"/>
+		</Unit>
+		<Unit filename="/mnt/c/Users/Ishe/Desktop/Ishe/1. COS 214 - Software Modelling/Project/Design Patterns/FalconNine.h">
+			<Option target="Design_Patterns"/>
+		</Unit>
+		<Unit filename="/mnt/c/Users/Ishe/Desktop/Ishe/1. COS 214 - Software Modelling/Project/Design Patterns/FalconNineCreator.cpp">
+			<Option target="Design_Patterns"/>
+		</Unit>
+		<Unit filename="/mnt/c/Users/Ishe/Desktop/Ishe/1. COS 214 - Software Modelling/Project/Design Patterns/FalconNineCreator.h">
+			<Option target="Design_Patterns"/>
+		</Unit>
+		<Unit filename="/mnt/c/Users/Ishe/Desktop/Ishe/1. COS 214 - Software Modelling/Project/Design Patterns/Main.cpp">
+			<Option target="Design_Patterns"/>
+		</Unit>
+		<Unit filename="/mnt/c/Users/Ishe/Desktop/Ishe/1. COS 214 - Software Modelling/Project/Design Patterns/Rocket.cpp">
+			<Option target="Design_Patterns"/>
+		</Unit>
+		<Unit filename="/mnt/c/Users/Ishe/Desktop/Ishe/1. COS 214 - Software Modelling/Project/Design Patterns/Rocket.h">
+			<Option target="Design_Patterns"/>
+		</Unit>
+		<Unit filename="/mnt/c/Users/Ishe/Desktop/Ishe/1. COS 214 - Software Modelling/Project/Design Patterns/RocketCreator.cpp">
+			<Option target="Design_Patterns"/>
+		</Unit>
+		<Unit filename="/mnt/c/Users/Ishe/Desktop/Ishe/1. COS 214 - Software Modelling/Project/Design Patterns/RocketCreator.h">
+			<Option target="Design_Patterns"/>
+		</Unit>
+		<Unit filename="/mnt/c/Users/Ishe/Desktop/Ishe/1. COS 214 - Software Modelling/Project/Design Patterns/ShuttleBuilder.h">
+			<Option target="Design_Patterns"/>
+		</Unit>
+		<Unit filename="/mnt/c/Users/Ishe/Desktop/Ishe/1. COS 214 - Software Modelling/Project/Design Patterns/SpaceCraft.cpp">
+			<Option target="Design_Patterns"/>
+		</Unit>
+		<Unit filename="/mnt/c/Users/Ishe/Desktop/Ishe/1. COS 214 - Software Modelling/Project/Design Patterns/SpaceCraft.h">
+			<Option target="Design_Patterns"/>
+		</Unit>
+		<Unit filename="/mnt/c/Users/Ishe/Desktop/Ishe/1. COS 214 - Software Modelling/Project/Design Patterns/SpaceCraftFCreator.h">
+			<Option target="Design_Patterns"/>
+		</Unit>
+		<Unit filename="/mnt/c/Users/Ishe/Desktop/Ishe/1. COS 214 - Software Modelling/Project/Design Patterns/SpaceShuttle.cpp">
+			<Option target="Design_Patterns"/>
+		</Unit>
+		<Unit filename="/mnt/c/Users/Ishe/Desktop/Ishe/1. COS 214 - Software Modelling/Project/Design Patterns/SpaceShuttle.h">
+			<Option target="Design_Patterns"/>
+		</Unit>
+		<Unit filename="/mnt/c/Users/Ishe/Desktop/Ishe/1. COS 214 - Software Modelling/Project/Design Patterns/SpaceShuttleBuilder.cpp">
+			<Option target="Design_Patterns"/>
+		</Unit>
+		<Unit filename="/mnt/c/Users/Ishe/Desktop/Ishe/1. COS 214 - Software Modelling/Project/Design Patterns/SpaceShuttleBuilder.h">
+			<Option target="Design_Patterns"/>
+		</Unit>
+		<Unit filename="/mnt/c/Users/Ishe/Desktop/Ishe/1. COS 214 - Software Modelling/Project/Design Patterns/SpaceX.cpp">
+			<Option target="Design_Patterns"/>
+		</Unit>
+		<Unit filename="/mnt/c/Users/Ishe/Desktop/Ishe/1. COS 214 - Software Modelling/Project/Design Patterns/SpaceX.h">
+			<Option target="Design_Patterns"/>
+		</Unit>
+		<Unit filename="/mnt/c/Users/Ishe/Desktop/Ishe/1. COS 214 - Software Modelling/Project/Design Patterns/Starlink.cpp">
+			<Option target="Design_Patterns"/>
+		</Unit>
+		<Unit filename="/mnt/c/Users/Ishe/Desktop/Ishe/1. COS 214 - Software Modelling/Project/Design Patterns/Starlink.h">
+			<Option target="Design_Patterns"/>
+		</Unit>
+		<Unit filename="/mnt/c/Users/Ishe/Desktop/Ishe/1. COS 214 - Software Modelling/Project/Design Patterns/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\"/>
+		</Unit>
+	</Project>
+</CodeBlocks_project_file>
