@@ -1,11 +1,14 @@
 #ifndef ROCKET_H
 #define ROCKET_H
 #include <iostream>
+#include "State.h"
+#include "Stage1.h"
 
 using namespace std;
 
 class Rocket {
     protected:
+        State* state;
         string type;
         double cost;
         double weight;
@@ -16,7 +19,11 @@ class Rocket {
         int num_reuses;
 
     public:
-        Rocket(string);
+        Rocket();
+        void fire();
+        void dock();
+        void detach();
+        State* getState();
         virtual ~Rocket();
         virtual void fire();
         virtual void detach();
