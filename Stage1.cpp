@@ -11,7 +11,7 @@ void Stage1::fire()
 
 void Stage1::dock()
 {
-  message += "\nStage 1 docking";
+  message += "\nStage 1 reentering Earth";
 }
 
 State* Stage1::detach()
