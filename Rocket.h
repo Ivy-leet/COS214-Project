@@ -20,6 +20,7 @@ class Rocket {
 
     public:
         Rocket();
+        void mission();
         void fire();
         void dock();
         void detach();
