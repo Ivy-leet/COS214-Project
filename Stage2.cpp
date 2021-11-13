@@ -6,16 +6,17 @@ Stage2::Stage2(string msg): State(msg)
 
 void Stage2::fire()
 {
- cout<<"Stage 2 fired"<<endl;
+ message = "Stage 2 fire";
 }
 
 void Stage2::dock()
 {
-  cout<<"Stage 2 is reaching destination"<<endl;
+  message = "Stage 2 is reaching it's destination";
 }
 
 State* Stage2::detach()
 {
+  message = "Stage 2 detach";
   return changeState();
 }
 
