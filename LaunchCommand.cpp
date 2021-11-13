@@ -9,5 +9,5 @@ LaunchCommand::LaunchCommand(Rocket* r): Command(r)
 
 void LaunchCommand::execute()
 {
-    rocket->fire();
+    rocket->mission();
 }
