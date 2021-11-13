@@ -1,14 +1,7 @@
-//
-// Created by Ishe on 2021/11/07.
-//
 
 #include "SpaceShuttle.h"
 #include "FalconNine.h"
 #include "FalconHeavy.h"
-
-SpaceShuttle::SpaceShuttle() {
-
-}
 
 /**
  * Maximum number of reuses of a rocket is 10
@@ -25,71 +18,38 @@ void SpaceShuttle::rocketReuse(Rocket* r) {
 
 /**
  * Function responsible for adding a rocket to a SpaceShuttle object
- * @param i  can either be 0 (Falcon Nine), or 1 (Falcon Heavy)
- * **/
-
-
-void SpaceShuttle::addRocket(int i) {
-    Rocket* r;
-
-    if (i==0) {
-        if (for_reuse.size()>=2) {
-            r=for_reuse.front();
-            r->setNumReuses(r->getNumReuses()+1);
-            for_reuse.pop();
-            testRocket(r);
-            this->rocket=r;
-            return;
-        }
-
-        r=new FalconNine();
-        r->setNumReuses(r->getNumReuses()+1);
-        testRocket(r);
-        this->rocket=r;
-
-    }
-    else {
-        r= new FalconHeavy();
-
-        if (for_reuse.size()>=2) {
-            Rocket* temp;
-            if (for_reuse.size()==2) {
-                for (int i=0;i<2;i++) {
-                    Rocket* temp = for_reuse.front();
-                    temp->setNumReuses(r->getNumReuses()+1);
-                    for_reuse.pop();
-                    testRocket(temp);
-                    r->addFalconNine(temp);
-                }  
-                temp=new FalconNine();
-                testRocket(temp);
-                r->addFalconNine(temp);
-            }
-            else {
-                for (int i=0;i<3;i++) {
-                    temp = for_reuse.front();
-                    temp->setNumReuses(r->getNumReuses()+1);
-                    for_reuse.pop();
-                    testRocket(temp);
-                    r->addFalconNine(temp);
-                }   
-            }
-
-            this->rocket=r;
-            return;
-        }
-
-        Rocket* temp;
-        for (int i=0;i<3;i++) {
-            temp=new FalconNine();
-            temp->setNumReuses(r->getNumReuses()+1);
-            testRocket(temp);
-            r->addFalconNine(temp);
-        }
-
-        this->rocket=r;
-    }
+ * @param r - pointer to a Rocket object of type FalconNine or FalconHeavy
+ * @return void
+ */
+void SpaceShuttle::addRocket(Rocket *r) {
+    rocket = r;
 }
+
+/**
+ * Function responsible for adding a spacecraft to a SpaceShuttle object
+ * @param t - pointer to a SpaceCraft objecy of type CrewDragon or Dragon
+ * @return void
+ */
+void SpaceShuttle::addSpaceCraft(SpaceCraft *s) {
+    spaceCraft = s;
+}
+
+double SpaceShuttle::getTotalWeight() const {
+    return rocket->getCargoWeight() + spaceCraft->getCargoWeight();
+}
+
+double SpaceShuttle::getTotalCost() const {
+    return rocket->getCost() + spaceCraft->getCost();
+}
+
+Rocket *SpaceShuttle::getRocket() {
+    return rocket;
+}
+
+SpaceCraft *SpaceShuttle::getSpaceCraft() {
+    return spaceCraft;
+}
+
 
 /**
  * Test section for the rockets. 

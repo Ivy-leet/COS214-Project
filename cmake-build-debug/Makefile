@@ -258,33 +258,6 @@ FalconHeavy.cpp.s:
 	$(MAKE) -f CMakeFiles/Design_Patterns.dir/build.make CMakeFiles/Design_Patterns.dir/FalconHeavy.cpp.s
 .PHONY : FalconHeavy.cpp.s
 
-FalconHeavyCreator.o: FalconHeavyCreator.cpp.o
-
-.PHONY : FalconHeavyCreator.o
-
-# target to build an object file
-FalconHeavyCreator.cpp.o:
-	$(MAKE) -f CMakeFiles/Design_Patterns.dir/build.make CMakeFiles/Design_Patterns.dir/FalconHeavyCreator.cpp.o
-.PHONY : FalconHeavyCreator.cpp.o
-
-FalconHeavyCreator.i: FalconHeavyCreator.cpp.i
-
-.PHONY : FalconHeavyCreator.i
-
-# target to preprocess a source file
-FalconHeavyCreator.cpp.i:
-	$(MAKE) -f CMakeFiles/Design_Patterns.dir/build.make CMakeFiles/Design_Patterns.dir/FalconHeavyCreator.cpp.i
-.PHONY : FalconHeavyCreator.cpp.i
-
-FalconHeavyCreator.s: FalconHeavyCreator.cpp.s
-
-.PHONY : FalconHeavyCreator.s
-
-# target to generate assembly for a file
-FalconHeavyCreator.cpp.s:
-	$(MAKE) -f CMakeFiles/Design_Patterns.dir/build.make CMakeFiles/Design_Patterns.dir/FalconHeavyCreator.cpp.s
-.PHONY : FalconHeavyCreator.cpp.s
-
 FalconNine.o: FalconNine.cpp.o
 
 .PHONY : FalconNine.o
@@ -311,33 +284,6 @@ FalconNine.s: FalconNine.cpp.s
 FalconNine.cpp.s:
 	$(MAKE) -f CMakeFiles/Design_Patterns.dir/build.make CMakeFiles/Design_Patterns.dir/FalconNine.cpp.s
 .PHONY : FalconNine.cpp.s
-
-FalconNineCreator.o: FalconNineCreator.cpp.o
-
-.PHONY : FalconNineCreator.o
-
-# target to build an object file
-FalconNineCreator.cpp.o:
-	$(MAKE) -f CMakeFiles/Design_Patterns.dir/build.make CMakeFiles/Design_Patterns.dir/FalconNineCreator.cpp.o
-.PHONY : FalconNineCreator.cpp.o
-
-FalconNineCreator.i: FalconNineCreator.cpp.i
-
-.PHONY : FalconNineCreator.i
-
-# target to preprocess a source file
-FalconNineCreator.cpp.i:
-	$(MAKE) -f CMakeFiles/Design_Patterns.dir/build.make CMakeFiles/Design_Patterns.dir/FalconNineCreator.cpp.i
-.PHONY : FalconNineCreator.cpp.i
-
-FalconNineCreator.s: FalconNineCreator.cpp.s
-
-.PHONY : FalconNineCreator.s
-
-# target to generate assembly for a file
-FalconNineCreator.cpp.s:
-	$(MAKE) -f CMakeFiles/Design_Patterns.dir/build.make CMakeFiles/Design_Patterns.dir/FalconNineCreator.cpp.s
-.PHONY : FalconNineCreator.cpp.s
 
 Main.o: Main.cpp.o
 
@@ -392,33 +338,6 @@ Rocket.s: Rocket.cpp.s
 Rocket.cpp.s:
 	$(MAKE) -f CMakeFiles/Design_Patterns.dir/build.make CMakeFiles/Design_Patterns.dir/Rocket.cpp.s
 .PHONY : Rocket.cpp.s
-
-RocketCreator.o: RocketCreator.cpp.o
-
-.PHONY : RocketCreator.o
-
-# target to build an object file
-RocketCreator.cpp.o:
-	$(MAKE) -f CMakeFiles/Design_Patterns.dir/build.make CMakeFiles/Design_Patterns.dir/RocketCreator.cpp.o
-.PHONY : RocketCreator.cpp.o
-
-RocketCreator.i: RocketCreator.cpp.i
-
-.PHONY : RocketCreator.i
-
-# target to preprocess a source file
-RocketCreator.cpp.i:
-	$(MAKE) -f CMakeFiles/Design_Patterns.dir/build.make CMakeFiles/Design_Patterns.dir/RocketCreator.cpp.i
-.PHONY : RocketCreator.cpp.i
-
-RocketCreator.s: RocketCreator.cpp.s
-
-.PHONY : RocketCreator.s
-
-# target to generate assembly for a file
-RocketCreator.cpp.s:
-	$(MAKE) -f CMakeFiles/Design_Patterns.dir/build.make CMakeFiles/Design_Patterns.dir/RocketCreator.cpp.s
-.PHONY : RocketCreator.cpp.s
 
 SpaceCraft.o: SpaceCraft.cpp.o
 
@@ -579,24 +498,15 @@ help:
 	@echo "... FalconHeavy.o"
 	@echo "... FalconHeavy.i"
 	@echo "... FalconHeavy.s"
-	@echo "... FalconHeavyCreator.o"
-	@echo "... FalconHeavyCreator.i"
-	@echo "... FalconHeavyCreator.s"
 	@echo "... FalconNine.o"
 	@echo "... FalconNine.i"
 	@echo "... FalconNine.s"
-	@echo "... FalconNineCreator.o"
-	@echo "... FalconNineCreator.i"
-	@echo "... FalconNineCreator.s"
 	@echo "... Main.o"
 	@echo "... Main.i"
 	@echo "... Main.s"
 	@echo "... Rocket.o"
 	@echo "... Rocket.i"
 	@echo "... Rocket.s"
-	@echo "... RocketCreator.o"
-	@echo "... RocketCreator.i"
-	@echo "... RocketCreator.s"
 	@echo "... SpaceCraft.o"
 	@echo "... SpaceCraft.i"
 	@echo "... SpaceCraft.s"

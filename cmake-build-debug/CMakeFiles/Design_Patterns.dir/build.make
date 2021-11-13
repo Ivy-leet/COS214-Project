@@ -226,45 +226,6 @@ CMakeFiles/Design_Patterns.dir/Main.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Design_Patterns.dir/Main.cpp.s"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/mnt/c/Users/Ishe/Desktop/Ishe/1. COS 214 - Software Modelling/Project/Design Patterns/Main.cpp" -o CMakeFiles/Design_Patterns.dir/Main.cpp.s
 
-CMakeFiles/Design_Patterns.dir/RocketCreator.cpp.o: CMakeFiles/Design_Patterns.dir/flags.make
-CMakeFiles/Design_Patterns.dir/RocketCreator.cpp.o: ../RocketCreator.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/mnt/c/Users/Ishe/Desktop/Ishe/1. COS 214 - Software Modelling/Project/Design Patterns/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_14) "Building CXX object CMakeFiles/Design_Patterns.dir/RocketCreator.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Design_Patterns.dir/RocketCreator.cpp.o -c "/mnt/c/Users/Ishe/Desktop/Ishe/1. COS 214 - Software Modelling/Project/Design Patterns/RocketCreator.cpp"
-
-CMakeFiles/Design_Patterns.dir/RocketCreator.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Design_Patterns.dir/RocketCreator.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/mnt/c/Users/Ishe/Desktop/Ishe/1. COS 214 - Software Modelling/Project/Design Patterns/RocketCreator.cpp" > CMakeFiles/Design_Patterns.dir/RocketCreator.cpp.i
-
-CMakeFiles/Design_Patterns.dir/RocketCreator.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Design_Patterns.dir/RocketCreator.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/mnt/c/Users/Ishe/Desktop/Ishe/1. COS 214 - Software Modelling/Project/Design Patterns/RocketCreator.cpp" -o CMakeFiles/Design_Patterns.dir/RocketCreator.cpp.s
-
-CMakeFiles/Design_Patterns.dir/FalconNineCreator.cpp.o: CMakeFiles/Design_Patterns.dir/flags.make
-CMakeFiles/Design_Patterns.dir/FalconNineCreator.cpp.o: ../FalconNineCreator.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/mnt/c/Users/Ishe/Desktop/Ishe/1. COS 214 - Software Modelling/Project/Design Patterns/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_15) "Building CXX object CMakeFiles/Design_Patterns.dir/FalconNineCreator.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Design_Patterns.dir/FalconNineCreator.cpp.o -c "/mnt/c/Users/Ishe/Desktop/Ishe/1. COS 214 - Software Modelling/Project/Design Patterns/FalconNineCreator.cpp"
-
-CMakeFiles/Design_Patterns.dir/FalconNineCreator.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Design_Patterns.dir/FalconNineCreator.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/mnt/c/Users/Ishe/Desktop/Ishe/1. COS 214 - Software Modelling/Project/Design Patterns/FalconNineCreator.cpp" > CMakeFiles/Design_Patterns.dir/FalconNineCreator.cpp.i
-
-CMakeFiles/Design_Patterns.dir/FalconNineCreator.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Design_Patterns.dir/FalconNineCreator.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/mnt/c/Users/Ishe/Desktop/Ishe/1. COS 214 - Software Modelling/Project/Design Patterns/FalconNineCreator.cpp" -o CMakeFiles/Design_Patterns.dir/FalconNineCreator.cpp.s
-
-CMakeFiles/Design_Patterns.dir/FalconHeavyCreator.cpp.o: CMakeFiles/Design_Patterns.dir/flags.make
-CMakeFiles/Design_Patterns.dir/FalconHeavyCreator.cpp.o: ../FalconHeavyCreator.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/mnt/c/Users/Ishe/Desktop/Ishe/1. COS 214 - Software Modelling/Project/Design Patterns/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_16) "Building CXX object CMakeFiles/Design_Patterns.dir/FalconHeavyCreator.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Design_Patterns.dir/FalconHeavyCreator.cpp.o -c "/mnt/c/Users/Ishe/Desktop/Ishe/1. COS 214 - Software Modelling/Project/Design Patterns/FalconHeavyCreator.cpp"
-
-CMakeFiles/Design_Patterns.dir/FalconHeavyCreator.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Design_Patterns.dir/FalconHeavyCreator.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/mnt/c/Users/Ishe/Desktop/Ishe/1. COS 214 - Software Modelling/Project/Design Patterns/FalconHeavyCreator.cpp" > CMakeFiles/Design_Patterns.dir/FalconHeavyCreator.cpp.i
-
-CMakeFiles/Design_Patterns.dir/FalconHeavyCreator.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Design_Patterns.dir/FalconHeavyCreator.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/mnt/c/Users/Ishe/Desktop/Ishe/1. COS 214 - Software Modelling/Project/Design Patterns/FalconHeavyCreator.cpp" -o CMakeFiles/Design_Patterns.dir/FalconHeavyCreator.cpp.s
-
 # Object files for target Design_Patterns
 Design_Patterns_OBJECTS = \
 "CMakeFiles/Design_Patterns.dir/SpaceShuttle.cpp.o" \
@@ -279,10 +240,7 @@ Design_Patterns_OBJECTS = \
 "CMakeFiles/Design_Patterns.dir/FalconNine.cpp.o" \
 "CMakeFiles/Design_Patterns.dir/FalconHeavy.cpp.o" \
 "CMakeFiles/Design_Patterns.dir/Starlink.cpp.o" \
-"CMakeFiles/Design_Patterns.dir/Main.cpp.o" \
-"CMakeFiles/Design_Patterns.dir/RocketCreator.cpp.o" \
-"CMakeFiles/Design_Patterns.dir/FalconNineCreator.cpp.o" \
-"CMakeFiles/Design_Patterns.dir/FalconHeavyCreator.cpp.o"
+"CMakeFiles/Design_Patterns.dir/Main.cpp.o"
 
 # External object files for target Design_Patterns
 Design_Patterns_EXTERNAL_OBJECTS =
@@ -300,12 +258,9 @@ Design_Patterns: CMakeFiles/Design_Patterns.dir/FalconNine.cpp.o
 Design_Patterns: CMakeFiles/Design_Patterns.dir/FalconHeavy.cpp.o
 Design_Patterns: CMakeFiles/Design_Patterns.dir/Starlink.cpp.o
 Design_Patterns: CMakeFiles/Design_Patterns.dir/Main.cpp.o
-Design_Patterns: CMakeFiles/Design_Patterns.dir/RocketCreator.cpp.o
-Design_Patterns: CMakeFiles/Design_Patterns.dir/FalconNineCreator.cpp.o
-Design_Patterns: CMakeFiles/Design_Patterns.dir/FalconHeavyCreator.cpp.o
 Design_Patterns: CMakeFiles/Design_Patterns.dir/build.make
 Design_Patterns: CMakeFiles/Design_Patterns.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir="/mnt/c/Users/Ishe/Desktop/Ishe/1. COS 214 - Software Modelling/Project/Design Patterns/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_17) "Linking CXX executable Design_Patterns"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir="/mnt/c/Users/Ishe/Desktop/Ishe/1. COS 214 - Software Modelling/Project/Design Patterns/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_14) "Linking CXX executable Design_Patterns"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/Design_Patterns.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

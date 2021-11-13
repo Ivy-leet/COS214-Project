@@ -7,6 +7,7 @@ class Dragon : public SpaceCraft {
         Dragon();
         void spaceCraftInfo() override;
         double getCost() override;
+        void setNumCrew(int i) override;
 };
 
 #endif

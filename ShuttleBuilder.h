@@ -4,11 +4,11 @@
 
 using namespace std;
 
-class ShuttleBuilder {              //  Builder
+class ShuttleBuilder {
     public:
         virtual ~ShuttleBuilder() {}
-        virtual void buildRocket(Rocket *) = 0;
-        virtual void buildShuttle(SpaceCraft *) = 0;
+        virtual void buildRocket(int) = 0;
+        virtual void buildSpaceCraft(int) = 0;
 };
 
 #endif

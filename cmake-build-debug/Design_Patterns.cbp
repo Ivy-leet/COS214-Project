@@ -112,22 +112,10 @@
 		<Unit filename="/mnt/c/Users/Ishe/Desktop/Ishe/1. COS 214 - Software Modelling/Project/Design Patterns/FalconHeavy.h">
 			<Option target="Design_Patterns"/>
 		</Unit>
-		<Unit filename="/mnt/c/Users/Ishe/Desktop/Ishe/1. COS 214 - Software Modelling/Project/Design Patterns/FalconHeavyCreator.cpp">
-			<Option target="Design_Patterns"/>
-		</Unit>
-		<Unit filename="/mnt/c/Users/Ishe/Desktop/Ishe/1. COS 214 - Software Modelling/Project/Design Patterns/FalconHeavyCreator.h">
-			<Option target="Design_Patterns"/>
-		</Unit>
 		<Unit filename="/mnt/c/Users/Ishe/Desktop/Ishe/1. COS 214 - Software Modelling/Project/Design Patterns/FalconNine.cpp">
 			<Option target="Design_Patterns"/>
 		</Unit>
 		<Unit filename="/mnt/c/Users/Ishe/Desktop/Ishe/1. COS 214 - Software Modelling/Project/Design Patterns/FalconNine.h">
-			<Option target="Design_Patterns"/>
-		</Unit>
-		<Unit filename="/mnt/c/Users/Ishe/Desktop/Ishe/1. COS 214 - Software Modelling/Project/Design Patterns/FalconNineCreator.cpp">
-			<Option target="Design_Patterns"/>
-		</Unit>
-		<Unit filename="/mnt/c/Users/Ishe/Desktop/Ishe/1. COS 214 - Software Modelling/Project/Design Patterns/FalconNineCreator.h">
 			<Option target="Design_Patterns"/>
 		</Unit>
 		<Unit filename="/mnt/c/Users/Ishe/Desktop/Ishe/1. COS 214 - Software Modelling/Project/Design Patterns/Main.cpp">
@@ -139,12 +127,6 @@
 		<Unit filename="/mnt/c/Users/Ishe/Desktop/Ishe/1. COS 214 - Software Modelling/Project/Design Patterns/Rocket.h">
 			<Option target="Design_Patterns"/>
 		</Unit>
-		<Unit filename="/mnt/c/Users/Ishe/Desktop/Ishe/1. COS 214 - Software Modelling/Project/Design Patterns/RocketCreator.cpp">
-			<Option target="Design_Patterns"/>
-		</Unit>
-		<Unit filename="/mnt/c/Users/Ishe/Desktop/Ishe/1. COS 214 - Software Modelling/Project/Design Patterns/RocketCreator.h">
-			<Option target="Design_Patterns"/>
-		</Unit>
 		<Unit filename="/mnt/c/Users/Ishe/Desktop/Ishe/1. COS 214 - Software Modelling/Project/Design Patterns/ShuttleBuilder.h">
 			<Option target="Design_Patterns"/>
 		</Unit>
@@ -154,7 +136,7 @@
 		<Unit filename="/mnt/c/Users/Ishe/Desktop/Ishe/1. COS 214 - Software Modelling/Project/Design Patterns/SpaceCraft.h">
 			<Option target="Design_Patterns"/>
 		</Unit>
-		<Unit filename="/mnt/c/Users/Ishe/Desktop/Ishe/1. COS 214 - Software Modelling/Project/Design Patterns/SpaceCraftFCreator.h">
+		<Unit filename="/mnt/c/Users/Ishe/Desktop/Ishe/1. COS 214 - Software Modelling/Project/Design Patterns/SpaceCraftCreator.h">
 			<Option target="Design_Patterns"/>
 		</Unit>
 		<Unit filename="/mnt/c/Users/Ishe/Desktop/Ishe/1. COS 214 - Software Modelling/Project/Design Patterns/SpaceShuttle.cpp">

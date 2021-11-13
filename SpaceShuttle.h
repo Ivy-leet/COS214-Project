@@ -8,7 +8,11 @@
 #include <math.h>
 #include <ctime>
 
-class SpaceShuttle {                    //  Product in Builder Pattern
+/*!
+ * SpaceShuttle is the product participant in the Builder DP. Consists of a rocket and spacecraft
+ */
+
+class SpaceShuttle {
     private:
         Rocket *rocket;
         SpaceCraft *spaceCraft;
@@ -20,13 +24,7 @@ class SpaceShuttle {                    //  Product in Builder Pattern
         bool binomialTest(int x, int n, double p);
 
     public:
-        SpaceShuttle();
-        
-        /**
-         * Function responsible for adding a rocket to a SpaceShuttle object
-         * @param i  can either be 0 (Falcon Nine), or 1 (Falcon Heavy)
-         * **/
-        void addRocket(int);
+        void addRocket(Rocket *);
         void addSpaceCraft(SpaceCraft *);
         double getTotalWeight() const;
         double getTotalCost() const;
@@ -41,9 +39,6 @@ class SpaceShuttle {                    //  Product in Builder Pattern
          * @param r Rocket to be reused or written-off
          * **/
         void rocketReuse(Rocket*);
-
-        
-
 };
 
 #endif

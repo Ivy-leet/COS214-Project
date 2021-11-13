@@ -11,3 +11,7 @@ double SpaceCraft::getPayload() const {
 double SpaceCraft::getCargoWeight() const {
     return cargoWeight;
 }
+
+void SpaceCraft::setCargoWeight(double c) {
+    cargoWeight = c;
+}
