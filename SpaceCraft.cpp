@@ -1,6 +1,10 @@
 #include "SpaceCraft.h"
 
-SpaceCraft::SpaceCraft(string type) : type(type) {}
+SpaceCraft::SpaceCraft(string type) : type(type) {
+    numCrew = 0;
+    payload = 0;
+    cargoWeight = 0.0;
+}
 
 SpaceCraft::~SpaceCraft(){}
 

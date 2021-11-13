@@ -1,12 +1,20 @@
 #include "SpaceShuttleBuilder.h"
 
+SpaceShuttleBuilder::SpaceShuttleBuilder() {
+    spaceShuttle = new SpaceShuttle;
+}
+
+SpaceShuttleBuilder::~SpaceShuttleBuilder() {}
+
 /**
  * @brief Builds a specific rocket for the SpaceShuttle based on the parameter
  * @param type - integer (integer (0=FalconNine and 1=FalconHeavy)
  * @return void
  */
 void SpaceShuttleBuilder::buildRocket(int type) {
-    Rocket *rocket = (type == 0) ? (Rocket *) new FalconNine : (Rocket *) new FalconHeavy;
+    Rocket *rocket;
+    if (type == 0) rocket = new FalconNine;
+    else rocket = new FalconHeavy;
     spaceShuttle->addRocket(rocket);
 }
 
@@ -16,8 +24,11 @@ void SpaceShuttleBuilder::buildRocket(int type) {
  * @return void
  */
 void SpaceShuttleBuilder::buildSpaceCraft(int type) {
-    SpaceCraftCreator *spaceCraft = (type == 0) ? (SpaceCraftCreator *) new CrewDragonCreator : (SpaceCraftCreator *) new DragonCreator;
+    SpaceCraftCreator *spaceCraft;
+    if (type == 0) spaceCraft = new CrewDragonCreator;
+    else spaceCraft = new DragonCreator;
     spaceShuttle->addSpaceCraft(spaceCraft->produceSpaceCraft());
+    delete spaceCraft;
 }
 
 /**

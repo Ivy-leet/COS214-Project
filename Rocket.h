@@ -12,7 +12,7 @@ class Rocket {
         double payload;
         int numMerlinEngines;
         int cores;
-        int VacuumME = 1;
+        int vacuumME;
         int num_reuses;
 
     public:
@@ -21,10 +21,10 @@ class Rocket {
         virtual void fire();
         virtual void detach();
         virtual void dock();
-        virtual double getCost() = 0;
-        virtual void spaceCraftInfo() = 0;
+        double getCost();
+        virtual void rocketInfo() = 0;
         double getPayload() const;
-        double getCargoWeight() const;
+        virtual double getWeight();
         virtual void addFalconNine(Rocket*) = 0;
         virtual Rocket* removeFalconNine() = 0;
         int getNumReuses();

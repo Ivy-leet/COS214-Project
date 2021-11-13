@@ -15,6 +15,8 @@ class SpaceShuttleBuilder : public ShuttleBuilder {
         SpaceShuttle *spaceShuttle;
 
     public:
+        SpaceShuttleBuilder();
+        virtual ~SpaceShuttleBuilder();
         void buildRocket(int type) override;
         void buildSpaceCraft(int type) override;
         SpaceShuttle *getShuttle() const;

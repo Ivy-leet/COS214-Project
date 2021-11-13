@@ -3,6 +3,13 @@
 #include "FalconNine.h"
 #include "FalconHeavy.h"
 
+SpaceShuttle::SpaceShuttle() : spaceCraft(nullptr), rocket(nullptr) {}
+
+SpaceShuttle::~SpaceShuttle() {
+    delete rocket;
+    delete spaceCraft;
+}
+
 /**
  * Maximum number of reuses of a rocket is 10
  * If less, add to for_reuse queue.
@@ -35,11 +42,19 @@ void SpaceShuttle::addSpaceCraft(SpaceCraft *s) {
 }
 
 double SpaceShuttle::getTotalWeight() const {
-    return rocket->getCargoWeight() + spaceCraft->getCargoWeight();
+    return rocket->getWeight() + spaceCraft->getCargoWeight() + starlinks.size() * 260;
 }
 
 double SpaceShuttle::getTotalCost() const {
-    return rocket->getCost() + spaceCraft->getCost();
+    return rocket->getCost() + spaceCraft->getCost() + starlinks.size() * 1000000;
+}
+
+void SpaceShuttle::shuttleInfo() {
+    cout << "SPACE SHUTTLE INFORMATION:\n";
+    rocket->rocketInfo();
+    cout << endl;
+    spaceCraft->spaceCraftInfo();
+    cout << endl;
 }
 
 Rocket *SpaceShuttle::getRocket() {

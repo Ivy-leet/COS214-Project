@@ -4,16 +4,11 @@
 #include <vector>
 
 class FalconNine : public Rocket {
-
     public:
         FalconNine();
-        double getCost() override;
-        void spaceCraftInfo() override;
+        void rocketInfo() override;
         virtual void addFalconNine(Rocket*);
         virtual Rocket* removeFalconNine();
 };
 
 #endif
- /*!
-  * @return void
-  */

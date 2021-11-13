@@ -1,10 +1,6 @@
 #include "CrewDragon.h"
 
-CrewDragon::CrewDragon() : SpaceCraft("Crew Dragon"){
-    numCrew = 0;
-    payload = 0;
-    cargoWeight = 0.0;
-}
+CrewDragon::CrewDragon() : SpaceCraft("Crew Dragon") {}
 
 void CrewDragon::spaceCraftInfo() {
     cout << "SpaceCraft Type: " << type << endl;

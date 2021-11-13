@@ -3,15 +3,15 @@
 #include "Rocket.h"
 #include <list>
 
+class Rocket;
+
 class FalconHeavy : public Rocket {
     private:
         list<Rocket*>falcon_nines;
 
     public:
         FalconHeavy();
-        void detach();
-        double getCost() override;
-        void spaceCraftInfo() override;
+        void rocketInfo() override;
         virtual void fire();
         virtual void detach();
         virtual void dock();
