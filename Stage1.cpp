@@ -6,16 +6,17 @@ Stage1::Stage1(string msg): State(msg)
 
 void Stage1::fire()
 {
- cout<<"Stage 1 fired"<<endl;
+ message = "Stage 1 fire";
 }
 
 void Stage1::dock()
 {
-  cout<<"Stage 1 is being docked"<<endl;
+  message += "\nStage 1 docking";
 }
 
 State* Stage1::detach()
 {
+  message = "Stage 1 detach";
   State* stage2 = changeState();
   dock();
   return stage2;
