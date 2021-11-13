@@ -9,3 +9,11 @@ double FalconNine::getCost() {
 void FalconNine::spaceCraftInfo() {
 
 }
+
+void FalconNine::addFalconNine(Rocket*) {
+
+}
+
+Rocket* FalconNine::removeFalconNine() {
+    
+}
