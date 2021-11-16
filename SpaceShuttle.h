@@ -17,17 +17,13 @@ class SpaceShuttle {
         Rocket *rocket;
         SpaceCraft *spaceCraft;
         vector<Starlink*> starlinks;
-        queue<Rocket*> for_reuse;
-
-        Rocket* testRocket(Rocket*);
-        int binomialC(int n, int k);
-        bool binomialTest(int x, int n, double p);
-
+        
     public:
         SpaceShuttle();
         virtual ~SpaceShuttle();
         void addRocket(Rocket *);
         void addSpaceCraft(SpaceCraft *);
+        void addStarlinks(int);
         double getTotalWeight() const;
         double getTotalCost() const;
         void shuttleInfo();

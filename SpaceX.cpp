@@ -21,7 +21,8 @@ SpaceX::SpaceX(ShuttleBuilder *sb) {
 * @brief Method is used to build the shuttle using our assigned builder
 * @return void
 */
-void SpaceX::construct(int rocketType, int craftType) {
+void SpaceX::construct(int rocketType, int craftType, int numOfStarlinks) {
     shuttleBuilder->buildRocket(rocketType);
-    shuttleBuilder->buildSpaceCraft(craftType);
+    shuttleBuilder->buildSpaceCraft(numOfStarlinks==-1, craftType==0);
+    shuttleBuilder->buildStarlinks(numOfStarlinks!=-1, numOfStarlinks);
 }

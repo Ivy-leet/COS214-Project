@@ -11,7 +11,8 @@ FalconNine::FalconNine() : Rocket("FalconNine") {
 
 void FalconNine::rocketInfo() {
     cout << "Rocket Type: " << type << endl;
-    cout << "Cost: $" << cost << endl;
+    cout<<fixed;
+    cout << "Cost: $" <<setprecision(2)<< cost << endl;
     cout << "Weight: " << weight << " kg\n";
     cout << "Payload: " << payload << " kg\n";
     cout << "Number of Cores: " << cores << endl;

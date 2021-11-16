@@ -14,7 +14,7 @@ class SpaceX {
 
     public:
         SpaceX(ShuttleBuilder *);
-        void construct(int rocketType, int craftType);
+        void construct(int rocketType, int craftType, int);
 };
 
 #endif
