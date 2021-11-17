@@ -16,7 +16,7 @@ void Stage2::dock()
 
 State* Stage2::detach()
 {
-  setMessage("Stage 2 detach");
+  setMessage("Stage 2 detach\nStage 2 reentering Earth");
   return changeState();
 }
 

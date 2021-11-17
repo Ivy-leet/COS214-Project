@@ -41,6 +41,7 @@ void Rocket::mission()
     std::cout << state->getMessage() << std::endl;
     dock();
     std::cout << state->getMessage() << std::endl;
+    detach();
 }
 
 void Rocket::fire()
@@ -59,6 +60,7 @@ void Rocket::detach()
         return;
     
     State* temp = state->detach();
+    std::cout << state->getMessage() << std::endl;
     if(state != nullptr)
         delete state;
     state = temp;
