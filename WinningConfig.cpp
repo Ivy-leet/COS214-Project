@@ -1,5 +1,10 @@
 #include "WinningConfig.h"
 
+WinningConfig::WinningConfig() : bestShuttle(nullptr)
+{
+	
+}
+
 WinningShuttle* WinningConfig::retrieveWinningShuttle()
 {
 	return bestShuttle;

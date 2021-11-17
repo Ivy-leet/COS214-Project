@@ -11,6 +11,7 @@ class WinningConfig
 		WinningShuttle* bestShuttle;
 
 	public:
+		WinningConfig();
 		WinningShuttle* retrieveWinningShuttle();
 		void storeWinningShuttle(WinningShuttle* ws);
 };

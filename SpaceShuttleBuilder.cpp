@@ -101,7 +101,22 @@ void SpaceShuttleBuilder::rocketReuse(Rocket* r) {
     else for_reuse.push(r);
 }
 
-WinningShuttle* SpaceShuttleBuilder::createMemento() {
+WinningShuttle* SpaceShuttleBuilder::createMemento(WinningShuttle* w) {
+    cout<<spaceShuttle->getTotalCost()<<endl;
+    if (w==nullptr){
+        cout<<"Here\n";
+        return new WinningShuttle(spaceShuttle);
+
+    } 
+    cout<<w->getWinningShuttle()->getTotalCost()<<endl;
+    cout<<spaceShuttle->getTotalCost()<<endl;
+    if (w->getWinningShuttle()->getTotalCost()< spaceShuttle->getTotalCost()) 
+    {
+        cout<<"Winning\n";
+        spaceShuttle=w->getWinningShuttle();
+    }
+        
+
     return new WinningShuttle(spaceShuttle);
 }
 

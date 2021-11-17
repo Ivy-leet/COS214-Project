@@ -22,7 +22,7 @@ class Rocket {
         virtual void fire();
         virtual void detach();
         virtual void dock();
-        double getCost();
+        virtual double getCost();
         virtual void rocketInfo() = 0;
         double getPayload() const;
         virtual double getWeight();

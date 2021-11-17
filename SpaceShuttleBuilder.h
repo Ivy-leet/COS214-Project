@@ -33,7 +33,7 @@ class SpaceShuttleBuilder : public ShuttleBuilder {
         SpaceShuttle *getShuttle() const;
         void rocketReuse(Rocket*);
 
-        WinningShuttle* createMemento();
+        WinningShuttle* createMemento(WinningShuttle*);
         void setMemento(WinningShuttle* );
 };
 
