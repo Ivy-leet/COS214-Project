@@ -1,11 +1,13 @@
 #ifndef SUBJECT_H
 #define SUBJECT_H
 
+#include <vector>
+#include <iostream>
 #include "Observer.h"
 
 public Subject{
 	private:
-		 List<Observer> observers = new List<Observer>();
+		 vector<Observer> observers = new vector<Observer>();
 
 	public:
 		attach(Observer*);
