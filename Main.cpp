@@ -2,6 +2,10 @@
 #include "SpaceX.h"
 #include "WinningConfig.h"
 #include "WinningShuttle.h"
+#include "Controller.h"
+#include "Command.h"
+#include "LaunchCommand.h"
+#include "HaltCommand.h"
 
 int validateCrew() {
     int numOfCrew=-1;
