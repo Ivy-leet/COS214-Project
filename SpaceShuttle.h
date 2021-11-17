@@ -12,11 +12,12 @@
  * SpaceShuttle is the product participant in the Builder DP. Consists of a rocket and spacecraft
  */
 
-class SpaceShuttle {
+class SpaceShuttle : Subject {
     private:
         Rocket *rocket;
         SpaceCraft *spaceCraft;
         vector<Starlink*> starlinks;
+        string subjectState;
         
     public:
         SpaceShuttle();
@@ -29,6 +30,8 @@ class SpaceShuttle {
         void shuttleInfo();
         Rocket *getRocket();
         SpaceCraft *getSpaceCraft();
+        string getSubjectState();
+        void setSubjectState(string);
 
         /**
          * Maximum number of reuses of a rocket is 10
