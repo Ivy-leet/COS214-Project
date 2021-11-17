@@ -3,10 +3,15 @@
 #include <iostream>
 #include <iomanip>
 
+#include "State.h"
+#include "Stage1.h"
+#include "Stage2.h"
+
 using namespace std;
 
 class Rocket {
     protected:
+        State* state;
         string type;
         double cost;
         double weight;
@@ -19,9 +24,11 @@ class Rocket {
     public:
         Rocket(string);
         virtual ~Rocket();
+        void mission();
         virtual void fire();
         virtual void detach();
         virtual void dock();
+        State* getState();
         virtual double getCost();
         virtual void rocketInfo() = 0;
         double getPayload() const;
