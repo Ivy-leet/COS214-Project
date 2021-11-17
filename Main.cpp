@@ -100,6 +100,15 @@ int main(int argc, char **argv) {
     SpaceShuttle* sp=builder->getShuttle();
     cout<<"-----------\tWINNING CONFIGURATION\t--------------\n";
     sp->shuttleInfo();
+    
+    cout<<"-----------\tLaunch\t--------------\n";
+    Command* launch = new LaunchCommand(sp->getRocket());
+    Command* halt = new HaltCommand(sp->getRocket());
+    Controller controller(launch, halt);
+    controller.launch();
+
+    delete halt;
+    delete launch;
 
     
     delete director;
