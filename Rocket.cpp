@@ -12,9 +12,16 @@ void Rocket::setNumReuses(int n) {
     this->num_reuses=n;
 }
 
-Rocket::Rocket(string type) : type(type), vacuumME(1) {}
+Rocket::Rocket(string type) : type(type), vacuumME(1)
+{
+    state = new Stage1("Rocket class");
+}
 
-Rocket::~Rocket() {}
+Rocket::~Rocket()
+{
+    if(state != nullptr)
+        delete state;
+}
 
 double Rocket::getPayload() const {
     return payload;
@@ -24,15 +31,40 @@ double Rocket::getWeight() {
     return weight;
 }
 
-void Rocket::fire() {
-
+void Rocket::mission()
+{
+    fire();
+    std::cout << state->getMessage() << std::endl;
+    detach();
+    std::cout << state->getMessage() << std::endl;
+    fire();
+    std::cout << state->getMessage() << std::endl;
+    dock();
+    std::cout << state->getMessage() << std::endl;
 }
 
-void Rocket::detach() {
-
+void Rocket::fire()
+{
+  state->fire();
 }
 
-void Rocket::dock() {
-
+void Rocket::dock()
+{
+  state->dock();
 }
 
+void Rocket::detach()
+{
+    if(state == nullptr)
+        return;
+    
+    State* temp = state->detach();
+    if(state != nullptr)
+        delete state;
+    state = temp;
+}
+
+State* Rocket::getState()
+{
+  return state;
+}
