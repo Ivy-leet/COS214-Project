@@ -1,8 +1,8 @@
 #include "WinningShuttle.h"
 
-WinningShuttle::WinningShuttle(Rocket* r, SpaceCraft* s) : spaceShuttle(nullptr)
+WinningShuttle::WinningShuttle(SpaceShuttle* s) : spaceShuttle(s)
 {
-	shuttlestate = new ShuttleState(r, s);
+	// shuttlestate = new ShuttleState(r, s);
 }
 
 WinningShuttle::~WinningShuttle()
@@ -12,7 +12,8 @@ WinningShuttle::~WinningShuttle()
 }
 
 void WinningShuttle::setWinningShuttle(SpaceShuttle* s) {
-	spaceShuttle=s;
+	if (s->getTotalCost()<spaceShuttle->getTotalCost())
+		spaceShuttle=s;
 }
 
 SpaceShuttle* WinningShuttle::getWinningShuttle() {

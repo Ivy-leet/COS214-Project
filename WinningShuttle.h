@@ -16,7 +16,7 @@ class WinningShuttle
 		SpaceShuttle* spaceShuttle;
 
 		
-		WinningShuttle(Rocket* r, SpaceCraft* s);
+		WinningShuttle(SpaceShuttle* s);
 		void setWinningShuttle(SpaceShuttle*);
 		SpaceShuttle* getWinningShuttle();
 

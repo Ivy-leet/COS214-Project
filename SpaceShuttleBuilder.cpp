@@ -102,11 +102,12 @@ void SpaceShuttleBuilder::rocketReuse(Rocket* r) {
 }
 
 WinningShuttle* SpaceShuttleBuilder::createMemento() {
-    return new WinningShuttle(nullptr, nullptr);
+    return new WinningShuttle(spaceShuttle);
 }
 
 void SpaceShuttleBuilder::setMemento(WinningShuttle* w) {
-    if (w->getWinningShuttle()->getTotalCost()< spaceShuttle->getTotalCost()) 
+    
+    // if (w->getWinningShuttle()->getTotalCost()< spaceShuttle->getTotalCost()) 
         spaceShuttle=w->getWinningShuttle();
 }
 
