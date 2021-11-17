@@ -36,7 +36,6 @@ void Rocket::mission()
     fire();
     std::cout << state->getMessage() << std::endl;
     detach();
-    std::cout << state->getMessage() << std::endl;
     fire();
     std::cout << state->getMessage() << std::endl;
     dock();
