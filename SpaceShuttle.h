@@ -31,6 +31,7 @@ class SpaceShuttle : public Subject {
         void shuttleInfo();
         Rocket *getRocket();
         SpaceCraft *getSpaceCraft();
+        void update();
         string getSubjectState();
         void setSubjectState(string);
 
