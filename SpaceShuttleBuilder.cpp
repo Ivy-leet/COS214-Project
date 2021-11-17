@@ -37,7 +37,7 @@ void SpaceShuttleBuilder::buildRocket(int type) {
         Rocket* temp;
         if (for_reuse.size()>=3) {
             for (int i=0;i<3;i++) {
-                cout<<"==================================\tTESTING ROCKET: "<<i+1<<"\t========================================\033[30m\n";
+                cout<<"\033[37m==================================\tTESTING ROCKET: "<<i+1<<"\t========================================\033[30m\n";
                 temp=for_reuse.front();
                 temp->setNumReuses(temp->getNumReuses()+1);
                 for_reuse.pop();
@@ -48,8 +48,8 @@ void SpaceShuttleBuilder::buildRocket(int type) {
         }
         else {
             for (int i=0;i<3;i++) {
-                cout<<"==================================\tTESTING ROCKET: "<<i+1<<"\t========================================\033[30m\n";
-                cout<<"TESTING ROCKET: "<<i+1<<endl;
+                cout<<"\033[37m==================================\tTESTING ROCKET: "<<i+1<<"\t========================================\033[30m\n";
+                // cout<<"TESTING ROCKET: "<<i+1<<endl;
                 temp=new FalconNine();
                 temp->setNumReuses(temp->getNumReuses()+1);
                 testRocket(temp);
@@ -102,22 +102,14 @@ void SpaceShuttleBuilder::rocketReuse(Rocket* r) {
 }
 
 WinningShuttle* SpaceShuttleBuilder::createMemento(WinningShuttle* w) {
-    cout<<spaceShuttle->getTotalCost()<<endl;
-    if (w==nullptr){
-        cout<<"Here\n";
-        return new WinningShuttle(spaceShuttle);
+    if (w==nullptr)
+        return new WinningShuttle(new SpaceShuttle(spaceShuttle));
 
-    } 
-    cout<<w->getWinningShuttle()->getTotalCost()<<endl;
-    cout<<spaceShuttle->getTotalCost()<<endl;
+
     if (w->getWinningShuttle()->getTotalCost()< spaceShuttle->getTotalCost()) 
-    {
-        cout<<"Winning\n";
         spaceShuttle=w->getWinningShuttle();
-    }
-        
 
-    return new WinningShuttle(spaceShuttle);
+    return new WinningShuttle(new SpaceShuttle(spaceShuttle));
 }
 
 void SpaceShuttleBuilder::setMemento(WinningShuttle* w) {

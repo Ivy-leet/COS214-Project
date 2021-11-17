@@ -5,6 +5,15 @@
 
 SpaceShuttle::SpaceShuttle() : spaceCraft(nullptr), rocket(nullptr) {}
 
+
+SpaceShuttle::SpaceShuttle(SpaceShuttle* s) {
+    SpaceShuttle* temp=new SpaceShuttle();
+
+    this->addRocket(s->getRocket());
+    this->addSpaceCraft(s->getSpaceCraft());
+    this->addStarlinks(s->getStarlinks().size());
+}
+
 SpaceShuttle::~SpaceShuttle() {
     delete rocket;
     delete spaceCraft;
@@ -74,6 +83,9 @@ SpaceCraft *SpaceShuttle::getSpaceCraft() {
     return spaceCraft;
 }
 
+vector<Starlink*> SpaceShuttle::getStarlinks() {
+    return starlinks;
+}
 
 /**
  * Test section for the rockets. 

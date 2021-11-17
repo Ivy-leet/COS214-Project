@@ -20,6 +20,7 @@ class SpaceShuttle {
         
     public:
         SpaceShuttle();
+        SpaceShuttle(SpaceShuttle*);
         virtual ~SpaceShuttle();
         void addRocket(Rocket *);
         void addSpaceCraft(SpaceCraft *);
@@ -29,6 +30,7 @@ class SpaceShuttle {
         void shuttleInfo();
         Rocket *getRocket();
         SpaceCraft *getSpaceCraft();
+        vector<Starlink*> getStarlinks();
 
         /**
          * Maximum number of reuses of a rocket is 10

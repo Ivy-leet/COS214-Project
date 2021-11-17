@@ -59,9 +59,7 @@ SpaceShuttle* simulation(WinningConfig& config, SpaceX* spaceX, SpaceShuttleBuil
         }
         sp->shuttleInfo();
         config.storeWinningShuttle(b->createMemento(config.retrieveWinningShuttle()));
-        // WinningShuttle* ws=config.retrieveWinningShuttle();
 
-        // b->setMemento(ws);
     }
 }
 
@@ -97,20 +95,13 @@ int main(int argc, char **argv) {
     SpaceX *director = new SpaceX(builder);
 
     simulation(winner, director, builder, numOfCrew, weightOfCargo, numOfStarlinks);
-    // director->construct(0, numOfCrew, numOfStarlinks);
-    // SpaceShuttle *sp = builder->getShuttle();
-
-    // if (typeOfTrip==0) {
-    //     sp->getSpaceCraft()->setCargoWeight(weightOfCargo);
-    //     sp->getSpaceCraft()->setNumCrew(numOfCrew);
-    // }
+    
     builder->setMemento(winner.retrieveWinningShuttle());
     SpaceShuttle* sp=builder->getShuttle();
+    cout<<"-----------\tWINNING CONFIGURATION\t--------------\n";
     sp->shuttleInfo();
 
-    // sp->getSpaceCraft()->setNumCrew(3);
-    // sp->shuttleInfo();
-
+    
     delete director;
     delete builder;
     delete sp;
