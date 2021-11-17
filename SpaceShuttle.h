@@ -13,7 +13,7 @@
  * SpaceShuttle is the product participant in the Builder DP. Consists of a rocket and spacecraft
  */
 
-class SpaceShuttle : Subject {
+class SpaceShuttle : public Subject {
     private:
         Rocket *rocket;
         SpaceCraft *spaceCraft;
