@@ -8,6 +8,7 @@
 #include "CrewDragonCreator.h"
 #include "FalconNine.h"
 #include "FalconHeavy.h"
+#include "WinningShuttle.h"
 
 /*!
 * @author Ishe
@@ -31,6 +32,9 @@ class SpaceShuttleBuilder : public ShuttleBuilder {
         void buildStarlinks(bool, int) override;
         SpaceShuttle *getShuttle() const;
         void rocketReuse(Rocket*);
+
+        WinningShuttle* createMemento();
+        void setMemento(WinningShuttle* );
 };
 
 #endif

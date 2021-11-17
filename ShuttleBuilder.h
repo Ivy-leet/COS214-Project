@@ -6,6 +6,7 @@ using namespace std;
 
 class ShuttleBuilder {
     public:
+        
         virtual ~ShuttleBuilder() {}
         virtual void buildRocket(int) = 0;
         virtual void buildSpaceCraft(bool, int) = 0;

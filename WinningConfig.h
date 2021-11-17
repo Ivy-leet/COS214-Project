@@ -3,6 +3,8 @@
 
 #include "WinningShuttle.h"
 
+// Caretaker
+
 class WinningConfig
 {
 	private:

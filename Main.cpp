@@ -1,5 +1,7 @@
 #include "SpaceShuttleBuilder.h"
 #include "SpaceX.h"
+#include "WinningConfig.h"
+#include "WinningShuttle.h"
 
 int validateCrew() {
     int numOfCrew=-1;
@@ -12,7 +14,8 @@ int validateCrew() {
         cout<<"Maximum number of crew members is 7. Please re-enter the number of crew members.\n";
         validateCrew();
     }
-    else return numOfCrew;
+    else 
+    return numOfCrew;
 
 }
 
@@ -26,7 +29,8 @@ int validateCargo() {
         cout<<"Maximum weight of cargo is 6000 kg. Please re-enter the weight of cargo.\n";
         validateCargo();
     }
-    else return weightOfCargo;
+    else 
+    return weightOfCargo;
 }
 
 int validateStarlinks() {
@@ -40,6 +44,24 @@ int validateStarlinks() {
         validateCargo();
     }
 
+}
+
+SpaceShuttle* simulation(WinningConfig& config, SpaceX* spaceX, SpaceShuttleBuilder* b, int numOfCrew, int weightOfCargo, int numOfStarlinks) {
+    int type[2]={0,1};
+
+    for (int i=0; i<2; i++) {
+        spaceX->construct(i, numOfCrew, numOfStarlinks);
+        SpaceShuttle* sp=b->getShuttle();
+
+        if (numOfStarlinks==-1) {
+            sp->getSpaceCraft()->setCargoWeight(weightOfCargo);
+            sp->getSpaceCraft()->setNumCrew(numOfCrew);
+        }
+        config.storeWinningShuttle(b->createMemento());
+        WinningShuttle* ws=config.retrieveWinningShuttle();
+
+        b->setMemento(ws);
+    }
 }
 
 
@@ -68,8 +90,9 @@ int main(int argc, char **argv) {
     }
     cout<<endl;
     
-
     SpaceShuttleBuilder *builder = new SpaceShuttleBuilder;
+    WinningConfig winner;
+    
     SpaceX *director = new SpaceX(builder);
     director->construct(0, numOfCrew, numOfStarlinks);
     SpaceShuttle *sp = builder->getShuttle();
