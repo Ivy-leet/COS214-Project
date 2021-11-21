@@ -13,6 +13,3 @@ void Dragon::spaceCraftInfo() {
 double Dragon::getCost() {
     return cargoWeight * 26670;
 }
-
-void Dragon::setNumCrew(int i) {
-}

@@ -14,7 +14,3 @@ void CrewDragon::spaceCraftInfo() {
 double CrewDragon::getCost() {
     return numCrew * 55000000 + cargoWeight * 26670;
 }
-
-void CrewDragon::setNumCrew(int num) {
-    numCrew = num;
-}

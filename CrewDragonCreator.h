@@ -3,8 +3,17 @@
 #include "SpaceCraftCreator.h"
 #include "CrewDragon.h"
 
+/**
+ * @class CrewDragonCreator.h "CrewDragonCreator.h"
+ * @brief Factory concrete creator for the space crafts
+*/
+
 class CrewDragonCreator : public SpaceCraftCreator {
     public:
+        /**
+         * @brief Creates new CrewDragon object
+         * @return SpaceCraft*
+        */
         SpaceCraft *produceSpaceCraft() override;
 };
 

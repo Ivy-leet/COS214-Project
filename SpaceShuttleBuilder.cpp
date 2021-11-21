@@ -6,9 +6,10 @@ SpaceShuttleBuilder::SpaceShuttleBuilder() {
 }
 
 SpaceShuttleBuilder::~SpaceShuttleBuilder() {
-        delete spaceShuttle;
+    delete spaceShuttle;
 
-    for (int i=0;i<for_reuse.size(); i++) {
+    int size=for_reuse.size();
+    for (int i=0;i<size; i++) {
         Rocket* r=for_reuse.top();
         for_reuse.pop();
 
@@ -74,11 +75,7 @@ void SpaceShuttleBuilder::buildRocket(int type) {
     spaceShuttle->addRocket(rocket);
 }
 
-/**
- * @brief Builds a specific spaceCraft for the SpaceShuttle based on the parameter
- * @param type - integer (0=CrewDragon and 1=Dragon)
- * @return void
- */
+
 void SpaceShuttleBuilder::buildSpaceCraft(bool hasSpaceCraft, int type) {
     if (!hasSpaceCraft) return;
 
@@ -112,6 +109,7 @@ void SpaceShuttleBuilder::rocketReuse(Rocket* r) {
     if (dynamic_cast<FalconNine*>(r)!=0) {
         if (r->getNumReuses()>=10 && r->getNumReuses()<=0) delete r;
         else    for_reuse.push(r);
+
     }
     else {
         for (int i=0;i<3; i++) {
@@ -129,7 +127,7 @@ void SpaceShuttleBuilder::rocketReuse(Rocket* r) {
 
 WinningShuttle* SpaceShuttleBuilder::createMemento(WinningShuttle* w) {
     if (w==nullptr)
-        return new WinningShuttle(new SpaceShuttle(spaceShuttle));
+        return new WinningShuttle(spaceShuttle->clone());
 
 
     if (w->getWinningShuttle()->getTotalCost()< spaceShuttle->getTotalCost()) {

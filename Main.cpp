@@ -138,14 +138,15 @@ int main(int argc, char **argv) {
         option=menu();
 
         delete sp->getSpaceCraft();
+        delete halt;
+    delete launch;
 
     }
     
 
     
 
-    delete halt;
-    delete launch;
+    
 
     
     delete director;
