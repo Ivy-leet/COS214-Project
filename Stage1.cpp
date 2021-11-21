@@ -6,17 +6,17 @@ Stage1::Stage1(string msg): State(msg)
 
 void Stage1::fire()
 {
- setMessage("Stage 1 fire");
+ setMessage("Stage 1 Request for Fire Received\nStage 1 Fire");
 }
 
 void Stage1::dock()
 {
-  addMessage("\nStage 1 reentering Earth");
+  addMessage("Stage 1 Auto-Dock engaging\nStage 1 commencing Earth reentry");
 }
 
 State* Stage1::detach()
 {
-  setMessage("Stage 1 detach");
+  setMessage("\nStage 1 Request for Detach Received\nStage 1 detach");
   dock();
   return changeState();
 }

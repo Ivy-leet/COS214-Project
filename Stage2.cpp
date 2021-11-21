@@ -6,17 +6,17 @@ Stage2::Stage2(string msg): State(msg)
 
 void Stage2::fire()
 {
- setMessage("Stage 2 fire");
+ setMessage("Stage 2 Request for Fire Received\nStage 2 Fire");
 }
 
 void Stage2::dock()
 {
-  setMessage("Stage 2 is reaching it's destination");
+  setMessage("Stage 2 Request for Dock Received\nStage 2 is continuing the mission");
 }
 
 State* Stage2::detach()
 {
-  setMessage("Stage 2 detach\nStage 2 reentering Earth");
+  setMessage("Stage 2 Request for Detach Received\nStage 2 detach\nStage 2 commencing Earth reentry");
   return changeState();
 }
 
