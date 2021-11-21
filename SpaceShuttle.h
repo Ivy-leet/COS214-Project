@@ -31,6 +31,7 @@ class SpaceShuttle {
         Rocket *getRocket();
         SpaceCraft *getSpaceCraft();
         vector<Starlink*> getStarlinks();
+        SpaceShuttle* clone();
 
         /**
          * Maximum number of reuses of a rocket is 10

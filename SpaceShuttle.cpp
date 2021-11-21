@@ -22,9 +22,22 @@ SpaceShuttle::SpaceShuttle(SpaceShuttle* s) {
     this->addStarlinks(s->getStarlinks().size());
 }
 
+
 SpaceShuttle::~SpaceShuttle() {
     rocket=nullptr;
-    delete spaceCraft;
+    // if (spaceCraft!=NULL)
+    //     delete spaceCraft;
+    spaceCraft=nullptr;
+}
+
+SpaceShuttle* SpaceShuttle::clone() {
+    SpaceShuttle* temp=new SpaceShuttle();
+    
+    temp->addRocket(this->getRocket());
+    temp->addSpaceCraft(this->getSpaceCraft());
+    temp->addStarlinks(this->getStarlinks().size());
+
+    return temp;
 }
 
 /**

@@ -137,7 +137,7 @@ int main(int argc, char **argv) {
         delete winner.retrieveWinningShuttle();
         option=menu();
 
-
+        delete sp->getSpaceCraft();
 
     }
     

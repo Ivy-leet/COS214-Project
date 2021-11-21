@@ -136,6 +136,7 @@ WinningShuttle* SpaceShuttleBuilder::createMemento(WinningShuttle* w) {
         Rocket* r=spaceShuttle->getRocket();
         r->setNumReuses(r->getNumReuses()-1);
         rocketReuse(r);
+        delete spaceShuttle->getSpaceCraft();
         delete spaceShuttle;
         this->setMemento(w);
 
@@ -144,15 +145,16 @@ WinningShuttle* SpaceShuttleBuilder::createMemento(WinningShuttle* w) {
         Rocket* r=w->getWinningShuttle()->getRocket();
         r->setNumReuses(r->getNumReuses()-1);
         rocketReuse(r);
+        delete w->getWinningShuttle()->getSpaceCraft();
         delete w->getWinningShuttle();
     }
 
-    return new WinningShuttle(new SpaceShuttle(spaceShuttle));
+    return new WinningShuttle(spaceShuttle->clone());
 }
 
 void SpaceShuttleBuilder::setMemento(WinningShuttle* w) {
 
-    spaceShuttle=w->getWinningShuttle();
+    spaceShuttle=w->getWinningShuttle()->clone();
 }
 
 
