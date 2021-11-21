@@ -5,7 +5,17 @@ SpaceShuttleBuilder::SpaceShuttleBuilder() {
     srand((unsigned) time(0));
 }
 
-SpaceShuttleBuilder::~SpaceShuttleBuilder() {}
+SpaceShuttleBuilder::~SpaceShuttleBuilder() {
+        delete spaceShuttle;
+
+    for (int i=0;i<for_reuse.size(); i++) {
+        Rocket* r=for_reuse.top();
+        for_reuse.pop();
+
+        delete r;
+    }
+
+}
 
 /**
  * @brief Builds a specific rocket for the SpaceShuttle based on the parameter
@@ -92,7 +102,7 @@ void SpaceShuttleBuilder::buildStarlinks(bool hasStarlinks, int num) {
  * @return SpaceShuttle pointer
  */
 SpaceShuttle *SpaceShuttleBuilder::getShuttle() const {
-    return spaceShuttle;
+    return  spaceShuttle;
 }
 
 
@@ -126,23 +136,23 @@ WinningShuttle* SpaceShuttleBuilder::createMemento(WinningShuttle* w) {
         Rocket* r=spaceShuttle->getRocket();
         r->setNumReuses(r->getNumReuses()-1);
         rocketReuse(r);
-        spaceShuttle=w->getWinningShuttle();
+        delete spaceShuttle;
+        this->setMemento(w);
 
     }
     else {
         Rocket* r=w->getWinningShuttle()->getRocket();
         r->setNumReuses(r->getNumReuses()-1);
         rocketReuse(r);
+        delete w->getWinningShuttle();
     }
-        
 
     return new WinningShuttle(new SpaceShuttle(spaceShuttle));
 }
 
 void SpaceShuttleBuilder::setMemento(WinningShuttle* w) {
-    
-    // if (w->getWinningShuttle()->getTotalCost()< spaceShuttle->getTotalCost()) 
-        spaceShuttle=w->getWinningShuttle();
+
+    spaceShuttle=w->getWinningShuttle();
 }
 
 

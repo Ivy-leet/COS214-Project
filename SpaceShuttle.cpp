@@ -2,20 +2,28 @@
 #include "SpaceShuttle.h"
 #include "FalconNine.h"
 #include "FalconHeavy.h"
+#include "CrewDragon.h"
+#include "Dragon.h"
 
 SpaceShuttle::SpaceShuttle() : spaceCraft(nullptr), rocket(nullptr) {}
 
 
 SpaceShuttle::SpaceShuttle(SpaceShuttle* s) {
-    SpaceShuttle* temp=new SpaceShuttle();
 
     this->addRocket(s->getRocket());
+
+    // if (s->getSpaceCraft()->getNumCrew()==0)
+    //     this->addSpaceCraft(new Dragon);
+    // else {
+    //     this->addSpaceCraft(new CrewDragon());
+    //     this->getSpaceCraft()->setNumCrew(s->getSpaceCraft()->getNumCrew());
+    // }
     this->addSpaceCraft(s->getSpaceCraft());
     this->addStarlinks(s->getStarlinks().size());
 }
 
 SpaceShuttle::~SpaceShuttle() {
-    delete rocket;
+    rocket=nullptr;
     delete spaceCraft;
 }
 

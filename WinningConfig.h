@@ -12,6 +12,7 @@ class WinningConfig
 
 	public:
 		WinningConfig();
+		~WinningConfig();
 		WinningShuttle* retrieveWinningShuttle();
 		void storeWinningShuttle(WinningShuttle* ws);
 };

@@ -19,3 +19,7 @@ double SpaceCraft::getCargoWeight() const {
 void SpaceCraft::setCargoWeight(double c) {
     cargoWeight = c;
 }
+
+int SpaceCraft::getNumCrew() {
+    return numCrew;
+}

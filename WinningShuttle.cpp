@@ -2,18 +2,15 @@
 
 WinningShuttle::WinningShuttle(SpaceShuttle* s) : spaceShuttle(s)
 {
-	// shuttlestate = new ShuttleState(r, s);
 }
 
 WinningShuttle::~WinningShuttle()
 {
-	if(shuttlestate != nullptr)
-		delete shuttlestate;
+	spaceShuttle=nullptr;
 }
 
 void WinningShuttle::setWinningShuttle(SpaceShuttle* s) {
-	if (s->getTotalCost()<spaceShuttle->getTotalCost())
-		spaceShuttle=s;
+	spaceShuttle=s;
 }
 
 SpaceShuttle* WinningShuttle::getWinningShuttle() {

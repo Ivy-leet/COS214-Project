@@ -8,6 +8,13 @@ FalconHeavy::FalconHeavy() : Rocket("FalconHeavy") {
     weight = 20000;
 }
 
+FalconHeavy::~FalconHeavy() {
+    list<Rocket*>::iterator it;
+
+    for (it=falcon_nines.begin();it!=falcon_nines.end();it++)
+        *it=nullptr;
+}
+
 void FalconHeavy::rocketInfo() {
     cout<<fixed;
     cout << "Rocket Type: " << type << endl;

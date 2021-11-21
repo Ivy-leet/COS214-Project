@@ -2,6 +2,7 @@
 #define FALCONHEAVY_H
 #include "Rocket.h"
 #include <list>
+#include <vector>
 
 class Rocket;
 
@@ -11,6 +12,7 @@ class FalconHeavy : public Rocket {
 
     public:
         FalconHeavy();
+        ~FalconHeavy();
         void rocketInfo() override;
         virtual void fire();
         virtual void detach();

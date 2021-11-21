@@ -26,6 +26,7 @@ class SpaceCraft {
         void setCargoWeight(double);
         virtual void setNumCrew(int) = 0;
         virtual double getCost() = 0;
+        virtual int getNumCrew();
         double getPayload() const;
         double getCargoWeight() const;
 };

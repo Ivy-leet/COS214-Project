@@ -21,7 +21,7 @@ class SpaceShuttle {
     public:
         SpaceShuttle();
         SpaceShuttle(SpaceShuttle*);
-        virtual ~SpaceShuttle();
+        ~SpaceShuttle();
         void addRocket(Rocket *);
         void addSpaceCraft(SpaceCraft *);
         void addStarlinks(int);

@@ -75,7 +75,6 @@ SpaceShuttle* simulation(WinningConfig& config, SpaceX* spaceX, SpaceShuttleBuil
         }
         sp->shuttleInfo();
         config.storeWinningShuttle(b->createMemento(config.retrieveWinningShuttle()));
-
     }
 }
 
@@ -120,7 +119,7 @@ int main(int argc, char **argv) {
 
         simulation(winner, director, builder, numOfCrew, weightOfCargo, numOfStarlinks);
         
-        builder->setMemento(winner.retrieveWinningShuttle());
+        // builder->setMemento(winner.retrieveWinningShuttle());
         SpaceShuttle* sp=builder->getShuttle();
         cout<<"-----------\tSHUTTLE TO BE LAUNCHED\t--------------\n";
         sp->shuttleInfo();
@@ -132,10 +131,14 @@ int main(int argc, char **argv) {
         controller.launch();
 
         builder->rocketReuse(sp->getRocket());
-
-        // delete sp;
+        
         cout<<endl;
+        
+        delete winner.retrieveWinningShuttle();
         option=menu();
+
+
+
     }
     
 
