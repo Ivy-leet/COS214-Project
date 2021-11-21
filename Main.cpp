@@ -7,6 +7,18 @@
 #include "LaunchCommand.h"
 #include "HaltCommand.h"
 
+
+int menu() {
+    int option;
+    cout<<"[0] Create new Space Shuttle\n";
+    cout<<"[1] Exit\n";
+    cout<<">> ";
+    cin>>option;
+
+    return option;
+}
+
+
 int validateCrew() {
     int numOfCrew=-1;
 
@@ -69,47 +81,65 @@ SpaceShuttle* simulation(WinningConfig& config, SpaceX* spaceX, SpaceShuttleBuil
 
 
 int main(int argc, char **argv) {
-    cout<<"\033[37m"<<"WELCOME TO SPACEX!!\n";
+    cout<<"\033[37m"<<"WELCOME TO SPACEX!!\n\n";
 
-    int typeOfTrip=-1;
+    int option=menu();
 
-    
-    cout<<"[0] Cargo and/or crew\n";
-    cout<<"[1] Starlinks\n";
-    cout<<"Please enter the type of trip: ";
-    cin>>typeOfTrip;
-    cout<<endl;
-
-    int numOfCrew=-1;
-    int weightOfCargo=-1;
-    int numOfStarlinks=-1;
-
-    if (typeOfTrip==0) {
-        numOfCrew=validateCrew();
-        weightOfCargo=validateCargo();
-    }
-    else {
-        numOfStarlinks=validateStarlinks();
-    }
-    cout<<endl;
-    
-    SpaceShuttleBuilder *builder = new SpaceShuttleBuilder;
-    WinningConfig winner;
-    
+    SpaceShuttleBuilder *builder = new SpaceShuttleBuilder;;
     SpaceX *director = new SpaceX(builder);
+    Command* launch;
+    Command* halt;
 
-    simulation(winner, director, builder, numOfCrew, weightOfCargo, numOfStarlinks);
+    while (option==0) {
+        int typeOfTrip=-1;
+
     
-    builder->setMemento(winner.retrieveWinningShuttle());
-    SpaceShuttle* sp=builder->getShuttle();
-    cout<<"-----------\tWINNING CONFIGURATION\t--------------\n";
-    sp->shuttleInfo();
+        cout<<"\n[0] Cargo and/or crew\n";
+        cout<<"[1] Starlinks\n";
+        cout<<"Please enter the type of trip: ";
+        cin>>typeOfTrip;
+        cout<<endl;
+
+        int numOfCrew=-1;
+        int weightOfCargo=-1;
+        int numOfStarlinks=-1;
+
+        if (typeOfTrip==0) {
+            numOfCrew=validateCrew();
+            weightOfCargo=validateCargo();
+        }
+        else {
+            numOfStarlinks=validateStarlinks();
+        }
+        cout<<endl;
     
-    cout<<"-----------\tLaunch\t--------------\n";
-    Command* launch = new LaunchCommand(sp->getRocket());
-    Command* halt = new HaltCommand(sp->getRocket());
-    Controller controller(launch, halt);
-    controller.launch();
+        // builder = new SpaceShuttleBuilder;
+        WinningConfig winner;
+        
+        // director = new SpaceX(builder);
+
+        simulation(winner, director, builder, numOfCrew, weightOfCargo, numOfStarlinks);
+        
+        builder->setMemento(winner.retrieveWinningShuttle());
+        SpaceShuttle* sp=builder->getShuttle();
+        cout<<"-----------\tSHUTTLE TO BE LAUNCHED\t--------------\n";
+        sp->shuttleInfo();
+        
+        cout<<"-----------\tLaunch\t--------------\n";
+        launch = new LaunchCommand(sp->getRocket());
+        halt = new HaltCommand(sp->getRocket());
+        Controller controller(launch, halt);
+        controller.launch();
+
+        builder->rocketReuse(sp->getRocket());
+
+        // delete sp;
+        cout<<endl;
+        option=menu();
+    }
+    
+
+    
 
     delete halt;
     delete launch;
@@ -117,7 +147,7 @@ int main(int argc, char **argv) {
     
     delete director;
     delete builder;
-    delete sp;
+    
 
 }
 

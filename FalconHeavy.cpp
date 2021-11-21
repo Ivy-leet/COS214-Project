@@ -11,7 +11,8 @@ FalconHeavy::FalconHeavy() : Rocket("FalconHeavy") {
 void FalconHeavy::rocketInfo() {
     cout<<fixed;
     cout << "Rocket Type: " << type << endl;
-    cout << "Cost: $" <<setprecision(2)<< cost << endl;
+    cout << "Number of reuses: " << num_reuses <<endl;
+    cout << "Cost: $" <<setprecision(2)<< getCost() << endl;
     cout << "Weight: " << weight << " kg\n";
     cout << "Payload: " << payload << " kg\n";
     cout << "Number of Cores: " << cores << endl;
@@ -24,7 +25,7 @@ void FalconHeavy::addFalconNine(Rocket* r) {
     if (falcon_nines.size()>=3) return;
 
     falcon_nines.push_back(r);
-    cost += 62000000;
+    cost += r->getCost();
     weight += r->getWeight();
 }
 

@@ -5,14 +5,14 @@ int Rocket::getNumReuses() {
 }
 
 double Rocket::getCost() {
-    return cost;
+    return cost-(50000000*(1%num_reuses));
 }
 
 void Rocket::setNumReuses(int n) {
     this->num_reuses=n;
 }
 
-Rocket::Rocket(string type) : type(type), vacuumME(1)
+Rocket::Rocket(string type) : type(type), vacuumME(1), num_reuses(0)
 {
     state = new Stage1("Rocket class");
 }
@@ -68,4 +68,9 @@ void Rocket::detach()
 State* Rocket::getState()
 {
   return state;
+}
+
+void Rocket::setState(State* s) 
+{
+    state=s;
 }

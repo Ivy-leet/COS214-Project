@@ -1,6 +1,7 @@
 #ifndef SPACESHUTTLEBUILDER_H
 #define SPACESHUTTLEBUILDER_H
 #include <queue>
+#include <stack>
 #include <ctime>
 #include <math.h>
 #include "ShuttleBuilder.h"
@@ -17,7 +18,7 @@
 class SpaceShuttleBuilder : public ShuttleBuilder {
     private:
         SpaceShuttle *spaceShuttle;
-        queue<Rocket*> for_reuse;
+        stack<Rocket*> for_reuse;
 
         bool heavyCheck();
         Rocket* testRocket(Rocket*);

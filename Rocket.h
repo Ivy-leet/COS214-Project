@@ -28,7 +28,8 @@ class Rocket {
         virtual void fire();
         virtual void detach();
         virtual void dock();
-        State* getState();
+        virtual State* getState();
+        virtual void setState(State*);
         virtual double getCost();
         virtual void rocketInfo() = 0;
         double getPayload() const;

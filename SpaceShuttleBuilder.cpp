@@ -19,8 +19,9 @@ void SpaceShuttleBuilder::buildRocket(int type) {
         cout<<"==================================\tTESTING ROCKET: 1\t========================================\033[0m\n";
         if (for_reuse.size()>=2)
         {
-            rocket=for_reuse.front();
+            rocket=for_reuse.top();
             rocket->setNumReuses(rocket->getNumReuses()+1);
+            rocket->setState(new Stage1("Rocket class"));
             for_reuse.pop();
             testRocket(rocket);
         }
@@ -38,7 +39,7 @@ void SpaceShuttleBuilder::buildRocket(int type) {
         if (for_reuse.size()>=3) {
             for (int i=0;i<3;i++) {
                 cout<<"\033[37m==================================\tTESTING ROCKET: "<<i+1<<"\t========================================\033[30m\n";
-                temp=for_reuse.front();
+                temp=for_reuse.top();
                 temp->setNumReuses(temp->getNumReuses()+1);
                 for_reuse.pop();
                 testRocket(temp);
@@ -97,8 +98,23 @@ SpaceShuttle *SpaceShuttleBuilder::getShuttle() const {
 
 
 void SpaceShuttleBuilder::rocketReuse(Rocket* r) {
-    if (r->getNumReuses()>=10) delete r;
-    else for_reuse.push(r);
+
+    if (dynamic_cast<FalconNine*>(r)!=0) {
+        if (r->getNumReuses()>=10 && r->getNumReuses()<=0) delete r;
+        else    for_reuse.push(r);
+    }
+    else {
+        for (int i=0;i<3; i++) {
+            Rocket* fNine=r->removeFalconNine();
+
+            if ((fNine->getNumReuses()>=10 && fNine->getNumReuses()<=0) || r->getNumReuses()<=0) delete fNine;
+            else    for_reuse.push(fNine);
+        }
+
+        delete r;
+    }
+
+    
 }
 
 WinningShuttle* SpaceShuttleBuilder::createMemento(WinningShuttle* w) {
@@ -106,8 +122,19 @@ WinningShuttle* SpaceShuttleBuilder::createMemento(WinningShuttle* w) {
         return new WinningShuttle(new SpaceShuttle(spaceShuttle));
 
 
-    if (w->getWinningShuttle()->getTotalCost()< spaceShuttle->getTotalCost()) 
+    if (w->getWinningShuttle()->getTotalCost()< spaceShuttle->getTotalCost()) {
+        Rocket* r=spaceShuttle->getRocket();
+        r->setNumReuses(r->getNumReuses()-1);
+        rocketReuse(r);
         spaceShuttle=w->getWinningShuttle();
+
+    }
+    else {
+        Rocket* r=w->getWinningShuttle()->getRocket();
+        r->setNumReuses(r->getNumReuses()-1);
+        rocketReuse(r);
+    }
+        
 
     return new WinningShuttle(new SpaceShuttle(spaceShuttle));
 }
@@ -128,7 +155,7 @@ Rocket* SpaceShuttleBuilder::testRocket(Rocket* r) {
     int x, count=0;
 
     do {
-        cout<<"TEST: "<<count++<<endl<<endl;
+        cout<<"TEST: "<<++count<<endl<<endl;
         x=0;
         int randNum;
         for (int i=0;i<10;i++)
