@@ -33,14 +33,28 @@ double Rocket::getWeight() {
 
 void Rocket::mission()
 {
+    std::cout << "\nOperator request for Stage 1 Rockets Fire\n" << std::endl;
     fire();
     std::cout << state->getMessage() << std::endl;
+    std::cout << "Stage 1 Rockets Fire request completed\n" << std::endl;
+
+    std::cout << "\nOperator request for Stage 1 Rockets Detach\n" << std::endl;
     detach();
+    std::cout << "Stage 1 Rockets Detach request completed\n" << std::endl;  
+
+    std::cout << "\nOperator request for Stage 2 Rockets Fire\n" << std::endl;
     fire();
     std::cout << state->getMessage() << std::endl;
+    std::cout << "Stage 2 Rockets Fire request completed\n" << std::endl;
+
+    std::cout << "\nOperator request for Stage 2 Rockets Dock\n" << std::endl;
     dock();
     std::cout << state->getMessage() << std::endl;
+    std::cout << "Stage 2 Rockets Dock request completed\n" << std::endl;
+
+    std::cout << "\nOperator request for Stage 2 Rockets Detach\n" << std::endl;
     detach();
+    std::cout << "Stage 2 Rockets Detach request completed\n" << std::endl;
 }
 
 void Rocket::fire()
