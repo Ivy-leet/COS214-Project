@@ -105,8 +105,8 @@ class Rocket {
         virtual Rocket* removeFalconNine() = 0;
     
  /**
- * @brief Returns the payload
- * @return int
+ * @brief Returns the number of reuses
+ * @return integer
  */
         int getNumReuses();
     
