@@ -8,8 +8,8 @@
 using namespace std;
 
 /**
- * @class Command "Command.h"
- * @brief Provides an interface for the different commands which will inherit from it
+ * @class LaunchCommand "LaunchCommand.h"
+ * @brief Responsible for calling the function that will launch the rocket
 */
 
 class LaunchCommand: public Command
@@ -19,6 +19,11 @@ class LaunchCommand: public Command
 
     public:
         LaunchCommand(SpaceShuttle* r);
+
+        /**
+         * @brief Calls the mission function of the rocket
+         * @return void
+        */
         void execute();
 };
 #endif

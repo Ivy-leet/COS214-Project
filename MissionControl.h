@@ -4,6 +4,11 @@
 #include "SpaceShuttle.h"
 #include "Controller.h"
 
+/**
+ * @class MissionControl
+ * @brief Concrete Observer
+*/
+
 class MissionControl : public Observer{
 	private:
 		string observerState;
@@ -13,11 +18,42 @@ class MissionControl : public Observer{
 
 	public:
 		MissionControl(SpaceShuttle*);
+
+		/**
+		 * @brief
+		 * @param
+		 * @return void
+		*/
 		void update(bool);
+
+		/**
+		 * @brief
+		 * @return void
+		*/
 		void pauseMission();
+
+		/**
+		 * @brief
+		 * @return void
+		*/
 		void rett();
+
+		/**
+		 * @brief
+		 * @return void
+		*/
 		void setSubject(SpaceShuttle*);
+
+		/**
+		 * @brief
+		 * @return Subject*
+		*/
 		Subject* getSubject();
+
+		/**
+		 * @brief
+		 * @return void
+		*/
 		void startMission();
 		~MissionControl();
 };

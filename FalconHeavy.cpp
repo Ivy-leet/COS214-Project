@@ -3,7 +3,7 @@
 FalconHeavy::FalconHeavy() : Rocket("FalconHeavy") {
     cores = 3;
     numMerlinEngines = 27;
-    cost = 62000000 * 3 + 150000000;
+    cost = 150000000;
     payload = 80000;                         // You decide
     weight = 20000;
 }
@@ -43,8 +43,8 @@ Rocket* FalconHeavy::removeFalconNine() {
     if (falcon_nines.size()==0) 
         falcon_nines.clear();
 
-    cost -= r->getCost();
-    weight -= r->getWeight();
+    // cost -= r->getCost();
+    // weight -= r->getWeight();
     return r;
 }
 

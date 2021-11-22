@@ -3,7 +3,7 @@
 #include "SpaceCraft.h"
 
 /**
- * @class responsible for adding a rocket to a SpaceShuttle object
+ * @class SpaceCraftCreator "SpaceCraftCreator.h"
  *  @brief A class which is an interface for the concreteCreators in the Factory DP
  **/
 

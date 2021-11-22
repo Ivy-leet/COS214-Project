@@ -28,6 +28,11 @@ int validateCrew() {
     cout<<"Enter the number of crew members (0 if none): ";
     cin>>numOfCrew;
 
+    if (!isdigit(numOfCrew)) {
+        cout<<"Invalid input! Please re-enter the number of crew members.\n";
+        validateCargo();
+    }
+
     if (numOfCrew>7)
     {
         cout<<"Maximum number of crew members is 7. Please re-enter the number of crew members.\n";
@@ -44,6 +49,11 @@ int validateCargo() {
     cout<<"Enter the weight of cargo (0 if none): ";
     cin>>weightOfCargo;
 
+    if (!isdigit(weightOfCargo)) {
+        cout<<"Invalid input! Please re-enter the weight of cargo.\n";
+        validateCargo();
+    }
+
     if (weightOfCargo>6000) {
         cout<<"Maximum weight of cargo is 6000 kg. Please re-enter the weight of cargo.\n";
         validateCargo();
@@ -58,10 +68,16 @@ int validateStarlinks() {
     cout<<"Enter the number of starlinks: ";
     cin>>numOfStarlinks;
 
+    if (!isdigit(numOfStarlinks)) {
+        cout<<"Invalid input! Please re-enter the number of starlinks.\n";
+        validateCargo();
+    }
+
     if (numOfStarlinks>180) {
         cout<<"Maximum number of starinks is 180. Please re-enter the number of starlinks.\n";
         validateCargo();
     }
+    
 
 }
 
@@ -69,7 +85,7 @@ void simulation(WinningConfig& config, SpaceX* spaceX, SpaceShuttleBuilder* b, i
     int type[2]={0,1};
 
     if (numOfStarlinks!=-1) {
-        if (numOfStarlinks>90) spaceX->construct(1, numOfCrew, numOfStarlinks);
+        if (numOfStarlinks>60) spaceX->construct(1, numOfCrew, numOfStarlinks);
         else spaceX->construct(0,numOfCrew, numOfStarlinks);
         return;
     }
@@ -89,7 +105,7 @@ void simulation(WinningConfig& config, SpaceX* spaceX, SpaceShuttleBuilder* b, i
 
 
 int main(int argc, char **argv) {
-    cout<<"\033[37m"<<"WELCOME TO SPACEX!!\n\n";
+    cout<<"\033[37m"<<"WELCOME TO SPACEX of the MISFITS!!\n\n";
 
     int option=menu();
 
@@ -146,12 +162,6 @@ int main(int argc, char **argv) {
         delete sp;
 
     }
-    
-
-    
-
-    
-
     
     delete director;
     delete builder;

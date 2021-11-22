@@ -9,7 +9,7 @@ using namespace std;
 
 /**
  * @class HaltCommand "HaltCommand.h"
- * @brief 
+ * @brief Responsible for stopping a rocket
 */
 
 class HaltCommand: public Command

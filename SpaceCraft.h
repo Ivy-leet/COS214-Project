@@ -16,6 +16,7 @@ class SpaceCraft {
         string type;
         int numCrew;
         double cargoWeight;
+        double payload;
 
     public:
         SpaceCraft(string);

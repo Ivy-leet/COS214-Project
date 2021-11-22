@@ -2,7 +2,7 @@
 
 SpaceCraft::SpaceCraft(string type) : type(type) {
     numCrew = 0;
-    payload = 0;
+    payload = 6000;
     cargoWeight = 0.0;
 }
 

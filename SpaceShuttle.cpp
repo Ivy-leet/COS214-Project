@@ -11,6 +11,7 @@ SpaceShuttle::SpaceShuttle() : spaceCraft(nullptr), rocket(nullptr), starlinks(n
 SpaceShuttle::~SpaceShuttle() {
     rocket=nullptr;
     spaceCraft=nullptr;
+    starlinks=nullptr;
 }
 
 SpaceShuttle* SpaceShuttle::clone() {
