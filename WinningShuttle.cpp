@@ -26,7 +26,6 @@ void WinningShuttle::setWinningShuttle(SpaceShuttle* s) {
  * @return SpaceShuttle pointer
  */
 
-
 SpaceShuttle* WinningShuttle::getWinningShuttle() {
 	return spaceShuttle;
 }
