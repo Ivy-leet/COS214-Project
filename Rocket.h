@@ -6,6 +6,7 @@
 #include "State.h"
 #include "Stage1.h"
 #include "Stage2.h"
+#include "Subject.h"
 
 using namespace std;
 
@@ -14,7 +15,7 @@ using namespace std;
  * @brief A class which specifies the Rockets configuration. This class is the AbstractClass participant in the Template Method DP
  */
 
-class Rocket {
+class Rocket : public Subject {
     protected:
         State* state;
         string type;
