@@ -19,7 +19,6 @@ class WinningConfig
 		~WinningConfig();
 /**
  * @brief Returns the stored Memento(WinningShuttle)
- * @param None
  * @return WinningShuttle pointer
  */
 		WinningShuttle* retrieveWinningShuttle();
