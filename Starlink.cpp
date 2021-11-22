@@ -12,26 +12,32 @@ Starlink::Starlink()
     cout<<"Starlink satellite has been created wtith ID: " <<StarlinkID<<endl;
 }
 
+Starlink::Starlink(int a) {}
+
 Starlink::Starlink(const Starlink& StarL)
 {
     this->StarlinkID = StarL.StarlinkID;
 }
 
-Starlink* Starlink::clone()
+Starlink::~Starlink() {}
+
+Handler* Starlink::clone()
 {
     cout<<"New Starlink satellite constructed"<<endl;
 
-    Starlink *SLink = new Starlink();
+    Handler *SLink = new Starlink();
     
-
-    
-
     return new Starlink(*this);
 }
 
 void Starlink::setNextHandler(Handler *nextH)
 {
     this->successor = nextH;
+}
+
+Handler* Starlink::getNextHandler() 
+{
+    return this->successor;
 }
 
 void Starlink::HandleRequest(Message inMes)

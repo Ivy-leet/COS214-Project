@@ -1,9 +1,9 @@
-
 #include "SpaceShuttle.h"
 #include "FalconNine.h"
 #include "FalconHeavy.h"
 #include "CrewDragon.h"
 #include "Dragon.h"
+
 
 SpaceShuttle::SpaceShuttle() : spaceCraft(nullptr), rocket(nullptr) {}
 
@@ -18,7 +18,6 @@ SpaceShuttle* SpaceShuttle::clone() {
     
     temp->addRocket(this->getRocket());
     temp->addSpaceCraft(this->getSpaceCraft());
-    temp->addStarlinks(this->getStarlinks().size());
 
     return temp;
 }
@@ -32,27 +31,41 @@ void SpaceShuttle::addSpaceCraft(SpaceCraft *s) {
 }
 
 void SpaceShuttle::addStarlinks(int num) {
-    Starlink* starlink = new Starlink();
 
-    for (int i=0;i<num; i++)
-        starlinks.push_back(starlink->clone());
+    numOfStarlinks=num;
+
+    Handler* starlink=new Starlink(); 
+    starlinks=starlink;
+
+    Handler* s=starlinks;
+
+
+    for (int i=1;i<num; i++)
+    {
+        s->setNextHandler(s->clone());
+        s=s->getNextHandler();
+    }
 
     delete starlink;
 }
 
+int SpaceShuttle::getNumOfStarlinks() {
+    return numOfStarlinks;
+}
+
 double SpaceShuttle::getTotalWeight() const {
-    return rocket->getWeight() + spaceCraft->getCargoWeight() + starlinks.size() * 260;
+    return rocket->getWeight() + spaceCraft->getCargoWeight() + numOfStarlinks * 260;
 }
 
 double SpaceShuttle::getTotalCost() const {
-    return rocket->getCost() + spaceCraft->getCost() + starlinks.size() * 1000000;
+    return rocket->getCost() + spaceCraft->getCost() + numOfStarlinks * 1000000;
 }
 
 void SpaceShuttle::shuttleInfo() {
     cout <<"\033[37m"<< "SPACE SHUTTLE INFORMATION:\n";
     rocket->rocketInfo();
     cout << endl;
-    spaceCraft->spaceCraftInfo();
+    if (spaceCraft)spaceCraft->spaceCraftInfo();
     cout << endl;
 }
 
@@ -64,7 +77,7 @@ SpaceCraft *SpaceShuttle::getSpaceCraft() {
     return spaceCraft;
 }
 
-vector<Starlink*> SpaceShuttle::getStarlinks() {
+Handler* SpaceShuttle::getStarlinks() {
     return starlinks;
 }
 

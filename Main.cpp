@@ -6,7 +6,9 @@
 #include "Command.h"
 #include "LaunchCommand.h"
 #include "HaltCommand.h"
+#include "Starlink.h"
 
+int Starlink::StarLinkIDInc=0;
 
 int menu() {
     int option;
@@ -62,8 +64,14 @@ int validateStarlinks() {
 
 }
 
-SpaceShuttle* simulation(WinningConfig& config, SpaceX* spaceX, SpaceShuttleBuilder* b, int numOfCrew, int weightOfCargo, int numOfStarlinks) {
+void simulation(WinningConfig& config, SpaceX* spaceX, SpaceShuttleBuilder* b, int numOfCrew, int weightOfCargo, int numOfStarlinks) {
     int type[2]={0,1};
+
+    if (numOfStarlinks!=-1) {
+        if (numOfStarlinks>90) spaceX->construct(1, numOfCrew, numOfStarlinks);
+        else spaceX->construct(0,numOfCrew, numOfStarlinks);
+        return;
+    }
 
     for (int i=0; i<2; i++) {
         spaceX->construct(i, numOfCrew, numOfStarlinks);

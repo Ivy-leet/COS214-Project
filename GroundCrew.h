@@ -1,3 +1,6 @@
+#ifndef GROUNDCREW_H
+#define GROUNDCREW_H
+
 #include "Handler.h"
 
 class GroundCrew : public Handler
@@ -11,3 +14,5 @@ public:
     void setNextHandler(Handler* nextH); //If the current object cannot handle the request, send it to the next
     ~GroundCrew();
 };
+
+#endif

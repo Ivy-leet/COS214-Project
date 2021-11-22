@@ -1,3 +1,6 @@
+#ifndef MESSAGE_H
+#define MESSAGE_H
+
 #include <string>
 
 using namespace std;
@@ -16,4 +19,6 @@ public:
     string getCommMedium();
     ~Message();
 };
+
+#endif
 

@@ -17,7 +17,14 @@ class SpaceShuttle {
     private:
         Rocket *rocket;
         SpaceCraft *spaceCraft;
-        vector<Starlink*> starlinks;
+        Handler* starlinks;
+        int numOfStarlinks;
+
+        /**
+         * @brief Makes copy of the current space shuttle object
+         * @return SpaceShuttle*
+        */
+        SpaceShuttle* clone();
         
     public:
         SpaceShuttle();
@@ -43,6 +50,8 @@ class SpaceShuttle {
          * @return void
         */
         void addStarlinks(int);
+
+        int getNumOfStarlinks();
 
         /**
          * @brief Returns the total weight of the space shuttle
@@ -78,13 +87,9 @@ class SpaceShuttle {
          * @brief Returns the data structure which holds the starlink pointers
          * @return vector<Starlink*>
         */
-        vector<Starlink*> getStarlinks();
+        Handler* getStarlinks();
 
-        /**
-         * @brief Makes copy of the current space shuttle object
-         * @return SpaceShuttle*
-        */
-        SpaceShuttle* clone();
+        
 
 };
 
