@@ -15,7 +15,6 @@ class SpaceCraft {
     protected:
         string type;
         int numCrew;
-        double payload;
         double cargoWeight;
 
     public:
