@@ -2,26 +2,23 @@
 #define LAUNCH_COMMAND_H
 
 #include <iostream>
+#include "SpaceShuttle.h"
 #include "Rocket.h"
 #include "Command.h"
 using namespace std;
 
 /**
- * @class LaunchCommand "LaunchCommand.h"
- * @brief
+ * @class Command "Command.h"
+ * @brief Provides an interface for the different commands which will inherit from it
 */
 
 class LaunchCommand: public Command
 {
     private:
         Rocket* rocket;
-    public:
-        LaunchCommand(Rocket* r);
 
-        /**
-         * @brief Calls the mission command of the rocket
-         * @return void
-        */
+    public:
+        LaunchCommand(SpaceShuttle* r);
         void execute();
 };
 #endif

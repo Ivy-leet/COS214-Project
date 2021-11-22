@@ -2,9 +2,9 @@
 #include "LaunchCommand.h"
 using namespace std;
 
-LaunchCommand::LaunchCommand(Rocket* r): Command(r)
+LaunchCommand::LaunchCommand(SpaceShuttle* r): Command(r)
 {
-    rocket = r;
+    rocket = r->getRocket();
 }
 
 void LaunchCommand::execute()
