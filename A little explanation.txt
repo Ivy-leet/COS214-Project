@@ -1,0 +1,34 @@
+Patterns:
+Chain of Responsibility (Handler, Starlink, GroundCrew, Message)
+Prototype (Starlink, Satellite, StarlinkReplicator)
+
+Classes which aren't in the class diagram:
+Message - Acts as the request being handled.
+	The Communication Medium variable determines which Oject handles it.
+	"Radio" - GroundCrew
+	"Laser" - Starlink
+Satellite - The interface for the Prototype pattern
+StarlinkReplicator - Used to actually clone the passed in Starlink Satellite. Sort of a Starlink factory.
+
+Operation:
+To use the prototype pattern:
+Objects from the Starlink and StarlinkReplicator classes are created
+The Starlink object is passed into the StarlinkReplicator to create a clone of itself
+i.e 	Starlink s1 = new Starlink();
+	Starlink s2 = new Starlink();
+	StarlinkReplicator StarlinkCloner = new StarlinkReplicator();
+	s2 = StarlinkCloner.getClone(s1); //clones s1 and stores into s2
+				// can be looped to create multiple clones of s1
+
+To use Chain of Responsibilty pattern:
+Create instances of the Handler (for both Starlink and GroundCrew
+Set successor for each Handler
+Create instance of message
+Pass message into first Handler in chain
+i.e Handler Starlink1 = new Starlink();
+     Handler Starlink2 = new Starlink();
+     Handler GCrew = new GroundCrew();
+     Starlink1.setNextHandler(Starlink2);
+     Starlink2.setNextHandler(GCrew);
+     Message req = new Message("Radio");
+     Starlink1.Handle(req); //The request will be passed down until handled by GroundCrew ("Radio")

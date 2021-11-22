@@ -1,0 +1,102 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/mnt/c/Users/Ishe/Desktop/Ishe/1. COS 214 - Software Modelling/Project/Design Patterns/CrewDragon.h
+SpaceCraft.h
+/mnt/c/Users/Ishe/Desktop/Ishe/1. COS 214 - Software Modelling/Project/Design Patterns/SpaceCraft.h
+
+/mnt/c/Users/Ishe/Desktop/Ishe/1. COS 214 - Software Modelling/Project/Design Patterns/CrewDragonCreator.h
+SpaceCraftCreator.h
+/mnt/c/Users/Ishe/Desktop/Ishe/1. COS 214 - Software Modelling/Project/Design Patterns/SpaceCraftCreator.h
+CrewDragon.h
+/mnt/c/Users/Ishe/Desktop/Ishe/1. COS 214 - Software Modelling/Project/Design Patterns/CrewDragon.h
+
+/mnt/c/Users/Ishe/Desktop/Ishe/1. COS 214 - Software Modelling/Project/Design Patterns/Dragon.h
+SpaceCraft.h
+/mnt/c/Users/Ishe/Desktop/Ishe/1. COS 214 - Software Modelling/Project/Design Patterns/SpaceCraft.h
+
+/mnt/c/Users/Ishe/Desktop/Ishe/1. COS 214 - Software Modelling/Project/Design Patterns/DragonCreator.h
+SpaceCraftCreator.h
+/mnt/c/Users/Ishe/Desktop/Ishe/1. COS 214 - Software Modelling/Project/Design Patterns/SpaceCraftCreator.h
+Dragon.h
+/mnt/c/Users/Ishe/Desktop/Ishe/1. COS 214 - Software Modelling/Project/Design Patterns/Dragon.h
+
+/mnt/c/Users/Ishe/Desktop/Ishe/1. COS 214 - Software Modelling/Project/Design Patterns/FalconHeavy.h
+Rocket.h
+/mnt/c/Users/Ishe/Desktop/Ishe/1. COS 214 - Software Modelling/Project/Design Patterns/Rocket.h
+list
+-
+
+/mnt/c/Users/Ishe/Desktop/Ishe/1. COS 214 - Software Modelling/Project/Design Patterns/FalconNine.cpp
+FalconNine.h
+/mnt/c/Users/Ishe/Desktop/Ishe/1. COS 214 - Software Modelling/Project/Design Patterns/FalconNine.h
+
+/mnt/c/Users/Ishe/Desktop/Ishe/1. COS 214 - Software Modelling/Project/Design Patterns/FalconNine.h
+Rocket.h
+/mnt/c/Users/Ishe/Desktop/Ishe/1. COS 214 - Software Modelling/Project/Design Patterns/Rocket.h
+vector
+-
+
+/mnt/c/Users/Ishe/Desktop/Ishe/1. COS 214 - Software Modelling/Project/Design Patterns/Main.cpp
+SpaceShuttleBuilder.h
+/mnt/c/Users/Ishe/Desktop/Ishe/1. COS 214 - Software Modelling/Project/Design Patterns/SpaceShuttleBuilder.h
+SpaceX.h
+/mnt/c/Users/Ishe/Desktop/Ishe/1. COS 214 - Software Modelling/Project/Design Patterns/SpaceX.h
+
+/mnt/c/Users/Ishe/Desktop/Ishe/1. COS 214 - Software Modelling/Project/Design Patterns/Rocket.h
+iostream
+-
+
+/mnt/c/Users/Ishe/Desktop/Ishe/1. COS 214 - Software Modelling/Project/Design Patterns/ShuttleBuilder.h
+SpaceShuttle.h
+/mnt/c/Users/Ishe/Desktop/Ishe/1. COS 214 - Software Modelling/Project/Design Patterns/SpaceShuttle.h
+
+/mnt/c/Users/Ishe/Desktop/Ishe/1. COS 214 - Software Modelling/Project/Design Patterns/SpaceCraft.h
+iostream
+-
+
+/mnt/c/Users/Ishe/Desktop/Ishe/1. COS 214 - Software Modelling/Project/Design Patterns/SpaceCraftCreator.h
+SpaceCraft.h
+/mnt/c/Users/Ishe/Desktop/Ishe/1. COS 214 - Software Modelling/Project/Design Patterns/SpaceCraft.h
+
+/mnt/c/Users/Ishe/Desktop/Ishe/1. COS 214 - Software Modelling/Project/Design Patterns/SpaceShuttle.h
+Rocket.h
+/mnt/c/Users/Ishe/Desktop/Ishe/1. COS 214 - Software Modelling/Project/Design Patterns/Rocket.h
+SpaceCraft.h
+/mnt/c/Users/Ishe/Desktop/Ishe/1. COS 214 - Software Modelling/Project/Design Patterns/SpaceCraft.h
+Starlink.h
+/mnt/c/Users/Ishe/Desktop/Ishe/1. COS 214 - Software Modelling/Project/Design Patterns/Starlink.h
+vector
+-
+queue
+-
+math.h
+-
+ctime
+-
+
+/mnt/c/Users/Ishe/Desktop/Ishe/1. COS 214 - Software Modelling/Project/Design Patterns/SpaceShuttleBuilder.h
+ShuttleBuilder.h
+/mnt/c/Users/Ishe/Desktop/Ishe/1. COS 214 - Software Modelling/Project/Design Patterns/ShuttleBuilder.h
+DragonCreator.h
+/mnt/c/Users/Ishe/Desktop/Ishe/1. COS 214 - Software Modelling/Project/Design Patterns/DragonCreator.h
+CrewDragonCreator.h
+/mnt/c/Users/Ishe/Desktop/Ishe/1. COS 214 - Software Modelling/Project/Design Patterns/CrewDragonCreator.h
+FalconNine.h
+/mnt/c/Users/Ishe/Desktop/Ishe/1. COS 214 - Software Modelling/Project/Design Patterns/FalconNine.h
+FalconHeavy.h
+/mnt/c/Users/Ishe/Desktop/Ishe/1. COS 214 - Software Modelling/Project/Design Patterns/FalconHeavy.h
+
+/mnt/c/Users/Ishe/Desktop/Ishe/1. COS 214 - Software Modelling/Project/Design Patterns/SpaceX.h
+ShuttleBuilder.h
+/mnt/c/Users/Ishe/Desktop/Ishe/1. COS 214 - Software Modelling/Project/Design Patterns/ShuttleBuilder.h
+SpaceCraftCreator.h
+/mnt/c/Users/Ishe/Desktop/Ishe/1. COS 214 - Software Modelling/Project/Design Patterns/SpaceCraftCreator.h
+
+/mnt/c/Users/Ishe/Desktop/Ishe/1. COS 214 - Software Modelling/Project/Design Patterns/Starlink.h
+
