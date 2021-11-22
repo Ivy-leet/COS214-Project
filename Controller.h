@@ -2,6 +2,7 @@
 #define CONTROLLER_H
 
 #include "Command.h"
+#include "SpaceShuttle.h"
 
 #include <iostream>
 
@@ -17,9 +18,11 @@ class Controller
     private:
         Command* launchC;
         Command* haltC;
+	Command* returnC;
+
     public:
         //Controller(LaunchCommand* l , HaltCommand* h );
-        Controller(Command* l, Command* h);
+        Controller(Command*, Command*, Command*);
 
         /**
          * @brief Executes the launch command
@@ -27,11 +30,12 @@ class Controller
         */
         void launch();
 
+        
         /**
          * @brief Executes the halt command
          * @return void
         */
         void halt();
-
+	    void ret();
 };
 #endif
