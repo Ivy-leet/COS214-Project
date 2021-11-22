@@ -7,13 +7,14 @@
 #include <queue>
 #include <math.h>
 #include <ctime>
+#include "Subject.h"
 
 /*!
 * @class    SpaceShuttleBuilder "SpaceShuttleBuilder.h"
 * @brief    SpaceShuttleBuilder is the concreteBuilder participant in the Builder DP. Responsible for the creation of the Space Shuttle and the testing of the rockets.
 */
 
-class SpaceShuttle {
+class SpaceShuttle : public Subject{
     private:
         Rocket *rocket;
         SpaceCraft *spaceCraft;

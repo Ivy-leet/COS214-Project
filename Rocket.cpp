@@ -37,6 +37,7 @@ void Rocket::mission()
     fire();
     std::cout << state->getMessage() << std::endl;
     std::cout << "Stage 1 Rockets Fire request completed\n" << std::endl;
+    Subject::setCurState("Rocket has Fired.", false);
 
     std::cout << "\nOperator request for Stage 1 Rockets Detach\n" << std::endl;
     detach();
@@ -46,11 +47,13 @@ void Rocket::mission()
     fire();
     std::cout << state->getMessage() << std::endl;
     std::cout << "Stage 2 Rockets Fire request completed\n" << std::endl;
+    Subject::setCurState("Rocket has Fired.", false);
 
     std::cout << "\nOperator request for Stage 2 Rockets Dock\n" << std::endl;
     dock();
     std::cout << state->getMessage() << std::endl;
     std::cout << "Stage 2 Rockets Dock request completed\n" << std::endl;
+    Subject::setCurState("Rocket has Docked.", false);
 
     std::cout << "\nOperator request for Stage 2 Rockets Detach\n" << std::endl;
     detach();
@@ -60,15 +63,18 @@ void Rocket::mission()
 void Rocket::fire()
 {
   state->fire();
+  Subject::setCurState("Rocket has begun to fire.", false);
 }
 
 void Rocket::dock()
 {
   state->dock();
+  Subject::setCurState("Rocket has begun to dock.", false);
 }
 
 void Rocket::detach()
 {
+    Subject::setCurState("Rocket has begun to Detach.", false);
     if(state == nullptr)
         return;
     
@@ -77,6 +83,8 @@ void Rocket::detach()
     if(state != nullptr)
         delete state;
     state = temp;
+    cout<<endl;
+    Subject::setCurState("Rocket has Detached.", false);
 }
 
 State* Rocket::getState()

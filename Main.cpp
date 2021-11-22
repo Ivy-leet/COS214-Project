@@ -7,6 +7,7 @@
 #include "LaunchCommand.h"
 #include "HaltCommand.h"
 #include "Starlink.h"
+#include "MissionControl.h"
 
 int Starlink::StarLinkIDInc=0;
 
@@ -133,10 +134,10 @@ int main(int argc, char **argv) {
         sp->shuttleInfo();
         
         cout<<"-----------\tLaunch\t--------------\n";
-        launch = new LaunchCommand(sp->getRocket());
-        halt = new HaltCommand(sp->getRocket());
-        Controller controller(launch, halt);
-        controller.launch();
+        MissionControl* missioncontrol = new MissionControl(sp);
+
+        missioncontrol->startMission();
+        missioncontrol->rett();
 
         builder->rocketReuse(sp->getRocket());
         
@@ -146,8 +147,7 @@ int main(int argc, char **argv) {
         option=menu();
 
         delete sp->getSpaceCraft();
-        delete halt;
-    delete launch;
+        // delete missioncontrol;
 
     }
     

@@ -24,6 +24,10 @@ int SpaceCraft::getNumCrew() {
     return numCrew;
 }
 
-void SpaceCraft::setNumCrew(int num) {
-    numCrew=num;
+void SpaceCraft::setNumCrew(int n) {
+    numCrew = n;
+}
+
+void SpaceCraft::ret(){
+	cout<<"SpaceCraft Returning to Earth."<<endl;
 }
