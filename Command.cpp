@@ -2,7 +2,7 @@
 #include "Command.h"
 using namespace std;
 
-Command::Command(Rocket* r)
+Command::Command(SpaceShuttle* r)
 {
-    rocket = r;
+    shuttle = r;
 }
