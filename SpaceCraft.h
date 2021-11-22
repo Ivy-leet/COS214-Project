@@ -65,6 +65,7 @@ class SpaceCraft {
          * @return void
         */
         void setNumCrew(int);
+        void ret();
 };
 
 
