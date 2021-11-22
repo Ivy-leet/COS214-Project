@@ -6,7 +6,10 @@
 #include "SpaceCraft.h"
 #include "SpaceShuttle.h"
 
-// Memento
+/**
+ * @class WinningShuttle "WinningShuttle.h"
+ * @brief A class which stores the state of the SpaceShuttle. This class is the Memento participant in the Memento DP
+ */
 
 class WinningShuttle
 {
@@ -17,7 +20,19 @@ class WinningShuttle
 
 		
 		WinningShuttle(SpaceShuttle* s);
+	
+/**
+ * @brief Stores the WinningShuttle(SpaceShuttle)
+ * @param s - SpaceShuttle*
+ * @return void
+ */
 		void setWinningShuttle(SpaceShuttle*);
+	
+/**
+ * @brief Returns the WinningShuttle(SpaceShuttle)
+ * @param None
+ * @return SpaceShuttle pointer
+ */
 		SpaceShuttle* getWinningShuttle();
 
 	public:
