@@ -7,12 +7,12 @@
 #include "Stage1.h"
 #include "Stage2.h"
 
+using namespace std;
+
 /**
  * @class State "Rocket.h"
  * @brief A class which specifies the Rockets configuration. This class is the AbstractClass participant in the Template Method DP
  */
-
-using namespace std;
 
 class Rocket {
     protected:
