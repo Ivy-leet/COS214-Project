@@ -6,7 +6,7 @@
 
 /**
  * @author Ishe
- * @class SpaceX.h "SpaceX.h"
+ * @class SpaceX "SpaceX.h"
  * @brief A class which instructs a builder to create a shuttle. (Director participant in the Builder DP
  */
 

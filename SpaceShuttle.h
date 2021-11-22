@@ -9,7 +9,7 @@
 #include <ctime>
 
 /*!
-* @class    SpaceShuttleBuilder.h   "SpaceShuttleBuilder.h"
+* @class    SpaceShuttleBuilder "SpaceShuttleBuilder.h"
 * @brief    SpaceShuttleBuilder is the concreteBuilder participant in the Builder DP. Responsible for the creation of the Space Shuttle and the testing of the rockets.
 */
 

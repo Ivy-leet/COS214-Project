@@ -4,7 +4,7 @@
 #include "CrewDragon.h"
 
 /**
- * @class CrewDragonCreator.h "CrewDragonCreator.h"
+ * @class CrewDragonCreator "CrewDragonCreator.h"
  * @brief Factory concrete creator for the space crafts
 */
 
