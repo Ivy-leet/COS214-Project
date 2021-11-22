@@ -66,7 +66,7 @@ class SpaceCraft {
          * @param n - int
          * @return void
         */
-        void setNumCrew(int);
+        // void setNumCrew(int);
         void ret();
 };
 

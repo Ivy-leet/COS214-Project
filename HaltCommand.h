@@ -3,10 +3,7 @@
 
 #include <iostream>
 #include "SpaceShuttle.h"
-<<<<<<< HEAD
-=======
 #include "Rocket.h"
->>>>>>> af7f5905369ffd88758adef6e125ee9a93df51ce
 #include "Command.h"
 using namespace std;
 
@@ -21,11 +18,7 @@ class HaltCommand: public Command
         Rocket* rocket;
     public:
         HaltCommand(SpaceShuttle* r);
-<<<<<<< HEAD
-
-=======
         
->>>>>>> af7f5905369ffd88758adef6e125ee9a93df51ce
         /**
          * @brief Calls the dock function of the rocket
          * @return voids
