@@ -47,6 +47,8 @@ class SpaceCraft {
         */
         virtual int getNumCrew();
 
+        virtual void setNumCrew(int);
+
         /**
          * @brief Returns the payload
          * @return double
