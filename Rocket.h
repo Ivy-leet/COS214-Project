@@ -7,6 +7,11 @@
 #include "Stage1.h"
 #include "Stage2.h"
 
+/**
+ * @class Rocket "Rocket.h"
+ * @brief
+*/
+
 using namespace std;
 
 class Rocket {

@@ -1,7 +1,10 @@
 #ifndef FALCONNINE_H
 #define FALCONNINE_H
 #include "Rocket.h"
-#include <vector>
+
+/**
+ * @class FalconNine "FalconNine"
+*/
 
 class FalconNine : public Rocket {
     public:

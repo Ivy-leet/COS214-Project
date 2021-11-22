@@ -2,8 +2,7 @@
 #define STARLINK_H
 
 /**
- * @author Ishe
- * @class Starlink
+ * @class Starlink "Starlink.h"
  * @brief A class for creating the starlinks
  */
 class Starlink {

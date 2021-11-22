@@ -2,7 +2,11 @@
 #define FALCONHEAVY_H
 #include "Rocket.h"
 #include <list>
-#include <vector>
+
+/**
+ * @class FalconHeavy "FalconHeavy.h"
+ * @brief The composite participant in the Composite design pattern. Holds pointers to FalconNine objects
+*/
 
 class Rocket;
 

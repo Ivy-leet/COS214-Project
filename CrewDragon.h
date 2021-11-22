@@ -2,6 +2,11 @@
 #define DRAGONCREW_H
 #include "SpaceCraft.h"
 
+/**
+ * @class CrewDragon "CrewDragon.h"
+ * @brief 
+*/
+
 class CrewDragon : public SpaceCraft {
     public:
         CrewDragon();
