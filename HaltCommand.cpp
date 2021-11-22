@@ -2,9 +2,9 @@
 #include "HaltCommand.h"
 using namespace std;
 
-HaltCommand::HaltCommand(Rocket* r): Command(r)
+HaltCommand::HaltCommand(SpaceShuttle* r): Command(r)
 {
-    rocket = r;
+    rocket = r->getRocket();
 }
 
 void HaltCommand::execute()
