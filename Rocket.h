@@ -8,9 +8,9 @@
 #include "Stage2.h"
 
 /**
- * @class Rocket "Rocket.h"
- * @brief
-*/
+ * @class State "Rocket.h"
+ * @brief A class which specifies the Rockets configuration. This class is the AbstractClass participant in the Template Method DP
+ */
 
 using namespace std;
 
