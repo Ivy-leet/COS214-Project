@@ -92,14 +92,14 @@ class Rocket {
         virtual double getWeight();
     
  /**
- * @brief Adds a FalconNine Rocket to the SpaceShuttle
+ * @brief Adds a FalconNine Rocket
  * @param r - Rocket*
  * @return void
  */
         virtual void addFalconNine(Rocket*) = 0;
     
  /**
- * @brief Removes a FalconNine Rocket to the SpaceShuttle
+ * @brief Removes a FalconNine Rocket
  * @return Rocket pointer
  */
         virtual Rocket* removeFalconNine() = 0;
