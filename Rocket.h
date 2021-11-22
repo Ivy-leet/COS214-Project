@@ -10,7 +10,7 @@
 using namespace std;
 
 /**
- * @class State "Rocket.h"
+ * @class State "State.h"
  * @brief A class which specifies the Rockets configuration. This class is the AbstractClass participant in the Template Method DP
  */
 
