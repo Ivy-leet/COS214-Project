@@ -24,6 +24,7 @@ class Stage1: public State
     
   public:
   Stage1(string msg);
+  
  /**
  * @brief Fires the Stage Rockets
  * @return void
