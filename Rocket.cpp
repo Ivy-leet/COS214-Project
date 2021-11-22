@@ -31,6 +31,17 @@ double Rocket::getWeight() {
     return weight;
 }
 
+/**
+ * @brief Simulates the launch of the SpaceShuttle
+ *
+ * The Template Method mission handles firing, detaching and docking of
+ * the Stage 1 and Stage 2 Engines. This is done to ensure that the correct
+ * procedure is followed. (Stage 2 will not fire before Stage 1 and either rocket
+ * will not detach before it's fired)
+ * @param None
+ * @return void
+ */
+
 void Rocket::mission()
 {
     std::cout << "\nOperator request for Stage 1 Rockets Fire\n" << std::endl;
