@@ -6,8 +6,8 @@
 using namespace std;
 
 /**
- * @class WinningShuttle "WinningShuttle.h"
- * @brief A class which stores the state of the SpaceShuttle. This class is the Memento participant in the Memento DP
+ * @class State "State.h"
+ * @brief A class which specifies the states of the Engine rockets. This class is the State participant in the State DP
  */
 
 class State
