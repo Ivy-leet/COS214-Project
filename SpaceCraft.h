@@ -58,6 +58,13 @@ class SpaceCraft {
          * @return double
         */
         double getCargoWeight() const;
+
+        /**
+         * @brief Sets the number of crew members
+         * @param n - int
+         * @return void
+        */
+        void setNumCrew(int);
 };
 
 

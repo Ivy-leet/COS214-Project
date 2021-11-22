@@ -23,3 +23,7 @@ void SpaceCraft::setCargoWeight(double c) {
 int SpaceCraft::getNumCrew() {
     return numCrew;
 }
+
+void SpaceCraft::setNumCrew(int n) {
+    numCrew = n;
+}
