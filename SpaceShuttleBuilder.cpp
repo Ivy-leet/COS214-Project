@@ -1,11 +1,12 @@
 #include "SpaceShuttleBuilder.h"
 
 SpaceShuttleBuilder::SpaceShuttleBuilder() {
-    spaceShuttle = new SpaceShuttle;
+    // spaceShuttle = new SpaceShuttle;
     srand((unsigned) time(0));
 }
 
 SpaceShuttleBuilder::~SpaceShuttleBuilder() {
+    spaceShuttle=nullptr;
     delete spaceShuttle;
 
     int size=for_reuse.size();
@@ -24,6 +25,7 @@ SpaceShuttleBuilder::~SpaceShuttleBuilder() {
  * @return void
  */
 void SpaceShuttleBuilder::buildRocket(int type) {
+    spaceShuttle=new SpaceShuttle;
     Rocket *rocket;
     if (type == 0) 
     {

@@ -45,8 +45,6 @@ void SpaceShuttle::addStarlinks(int num) {
         s->setNextHandler(s->clone());
         s=s->getNextHandler();
     }
-
-    delete starlink;
 }
 
 int SpaceShuttle::getNumOfStarlinks() {
@@ -78,7 +76,9 @@ SpaceCraft *SpaceShuttle::getSpaceCraft() {
 }
 
 Handler* SpaceShuttle::getStarlinks() {
-    return starlinks;
+    Handler* s=starlinks;
+    starlinks=nullptr;
+    return s;
 }
 
 

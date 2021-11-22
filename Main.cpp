@@ -119,14 +119,10 @@ int main(int argc, char **argv) {
         }
         cout<<endl;
     
-        // builder = new SpaceShuttleBuilder;
         WinningConfig winner;
-        
-        // director = new SpaceX(builder);
 
         simulation(winner, director, builder, numOfCrew, weightOfCargo, numOfStarlinks);
         
-        // builder->setMemento(winner.retrieveWinningShuttle());
         SpaceShuttle* sp=builder->getShuttle();
         cout<<"-----------\tSHUTTLE TO BE LAUNCHED\t--------------\n";
         sp->shuttleInfo();
@@ -141,10 +137,13 @@ int main(int argc, char **argv) {
         
         cout<<endl;
         
-        delete winner.retrieveWinningShuttle();
+        if (winner.retrieveWinningShuttle()!=nullptr)
+            delete winner.retrieveWinningShuttle();
+
         option=menu();
 
         delete sp->getSpaceCraft();
+        delete sp;
 
     }
     
