@@ -1,4 +1,4 @@
-# Install script for directory: /mnt/c/Users/Ishe/Desktop/Ishe/1. COS 214 - Software Modelling/Project/Design Patterns
+# Install script for directory: /mnt/c/Users/Ishe/Desktop/Ishe/1. COS 214 - Software Modelling/Google Test
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -45,5 +45,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "/mnt/c/Users/Ishe/Desktop/Ishe/1. COS 214 - Software Modelling/Project/Design Patterns/cmake-build-debug/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "/mnt/c/Users/Ishe/Desktop/Ishe/1. COS 214 - Software Modelling/Google Test/cmake-build-debug/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")

@@ -5,6 +5,7 @@ int Rocket::getNumReuses() {
 }
 
 double Rocket::getCost() {
+    num_reuses++;
     return cost-(50000000*(1%num_reuses));
 }
 

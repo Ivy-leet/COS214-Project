@@ -48,10 +48,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = "/mnt/c/Users/Ishe/Desktop/Ishe/1. COS 214 - Software Modelling/Project/Design Patterns"
+CMAKE_SOURCE_DIR = "/mnt/c/Users/Ishe/Desktop/Ishe/1. COS 214 - Software Modelling/Google Test"
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = "/mnt/c/Users/Ishe/Desktop/Ishe/1. COS 214 - Software Modelling/Project/Design Patterns/cmake-build-debug"
+CMAKE_BINARY_DIR = "/mnt/c/Users/Ishe/Desktop/Ishe/1. COS 214 - Software Modelling/Google Test/cmake-build-debug"
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -80,9 +80,9 @@ edit_cache/fast: edit_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start "/mnt/c/Users/Ishe/Desktop/Ishe/1. COS 214 - Software Modelling/Project/Design Patterns/cmake-build-debug/CMakeFiles" "/mnt/c/Users/Ishe/Desktop/Ishe/1. COS 214 - Software Modelling/Project/Design Patterns/cmake-build-debug/CMakeFiles/progress.marks"
+	$(CMAKE_COMMAND) -E cmake_progress_start "/mnt/c/Users/Ishe/Desktop/Ishe/1. COS 214 - Software Modelling/Google Test/cmake-build-debug/CMakeFiles" "/mnt/c/Users/Ishe/Desktop/Ishe/1. COS 214 - Software Modelling/Google Test/cmake-build-debug/CMakeFiles/progress.marks"
 	$(MAKE) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start "/mnt/c/Users/Ishe/Desktop/Ishe/1. COS 214 - Software Modelling/Project/Design Patterns/cmake-build-debug/CMakeFiles" 0
+	$(CMAKE_COMMAND) -E cmake_progress_start "/mnt/c/Users/Ishe/Desktop/Ishe/1. COS 214 - Software Modelling/Google Test/cmake-build-debug/CMakeFiles" 0
 .PHONY : all
 
 # The main clean target
@@ -111,17 +111,98 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named Design_Patterns
+# Target rules for targets named builderTest
 
 # Build rule for target.
-Design_Patterns: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 Design_Patterns
-.PHONY : Design_Patterns
+builderTest: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 builderTest
+.PHONY : builderTest
 
 # fast build rule for target.
-Design_Patterns/fast:
-	$(MAKE) -f CMakeFiles/Design_Patterns.dir/build.make CMakeFiles/Design_Patterns.dir/build
-.PHONY : Design_Patterns/fast
+builderTest/fast:
+	$(MAKE) -f CMakeFiles/builderTest.dir/build.make CMakeFiles/builderTest.dir/build
+.PHONY : builderTest/fast
+
+BuilderPattern_Test.o: BuilderPattern_Test.cpp.o
+
+.PHONY : BuilderPattern_Test.o
+
+# target to build an object file
+BuilderPattern_Test.cpp.o:
+	$(MAKE) -f CMakeFiles/builderTest.dir/build.make CMakeFiles/builderTest.dir/BuilderPattern_Test.cpp.o
+.PHONY : BuilderPattern_Test.cpp.o
+
+BuilderPattern_Test.i: BuilderPattern_Test.cpp.i
+
+.PHONY : BuilderPattern_Test.i
+
+# target to preprocess a source file
+BuilderPattern_Test.cpp.i:
+	$(MAKE) -f CMakeFiles/builderTest.dir/build.make CMakeFiles/builderTest.dir/BuilderPattern_Test.cpp.i
+.PHONY : BuilderPattern_Test.cpp.i
+
+BuilderPattern_Test.s: BuilderPattern_Test.cpp.s
+
+.PHONY : BuilderPattern_Test.s
+
+# target to generate assembly for a file
+BuilderPattern_Test.cpp.s:
+	$(MAKE) -f CMakeFiles/builderTest.dir/build.make CMakeFiles/builderTest.dir/BuilderPattern_Test.cpp.s
+.PHONY : BuilderPattern_Test.cpp.s
+
+Command.o: Command.cpp.o
+
+.PHONY : Command.o
+
+# target to build an object file
+Command.cpp.o:
+	$(MAKE) -f CMakeFiles/builderTest.dir/build.make CMakeFiles/builderTest.dir/Command.cpp.o
+.PHONY : Command.cpp.o
+
+Command.i: Command.cpp.i
+
+.PHONY : Command.i
+
+# target to preprocess a source file
+Command.cpp.i:
+	$(MAKE) -f CMakeFiles/builderTest.dir/build.make CMakeFiles/builderTest.dir/Command.cpp.i
+.PHONY : Command.cpp.i
+
+Command.s: Command.cpp.s
+
+.PHONY : Command.s
+
+# target to generate assembly for a file
+Command.cpp.s:
+	$(MAKE) -f CMakeFiles/builderTest.dir/build.make CMakeFiles/builderTest.dir/Command.cpp.s
+.PHONY : Command.cpp.s
+
+Controller.o: Controller.cpp.o
+
+.PHONY : Controller.o
+
+# target to build an object file
+Controller.cpp.o:
+	$(MAKE) -f CMakeFiles/builderTest.dir/build.make CMakeFiles/builderTest.dir/Controller.cpp.o
+.PHONY : Controller.cpp.o
+
+Controller.i: Controller.cpp.i
+
+.PHONY : Controller.i
+
+# target to preprocess a source file
+Controller.cpp.i:
+	$(MAKE) -f CMakeFiles/builderTest.dir/build.make CMakeFiles/builderTest.dir/Controller.cpp.i
+.PHONY : Controller.cpp.i
+
+Controller.s: Controller.cpp.s
+
+.PHONY : Controller.s
+
+# target to generate assembly for a file
+Controller.cpp.s:
+	$(MAKE) -f CMakeFiles/builderTest.dir/build.make CMakeFiles/builderTest.dir/Controller.cpp.s
+.PHONY : Controller.cpp.s
 
 CrewDragon.o: CrewDragon.cpp.o
 
@@ -129,7 +210,7 @@ CrewDragon.o: CrewDragon.cpp.o
 
 # target to build an object file
 CrewDragon.cpp.o:
-	$(MAKE) -f CMakeFiles/Design_Patterns.dir/build.make CMakeFiles/Design_Patterns.dir/CrewDragon.cpp.o
+	$(MAKE) -f CMakeFiles/builderTest.dir/build.make CMakeFiles/builderTest.dir/CrewDragon.cpp.o
 .PHONY : CrewDragon.cpp.o
 
 CrewDragon.i: CrewDragon.cpp.i
@@ -138,7 +219,7 @@ CrewDragon.i: CrewDragon.cpp.i
 
 # target to preprocess a source file
 CrewDragon.cpp.i:
-	$(MAKE) -f CMakeFiles/Design_Patterns.dir/build.make CMakeFiles/Design_Patterns.dir/CrewDragon.cpp.i
+	$(MAKE) -f CMakeFiles/builderTest.dir/build.make CMakeFiles/builderTest.dir/CrewDragon.cpp.i
 .PHONY : CrewDragon.cpp.i
 
 CrewDragon.s: CrewDragon.cpp.s
@@ -147,7 +228,7 @@ CrewDragon.s: CrewDragon.cpp.s
 
 # target to generate assembly for a file
 CrewDragon.cpp.s:
-	$(MAKE) -f CMakeFiles/Design_Patterns.dir/build.make CMakeFiles/Design_Patterns.dir/CrewDragon.cpp.s
+	$(MAKE) -f CMakeFiles/builderTest.dir/build.make CMakeFiles/builderTest.dir/CrewDragon.cpp.s
 .PHONY : CrewDragon.cpp.s
 
 CrewDragonCreator.o: CrewDragonCreator.cpp.o
@@ -156,7 +237,7 @@ CrewDragonCreator.o: CrewDragonCreator.cpp.o
 
 # target to build an object file
 CrewDragonCreator.cpp.o:
-	$(MAKE) -f CMakeFiles/Design_Patterns.dir/build.make CMakeFiles/Design_Patterns.dir/CrewDragonCreator.cpp.o
+	$(MAKE) -f CMakeFiles/builderTest.dir/build.make CMakeFiles/builderTest.dir/CrewDragonCreator.cpp.o
 .PHONY : CrewDragonCreator.cpp.o
 
 CrewDragonCreator.i: CrewDragonCreator.cpp.i
@@ -165,7 +246,7 @@ CrewDragonCreator.i: CrewDragonCreator.cpp.i
 
 # target to preprocess a source file
 CrewDragonCreator.cpp.i:
-	$(MAKE) -f CMakeFiles/Design_Patterns.dir/build.make CMakeFiles/Design_Patterns.dir/CrewDragonCreator.cpp.i
+	$(MAKE) -f CMakeFiles/builderTest.dir/build.make CMakeFiles/builderTest.dir/CrewDragonCreator.cpp.i
 .PHONY : CrewDragonCreator.cpp.i
 
 CrewDragonCreator.s: CrewDragonCreator.cpp.s
@@ -174,7 +255,7 @@ CrewDragonCreator.s: CrewDragonCreator.cpp.s
 
 # target to generate assembly for a file
 CrewDragonCreator.cpp.s:
-	$(MAKE) -f CMakeFiles/Design_Patterns.dir/build.make CMakeFiles/Design_Patterns.dir/CrewDragonCreator.cpp.s
+	$(MAKE) -f CMakeFiles/builderTest.dir/build.make CMakeFiles/builderTest.dir/CrewDragonCreator.cpp.s
 .PHONY : CrewDragonCreator.cpp.s
 
 Dragon.o: Dragon.cpp.o
@@ -183,7 +264,7 @@ Dragon.o: Dragon.cpp.o
 
 # target to build an object file
 Dragon.cpp.o:
-	$(MAKE) -f CMakeFiles/Design_Patterns.dir/build.make CMakeFiles/Design_Patterns.dir/Dragon.cpp.o
+	$(MAKE) -f CMakeFiles/builderTest.dir/build.make CMakeFiles/builderTest.dir/Dragon.cpp.o
 .PHONY : Dragon.cpp.o
 
 Dragon.i: Dragon.cpp.i
@@ -192,7 +273,7 @@ Dragon.i: Dragon.cpp.i
 
 # target to preprocess a source file
 Dragon.cpp.i:
-	$(MAKE) -f CMakeFiles/Design_Patterns.dir/build.make CMakeFiles/Design_Patterns.dir/Dragon.cpp.i
+	$(MAKE) -f CMakeFiles/builderTest.dir/build.make CMakeFiles/builderTest.dir/Dragon.cpp.i
 .PHONY : Dragon.cpp.i
 
 Dragon.s: Dragon.cpp.s
@@ -201,7 +282,7 @@ Dragon.s: Dragon.cpp.s
 
 # target to generate assembly for a file
 Dragon.cpp.s:
-	$(MAKE) -f CMakeFiles/Design_Patterns.dir/build.make CMakeFiles/Design_Patterns.dir/Dragon.cpp.s
+	$(MAKE) -f CMakeFiles/builderTest.dir/build.make CMakeFiles/builderTest.dir/Dragon.cpp.s
 .PHONY : Dragon.cpp.s
 
 DragonCreator.o: DragonCreator.cpp.o
@@ -210,7 +291,7 @@ DragonCreator.o: DragonCreator.cpp.o
 
 # target to build an object file
 DragonCreator.cpp.o:
-	$(MAKE) -f CMakeFiles/Design_Patterns.dir/build.make CMakeFiles/Design_Patterns.dir/DragonCreator.cpp.o
+	$(MAKE) -f CMakeFiles/builderTest.dir/build.make CMakeFiles/builderTest.dir/DragonCreator.cpp.o
 .PHONY : DragonCreator.cpp.o
 
 DragonCreator.i: DragonCreator.cpp.i
@@ -219,7 +300,7 @@ DragonCreator.i: DragonCreator.cpp.i
 
 # target to preprocess a source file
 DragonCreator.cpp.i:
-	$(MAKE) -f CMakeFiles/Design_Patterns.dir/build.make CMakeFiles/Design_Patterns.dir/DragonCreator.cpp.i
+	$(MAKE) -f CMakeFiles/builderTest.dir/build.make CMakeFiles/builderTest.dir/DragonCreator.cpp.i
 .PHONY : DragonCreator.cpp.i
 
 DragonCreator.s: DragonCreator.cpp.s
@@ -228,7 +309,7 @@ DragonCreator.s: DragonCreator.cpp.s
 
 # target to generate assembly for a file
 DragonCreator.cpp.s:
-	$(MAKE) -f CMakeFiles/Design_Patterns.dir/build.make CMakeFiles/Design_Patterns.dir/DragonCreator.cpp.s
+	$(MAKE) -f CMakeFiles/builderTest.dir/build.make CMakeFiles/builderTest.dir/DragonCreator.cpp.s
 .PHONY : DragonCreator.cpp.s
 
 FalconHeavy.o: FalconHeavy.cpp.o
@@ -237,7 +318,7 @@ FalconHeavy.o: FalconHeavy.cpp.o
 
 # target to build an object file
 FalconHeavy.cpp.o:
-	$(MAKE) -f CMakeFiles/Design_Patterns.dir/build.make CMakeFiles/Design_Patterns.dir/FalconHeavy.cpp.o
+	$(MAKE) -f CMakeFiles/builderTest.dir/build.make CMakeFiles/builderTest.dir/FalconHeavy.cpp.o
 .PHONY : FalconHeavy.cpp.o
 
 FalconHeavy.i: FalconHeavy.cpp.i
@@ -246,7 +327,7 @@ FalconHeavy.i: FalconHeavy.cpp.i
 
 # target to preprocess a source file
 FalconHeavy.cpp.i:
-	$(MAKE) -f CMakeFiles/Design_Patterns.dir/build.make CMakeFiles/Design_Patterns.dir/FalconHeavy.cpp.i
+	$(MAKE) -f CMakeFiles/builderTest.dir/build.make CMakeFiles/builderTest.dir/FalconHeavy.cpp.i
 .PHONY : FalconHeavy.cpp.i
 
 FalconHeavy.s: FalconHeavy.cpp.s
@@ -255,7 +336,7 @@ FalconHeavy.s: FalconHeavy.cpp.s
 
 # target to generate assembly for a file
 FalconHeavy.cpp.s:
-	$(MAKE) -f CMakeFiles/Design_Patterns.dir/build.make CMakeFiles/Design_Patterns.dir/FalconHeavy.cpp.s
+	$(MAKE) -f CMakeFiles/builderTest.dir/build.make CMakeFiles/builderTest.dir/FalconHeavy.cpp.s
 .PHONY : FalconHeavy.cpp.s
 
 FalconNine.o: FalconNine.cpp.o
@@ -264,7 +345,7 @@ FalconNine.o: FalconNine.cpp.o
 
 # target to build an object file
 FalconNine.cpp.o:
-	$(MAKE) -f CMakeFiles/Design_Patterns.dir/build.make CMakeFiles/Design_Patterns.dir/FalconNine.cpp.o
+	$(MAKE) -f CMakeFiles/builderTest.dir/build.make CMakeFiles/builderTest.dir/FalconNine.cpp.o
 .PHONY : FalconNine.cpp.o
 
 FalconNine.i: FalconNine.cpp.i
@@ -273,7 +354,7 @@ FalconNine.i: FalconNine.cpp.i
 
 # target to preprocess a source file
 FalconNine.cpp.i:
-	$(MAKE) -f CMakeFiles/Design_Patterns.dir/build.make CMakeFiles/Design_Patterns.dir/FalconNine.cpp.i
+	$(MAKE) -f CMakeFiles/builderTest.dir/build.make CMakeFiles/builderTest.dir/FalconNine.cpp.i
 .PHONY : FalconNine.cpp.i
 
 FalconNine.s: FalconNine.cpp.s
@@ -282,35 +363,62 @@ FalconNine.s: FalconNine.cpp.s
 
 # target to generate assembly for a file
 FalconNine.cpp.s:
-	$(MAKE) -f CMakeFiles/Design_Patterns.dir/build.make CMakeFiles/Design_Patterns.dir/FalconNine.cpp.s
+	$(MAKE) -f CMakeFiles/builderTest.dir/build.make CMakeFiles/builderTest.dir/FalconNine.cpp.s
 .PHONY : FalconNine.cpp.s
 
-Main.o: Main.cpp.o
+HaltCommand.o: HaltCommand.cpp.o
 
-.PHONY : Main.o
+.PHONY : HaltCommand.o
 
 # target to build an object file
-Main.cpp.o:
-	$(MAKE) -f CMakeFiles/Design_Patterns.dir/build.make CMakeFiles/Design_Patterns.dir/Main.cpp.o
-.PHONY : Main.cpp.o
+HaltCommand.cpp.o:
+	$(MAKE) -f CMakeFiles/builderTest.dir/build.make CMakeFiles/builderTest.dir/HaltCommand.cpp.o
+.PHONY : HaltCommand.cpp.o
 
-Main.i: Main.cpp.i
+HaltCommand.i: HaltCommand.cpp.i
 
-.PHONY : Main.i
+.PHONY : HaltCommand.i
 
 # target to preprocess a source file
-Main.cpp.i:
-	$(MAKE) -f CMakeFiles/Design_Patterns.dir/build.make CMakeFiles/Design_Patterns.dir/Main.cpp.i
-.PHONY : Main.cpp.i
+HaltCommand.cpp.i:
+	$(MAKE) -f CMakeFiles/builderTest.dir/build.make CMakeFiles/builderTest.dir/HaltCommand.cpp.i
+.PHONY : HaltCommand.cpp.i
 
-Main.s: Main.cpp.s
+HaltCommand.s: HaltCommand.cpp.s
 
-.PHONY : Main.s
+.PHONY : HaltCommand.s
 
 # target to generate assembly for a file
-Main.cpp.s:
-	$(MAKE) -f CMakeFiles/Design_Patterns.dir/build.make CMakeFiles/Design_Patterns.dir/Main.cpp.s
-.PHONY : Main.cpp.s
+HaltCommand.cpp.s:
+	$(MAKE) -f CMakeFiles/builderTest.dir/build.make CMakeFiles/builderTest.dir/HaltCommand.cpp.s
+.PHONY : HaltCommand.cpp.s
+
+LaunchCommand.o: LaunchCommand.cpp.o
+
+.PHONY : LaunchCommand.o
+
+# target to build an object file
+LaunchCommand.cpp.o:
+	$(MAKE) -f CMakeFiles/builderTest.dir/build.make CMakeFiles/builderTest.dir/LaunchCommand.cpp.o
+.PHONY : LaunchCommand.cpp.o
+
+LaunchCommand.i: LaunchCommand.cpp.i
+
+.PHONY : LaunchCommand.i
+
+# target to preprocess a source file
+LaunchCommand.cpp.i:
+	$(MAKE) -f CMakeFiles/builderTest.dir/build.make CMakeFiles/builderTest.dir/LaunchCommand.cpp.i
+.PHONY : LaunchCommand.cpp.i
+
+LaunchCommand.s: LaunchCommand.cpp.s
+
+.PHONY : LaunchCommand.s
+
+# target to generate assembly for a file
+LaunchCommand.cpp.s:
+	$(MAKE) -f CMakeFiles/builderTest.dir/build.make CMakeFiles/builderTest.dir/LaunchCommand.cpp.s
+.PHONY : LaunchCommand.cpp.s
 
 Rocket.o: Rocket.cpp.o
 
@@ -318,7 +426,7 @@ Rocket.o: Rocket.cpp.o
 
 # target to build an object file
 Rocket.cpp.o:
-	$(MAKE) -f CMakeFiles/Design_Patterns.dir/build.make CMakeFiles/Design_Patterns.dir/Rocket.cpp.o
+	$(MAKE) -f CMakeFiles/builderTest.dir/build.make CMakeFiles/builderTest.dir/Rocket.cpp.o
 .PHONY : Rocket.cpp.o
 
 Rocket.i: Rocket.cpp.i
@@ -327,7 +435,7 @@ Rocket.i: Rocket.cpp.i
 
 # target to preprocess a source file
 Rocket.cpp.i:
-	$(MAKE) -f CMakeFiles/Design_Patterns.dir/build.make CMakeFiles/Design_Patterns.dir/Rocket.cpp.i
+	$(MAKE) -f CMakeFiles/builderTest.dir/build.make CMakeFiles/builderTest.dir/Rocket.cpp.i
 .PHONY : Rocket.cpp.i
 
 Rocket.s: Rocket.cpp.s
@@ -336,8 +444,35 @@ Rocket.s: Rocket.cpp.s
 
 # target to generate assembly for a file
 Rocket.cpp.s:
-	$(MAKE) -f CMakeFiles/Design_Patterns.dir/build.make CMakeFiles/Design_Patterns.dir/Rocket.cpp.s
+	$(MAKE) -f CMakeFiles/builderTest.dir/build.make CMakeFiles/builderTest.dir/Rocket.cpp.s
 .PHONY : Rocket.cpp.s
+
+ShuttleState.o: ShuttleState.cpp.o
+
+.PHONY : ShuttleState.o
+
+# target to build an object file
+ShuttleState.cpp.o:
+	$(MAKE) -f CMakeFiles/builderTest.dir/build.make CMakeFiles/builderTest.dir/ShuttleState.cpp.o
+.PHONY : ShuttleState.cpp.o
+
+ShuttleState.i: ShuttleState.cpp.i
+
+.PHONY : ShuttleState.i
+
+# target to preprocess a source file
+ShuttleState.cpp.i:
+	$(MAKE) -f CMakeFiles/builderTest.dir/build.make CMakeFiles/builderTest.dir/ShuttleState.cpp.i
+.PHONY : ShuttleState.cpp.i
+
+ShuttleState.s: ShuttleState.cpp.s
+
+.PHONY : ShuttleState.s
+
+# target to generate assembly for a file
+ShuttleState.cpp.s:
+	$(MAKE) -f CMakeFiles/builderTest.dir/build.make CMakeFiles/builderTest.dir/ShuttleState.cpp.s
+.PHONY : ShuttleState.cpp.s
 
 SpaceCraft.o: SpaceCraft.cpp.o
 
@@ -345,7 +480,7 @@ SpaceCraft.o: SpaceCraft.cpp.o
 
 # target to build an object file
 SpaceCraft.cpp.o:
-	$(MAKE) -f CMakeFiles/Design_Patterns.dir/build.make CMakeFiles/Design_Patterns.dir/SpaceCraft.cpp.o
+	$(MAKE) -f CMakeFiles/builderTest.dir/build.make CMakeFiles/builderTest.dir/SpaceCraft.cpp.o
 .PHONY : SpaceCraft.cpp.o
 
 SpaceCraft.i: SpaceCraft.cpp.i
@@ -354,7 +489,7 @@ SpaceCraft.i: SpaceCraft.cpp.i
 
 # target to preprocess a source file
 SpaceCraft.cpp.i:
-	$(MAKE) -f CMakeFiles/Design_Patterns.dir/build.make CMakeFiles/Design_Patterns.dir/SpaceCraft.cpp.i
+	$(MAKE) -f CMakeFiles/builderTest.dir/build.make CMakeFiles/builderTest.dir/SpaceCraft.cpp.i
 .PHONY : SpaceCraft.cpp.i
 
 SpaceCraft.s: SpaceCraft.cpp.s
@@ -363,7 +498,7 @@ SpaceCraft.s: SpaceCraft.cpp.s
 
 # target to generate assembly for a file
 SpaceCraft.cpp.s:
-	$(MAKE) -f CMakeFiles/Design_Patterns.dir/build.make CMakeFiles/Design_Patterns.dir/SpaceCraft.cpp.s
+	$(MAKE) -f CMakeFiles/builderTest.dir/build.make CMakeFiles/builderTest.dir/SpaceCraft.cpp.s
 .PHONY : SpaceCraft.cpp.s
 
 SpaceShuttle.o: SpaceShuttle.cpp.o
@@ -372,7 +507,7 @@ SpaceShuttle.o: SpaceShuttle.cpp.o
 
 # target to build an object file
 SpaceShuttle.cpp.o:
-	$(MAKE) -f CMakeFiles/Design_Patterns.dir/build.make CMakeFiles/Design_Patterns.dir/SpaceShuttle.cpp.o
+	$(MAKE) -f CMakeFiles/builderTest.dir/build.make CMakeFiles/builderTest.dir/SpaceShuttle.cpp.o
 .PHONY : SpaceShuttle.cpp.o
 
 SpaceShuttle.i: SpaceShuttle.cpp.i
@@ -381,7 +516,7 @@ SpaceShuttle.i: SpaceShuttle.cpp.i
 
 # target to preprocess a source file
 SpaceShuttle.cpp.i:
-	$(MAKE) -f CMakeFiles/Design_Patterns.dir/build.make CMakeFiles/Design_Patterns.dir/SpaceShuttle.cpp.i
+	$(MAKE) -f CMakeFiles/builderTest.dir/build.make CMakeFiles/builderTest.dir/SpaceShuttle.cpp.i
 .PHONY : SpaceShuttle.cpp.i
 
 SpaceShuttle.s: SpaceShuttle.cpp.s
@@ -390,7 +525,7 @@ SpaceShuttle.s: SpaceShuttle.cpp.s
 
 # target to generate assembly for a file
 SpaceShuttle.cpp.s:
-	$(MAKE) -f CMakeFiles/Design_Patterns.dir/build.make CMakeFiles/Design_Patterns.dir/SpaceShuttle.cpp.s
+	$(MAKE) -f CMakeFiles/builderTest.dir/build.make CMakeFiles/builderTest.dir/SpaceShuttle.cpp.s
 .PHONY : SpaceShuttle.cpp.s
 
 SpaceShuttleBuilder.o: SpaceShuttleBuilder.cpp.o
@@ -399,7 +534,7 @@ SpaceShuttleBuilder.o: SpaceShuttleBuilder.cpp.o
 
 # target to build an object file
 SpaceShuttleBuilder.cpp.o:
-	$(MAKE) -f CMakeFiles/Design_Patterns.dir/build.make CMakeFiles/Design_Patterns.dir/SpaceShuttleBuilder.cpp.o
+	$(MAKE) -f CMakeFiles/builderTest.dir/build.make CMakeFiles/builderTest.dir/SpaceShuttleBuilder.cpp.o
 .PHONY : SpaceShuttleBuilder.cpp.o
 
 SpaceShuttleBuilder.i: SpaceShuttleBuilder.cpp.i
@@ -408,7 +543,7 @@ SpaceShuttleBuilder.i: SpaceShuttleBuilder.cpp.i
 
 # target to preprocess a source file
 SpaceShuttleBuilder.cpp.i:
-	$(MAKE) -f CMakeFiles/Design_Patterns.dir/build.make CMakeFiles/Design_Patterns.dir/SpaceShuttleBuilder.cpp.i
+	$(MAKE) -f CMakeFiles/builderTest.dir/build.make CMakeFiles/builderTest.dir/SpaceShuttleBuilder.cpp.i
 .PHONY : SpaceShuttleBuilder.cpp.i
 
 SpaceShuttleBuilder.s: SpaceShuttleBuilder.cpp.s
@@ -417,7 +552,7 @@ SpaceShuttleBuilder.s: SpaceShuttleBuilder.cpp.s
 
 # target to generate assembly for a file
 SpaceShuttleBuilder.cpp.s:
-	$(MAKE) -f CMakeFiles/Design_Patterns.dir/build.make CMakeFiles/Design_Patterns.dir/SpaceShuttleBuilder.cpp.s
+	$(MAKE) -f CMakeFiles/builderTest.dir/build.make CMakeFiles/builderTest.dir/SpaceShuttleBuilder.cpp.s
 .PHONY : SpaceShuttleBuilder.cpp.s
 
 SpaceX.o: SpaceX.cpp.o
@@ -426,7 +561,7 @@ SpaceX.o: SpaceX.cpp.o
 
 # target to build an object file
 SpaceX.cpp.o:
-	$(MAKE) -f CMakeFiles/Design_Patterns.dir/build.make CMakeFiles/Design_Patterns.dir/SpaceX.cpp.o
+	$(MAKE) -f CMakeFiles/builderTest.dir/build.make CMakeFiles/builderTest.dir/SpaceX.cpp.o
 .PHONY : SpaceX.cpp.o
 
 SpaceX.i: SpaceX.cpp.i
@@ -435,7 +570,7 @@ SpaceX.i: SpaceX.cpp.i
 
 # target to preprocess a source file
 SpaceX.cpp.i:
-	$(MAKE) -f CMakeFiles/Design_Patterns.dir/build.make CMakeFiles/Design_Patterns.dir/SpaceX.cpp.i
+	$(MAKE) -f CMakeFiles/builderTest.dir/build.make CMakeFiles/builderTest.dir/SpaceX.cpp.i
 .PHONY : SpaceX.cpp.i
 
 SpaceX.s: SpaceX.cpp.s
@@ -444,8 +579,62 @@ SpaceX.s: SpaceX.cpp.s
 
 # target to generate assembly for a file
 SpaceX.cpp.s:
-	$(MAKE) -f CMakeFiles/Design_Patterns.dir/build.make CMakeFiles/Design_Patterns.dir/SpaceX.cpp.s
+	$(MAKE) -f CMakeFiles/builderTest.dir/build.make CMakeFiles/builderTest.dir/SpaceX.cpp.s
 .PHONY : SpaceX.cpp.s
+
+Stage1.o: Stage1.cpp.o
+
+.PHONY : Stage1.o
+
+# target to build an object file
+Stage1.cpp.o:
+	$(MAKE) -f CMakeFiles/builderTest.dir/build.make CMakeFiles/builderTest.dir/Stage1.cpp.o
+.PHONY : Stage1.cpp.o
+
+Stage1.i: Stage1.cpp.i
+
+.PHONY : Stage1.i
+
+# target to preprocess a source file
+Stage1.cpp.i:
+	$(MAKE) -f CMakeFiles/builderTest.dir/build.make CMakeFiles/builderTest.dir/Stage1.cpp.i
+.PHONY : Stage1.cpp.i
+
+Stage1.s: Stage1.cpp.s
+
+.PHONY : Stage1.s
+
+# target to generate assembly for a file
+Stage1.cpp.s:
+	$(MAKE) -f CMakeFiles/builderTest.dir/build.make CMakeFiles/builderTest.dir/Stage1.cpp.s
+.PHONY : Stage1.cpp.s
+
+Stage2.o: Stage2.cpp.o
+
+.PHONY : Stage2.o
+
+# target to build an object file
+Stage2.cpp.o:
+	$(MAKE) -f CMakeFiles/builderTest.dir/build.make CMakeFiles/builderTest.dir/Stage2.cpp.o
+.PHONY : Stage2.cpp.o
+
+Stage2.i: Stage2.cpp.i
+
+.PHONY : Stage2.i
+
+# target to preprocess a source file
+Stage2.cpp.i:
+	$(MAKE) -f CMakeFiles/builderTest.dir/build.make CMakeFiles/builderTest.dir/Stage2.cpp.i
+.PHONY : Stage2.cpp.i
+
+Stage2.s: Stage2.cpp.s
+
+.PHONY : Stage2.s
+
+# target to generate assembly for a file
+Stage2.cpp.s:
+	$(MAKE) -f CMakeFiles/builderTest.dir/build.make CMakeFiles/builderTest.dir/Stage2.cpp.s
+.PHONY : Stage2.cpp.s
 
 Starlink.o: Starlink.cpp.o
 
@@ -453,7 +642,7 @@ Starlink.o: Starlink.cpp.o
 
 # target to build an object file
 Starlink.cpp.o:
-	$(MAKE) -f CMakeFiles/Design_Patterns.dir/build.make CMakeFiles/Design_Patterns.dir/Starlink.cpp.o
+	$(MAKE) -f CMakeFiles/builderTest.dir/build.make CMakeFiles/builderTest.dir/Starlink.cpp.o
 .PHONY : Starlink.cpp.o
 
 Starlink.i: Starlink.cpp.i
@@ -462,7 +651,7 @@ Starlink.i: Starlink.cpp.i
 
 # target to preprocess a source file
 Starlink.cpp.i:
-	$(MAKE) -f CMakeFiles/Design_Patterns.dir/build.make CMakeFiles/Design_Patterns.dir/Starlink.cpp.i
+	$(MAKE) -f CMakeFiles/builderTest.dir/build.make CMakeFiles/builderTest.dir/Starlink.cpp.i
 .PHONY : Starlink.cpp.i
 
 Starlink.s: Starlink.cpp.s
@@ -471,8 +660,89 @@ Starlink.s: Starlink.cpp.s
 
 # target to generate assembly for a file
 Starlink.cpp.s:
-	$(MAKE) -f CMakeFiles/Design_Patterns.dir/build.make CMakeFiles/Design_Patterns.dir/Starlink.cpp.s
+	$(MAKE) -f CMakeFiles/builderTest.dir/build.make CMakeFiles/builderTest.dir/Starlink.cpp.s
 .PHONY : Starlink.cpp.s
+
+State.o: State.cpp.o
+
+.PHONY : State.o
+
+# target to build an object file
+State.cpp.o:
+	$(MAKE) -f CMakeFiles/builderTest.dir/build.make CMakeFiles/builderTest.dir/State.cpp.o
+.PHONY : State.cpp.o
+
+State.i: State.cpp.i
+
+.PHONY : State.i
+
+# target to preprocess a source file
+State.cpp.i:
+	$(MAKE) -f CMakeFiles/builderTest.dir/build.make CMakeFiles/builderTest.dir/State.cpp.i
+.PHONY : State.cpp.i
+
+State.s: State.cpp.s
+
+.PHONY : State.s
+
+# target to generate assembly for a file
+State.cpp.s:
+	$(MAKE) -f CMakeFiles/builderTest.dir/build.make CMakeFiles/builderTest.dir/State.cpp.s
+.PHONY : State.cpp.s
+
+WinningConfig.o: WinningConfig.cpp.o
+
+.PHONY : WinningConfig.o
+
+# target to build an object file
+WinningConfig.cpp.o:
+	$(MAKE) -f CMakeFiles/builderTest.dir/build.make CMakeFiles/builderTest.dir/WinningConfig.cpp.o
+.PHONY : WinningConfig.cpp.o
+
+WinningConfig.i: WinningConfig.cpp.i
+
+.PHONY : WinningConfig.i
+
+# target to preprocess a source file
+WinningConfig.cpp.i:
+	$(MAKE) -f CMakeFiles/builderTest.dir/build.make CMakeFiles/builderTest.dir/WinningConfig.cpp.i
+.PHONY : WinningConfig.cpp.i
+
+WinningConfig.s: WinningConfig.cpp.s
+
+.PHONY : WinningConfig.s
+
+# target to generate assembly for a file
+WinningConfig.cpp.s:
+	$(MAKE) -f CMakeFiles/builderTest.dir/build.make CMakeFiles/builderTest.dir/WinningConfig.cpp.s
+.PHONY : WinningConfig.cpp.s
+
+WinningShuttle.o: WinningShuttle.cpp.o
+
+.PHONY : WinningShuttle.o
+
+# target to build an object file
+WinningShuttle.cpp.o:
+	$(MAKE) -f CMakeFiles/builderTest.dir/build.make CMakeFiles/builderTest.dir/WinningShuttle.cpp.o
+.PHONY : WinningShuttle.cpp.o
+
+WinningShuttle.i: WinningShuttle.cpp.i
+
+.PHONY : WinningShuttle.i
+
+# target to preprocess a source file
+WinningShuttle.cpp.i:
+	$(MAKE) -f CMakeFiles/builderTest.dir/build.make CMakeFiles/builderTest.dir/WinningShuttle.cpp.i
+.PHONY : WinningShuttle.cpp.i
+
+WinningShuttle.s: WinningShuttle.cpp.s
+
+.PHONY : WinningShuttle.s
+
+# target to generate assembly for a file
+WinningShuttle.cpp.s:
+	$(MAKE) -f CMakeFiles/builderTest.dir/build.make CMakeFiles/builderTest.dir/WinningShuttle.cpp.s
+.PHONY : WinningShuttle.cpp.s
 
 # Help Target
 help:
@@ -482,7 +752,16 @@ help:
 	@echo "... depend"
 	@echo "... rebuild_cache"
 	@echo "... edit_cache"
-	@echo "... Design_Patterns"
+	@echo "... builderTest"
+	@echo "... BuilderPattern_Test.o"
+	@echo "... BuilderPattern_Test.i"
+	@echo "... BuilderPattern_Test.s"
+	@echo "... Command.o"
+	@echo "... Command.i"
+	@echo "... Command.s"
+	@echo "... Controller.o"
+	@echo "... Controller.i"
+	@echo "... Controller.s"
 	@echo "... CrewDragon.o"
 	@echo "... CrewDragon.i"
 	@echo "... CrewDragon.s"
@@ -501,12 +780,18 @@ help:
 	@echo "... FalconNine.o"
 	@echo "... FalconNine.i"
 	@echo "... FalconNine.s"
-	@echo "... Main.o"
-	@echo "... Main.i"
-	@echo "... Main.s"
+	@echo "... HaltCommand.o"
+	@echo "... HaltCommand.i"
+	@echo "... HaltCommand.s"
+	@echo "... LaunchCommand.o"
+	@echo "... LaunchCommand.i"
+	@echo "... LaunchCommand.s"
 	@echo "... Rocket.o"
 	@echo "... Rocket.i"
 	@echo "... Rocket.s"
+	@echo "... ShuttleState.o"
+	@echo "... ShuttleState.i"
+	@echo "... ShuttleState.s"
 	@echo "... SpaceCraft.o"
 	@echo "... SpaceCraft.i"
 	@echo "... SpaceCraft.s"
@@ -519,9 +804,24 @@ help:
 	@echo "... SpaceX.o"
 	@echo "... SpaceX.i"
 	@echo "... SpaceX.s"
+	@echo "... Stage1.o"
+	@echo "... Stage1.i"
+	@echo "... Stage1.s"
+	@echo "... Stage2.o"
+	@echo "... Stage2.i"
+	@echo "... Stage2.s"
 	@echo "... Starlink.o"
 	@echo "... Starlink.i"
 	@echo "... Starlink.s"
+	@echo "... State.o"
+	@echo "... State.i"
+	@echo "... State.s"
+	@echo "... WinningConfig.o"
+	@echo "... WinningConfig.i"
+	@echo "... WinningConfig.s"
+	@echo "... WinningShuttle.o"
+	@echo "... WinningShuttle.i"
+	@echo "... WinningShuttle.s"
 .PHONY : help
 
 

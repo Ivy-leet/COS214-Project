@@ -1,0 +1,170 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/mnt/c/Users/Ishe/Desktop/Ishe/1. COS 214 - Software Modelling/Google Test/BuilderPattern_Test.cpp
+gtest/gtest.h
+-
+CrewDragonCreator.h
+/mnt/c/Users/Ishe/Desktop/Ishe/1. COS 214 - Software Modelling/Google Test/CrewDragonCreator.h
+FalconHeavy.h
+/mnt/c/Users/Ishe/Desktop/Ishe/1. COS 214 - Software Modelling/Google Test/FalconHeavy.h
+FalconNine.h
+/mnt/c/Users/Ishe/Desktop/Ishe/1. COS 214 - Software Modelling/Google Test/FalconNine.h
+SpaceX.h
+/mnt/c/Users/Ishe/Desktop/Ishe/1. COS 214 - Software Modelling/Google Test/SpaceX.h
+SpaceShuttleBuilder.h
+/mnt/c/Users/Ishe/Desktop/Ishe/1. COS 214 - Software Modelling/Google Test/SpaceShuttleBuilder.h
+
+/mnt/c/Users/Ishe/Desktop/Ishe/1. COS 214 - Software Modelling/Google Test/CrewDragon.h
+SpaceCraft.h
+/mnt/c/Users/Ishe/Desktop/Ishe/1. COS 214 - Software Modelling/Google Test/SpaceCraft.h
+
+/mnt/c/Users/Ishe/Desktop/Ishe/1. COS 214 - Software Modelling/Google Test/CrewDragonCreator.h
+SpaceCraftCreator.h
+/mnt/c/Users/Ishe/Desktop/Ishe/1. COS 214 - Software Modelling/Google Test/SpaceCraftCreator.h
+CrewDragon.h
+/mnt/c/Users/Ishe/Desktop/Ishe/1. COS 214 - Software Modelling/Google Test/CrewDragon.h
+
+/mnt/c/Users/Ishe/Desktop/Ishe/1. COS 214 - Software Modelling/Google Test/Dragon.h
+SpaceCraft.h
+/mnt/c/Users/Ishe/Desktop/Ishe/1. COS 214 - Software Modelling/Google Test/SpaceCraft.h
+
+/mnt/c/Users/Ishe/Desktop/Ishe/1. COS 214 - Software Modelling/Google Test/DragonCreator.h
+SpaceCraftCreator.h
+/mnt/c/Users/Ishe/Desktop/Ishe/1. COS 214 - Software Modelling/Google Test/SpaceCraftCreator.h
+Dragon.h
+/mnt/c/Users/Ishe/Desktop/Ishe/1. COS 214 - Software Modelling/Google Test/Dragon.h
+
+/mnt/c/Users/Ishe/Desktop/Ishe/1. COS 214 - Software Modelling/Google Test/FalconHeavy.h
+Rocket.h
+/mnt/c/Users/Ishe/Desktop/Ishe/1. COS 214 - Software Modelling/Google Test/Rocket.h
+list
+-
+vector
+-
+
+/mnt/c/Users/Ishe/Desktop/Ishe/1. COS 214 - Software Modelling/Google Test/FalconNine.h
+Rocket.h
+/mnt/c/Users/Ishe/Desktop/Ishe/1. COS 214 - Software Modelling/Google Test/Rocket.h
+vector
+-
+
+/mnt/c/Users/Ishe/Desktop/Ishe/1. COS 214 - Software Modelling/Google Test/Rocket.h
+iostream
+-
+iomanip
+-
+State.h
+/mnt/c/Users/Ishe/Desktop/Ishe/1. COS 214 - Software Modelling/Google Test/State.h
+Stage1.h
+/mnt/c/Users/Ishe/Desktop/Ishe/1. COS 214 - Software Modelling/Google Test/Stage1.h
+Stage2.h
+/mnt/c/Users/Ishe/Desktop/Ishe/1. COS 214 - Software Modelling/Google Test/Stage2.h
+
+/mnt/c/Users/Ishe/Desktop/Ishe/1. COS 214 - Software Modelling/Google Test/ShuttleBuilder.h
+SpaceShuttle.h
+/mnt/c/Users/Ishe/Desktop/Ishe/1. COS 214 - Software Modelling/Google Test/SpaceShuttle.h
+
+/mnt/c/Users/Ishe/Desktop/Ishe/1. COS 214 - Software Modelling/Google Test/ShuttleState.h
+Rocket.h
+/mnt/c/Users/Ishe/Desktop/Ishe/1. COS 214 - Software Modelling/Google Test/Rocket.h
+SpaceCraft.h
+/mnt/c/Users/Ishe/Desktop/Ishe/1. COS 214 - Software Modelling/Google Test/SpaceCraft.h
+
+/mnt/c/Users/Ishe/Desktop/Ishe/1. COS 214 - Software Modelling/Google Test/SpaceCraft.h
+iostream
+-
+iomanip
+-
+
+/mnt/c/Users/Ishe/Desktop/Ishe/1. COS 214 - Software Modelling/Google Test/SpaceCraftCreator.h
+SpaceCraft.h
+/mnt/c/Users/Ishe/Desktop/Ishe/1. COS 214 - Software Modelling/Google Test/SpaceCraft.h
+
+/mnt/c/Users/Ishe/Desktop/Ishe/1. COS 214 - Software Modelling/Google Test/SpaceShuttle.h
+Rocket.h
+/mnt/c/Users/Ishe/Desktop/Ishe/1. COS 214 - Software Modelling/Google Test/Rocket.h
+SpaceCraft.h
+/mnt/c/Users/Ishe/Desktop/Ishe/1. COS 214 - Software Modelling/Google Test/SpaceCraft.h
+Starlink.h
+/mnt/c/Users/Ishe/Desktop/Ishe/1. COS 214 - Software Modelling/Google Test/Starlink.h
+vector
+-
+queue
+-
+math.h
+-
+ctime
+-
+
+/mnt/c/Users/Ishe/Desktop/Ishe/1. COS 214 - Software Modelling/Google Test/SpaceShuttleBuilder.h
+queue
+-
+stack
+-
+ctime
+-
+math.h
+-
+ShuttleBuilder.h
+/mnt/c/Users/Ishe/Desktop/Ishe/1. COS 214 - Software Modelling/Google Test/ShuttleBuilder.h
+DragonCreator.h
+/mnt/c/Users/Ishe/Desktop/Ishe/1. COS 214 - Software Modelling/Google Test/DragonCreator.h
+CrewDragonCreator.h
+/mnt/c/Users/Ishe/Desktop/Ishe/1. COS 214 - Software Modelling/Google Test/CrewDragonCreator.h
+FalconNine.h
+/mnt/c/Users/Ishe/Desktop/Ishe/1. COS 214 - Software Modelling/Google Test/FalconNine.h
+FalconHeavy.h
+/mnt/c/Users/Ishe/Desktop/Ishe/1. COS 214 - Software Modelling/Google Test/FalconHeavy.h
+WinningShuttle.h
+/mnt/c/Users/Ishe/Desktop/Ishe/1. COS 214 - Software Modelling/Google Test/WinningShuttle.h
+
+/mnt/c/Users/Ishe/Desktop/Ishe/1. COS 214 - Software Modelling/Google Test/SpaceX.h
+ShuttleBuilder.h
+/mnt/c/Users/Ishe/Desktop/Ishe/1. COS 214 - Software Modelling/Google Test/ShuttleBuilder.h
+SpaceCraftCreator.h
+/mnt/c/Users/Ishe/Desktop/Ishe/1. COS 214 - Software Modelling/Google Test/SpaceCraftCreator.h
+WinningShuttle.h
+/mnt/c/Users/Ishe/Desktop/Ishe/1. COS 214 - Software Modelling/Google Test/WinningShuttle.h
+
+/mnt/c/Users/Ishe/Desktop/Ishe/1. COS 214 - Software Modelling/Google Test/Stage1.h
+iostream
+-
+string
+-
+State.h
+/mnt/c/Users/Ishe/Desktop/Ishe/1. COS 214 - Software Modelling/Google Test/State.h
+Stage2.h
+/mnt/c/Users/Ishe/Desktop/Ishe/1. COS 214 - Software Modelling/Google Test/Stage2.h
+
+/mnt/c/Users/Ishe/Desktop/Ishe/1. COS 214 - Software Modelling/Google Test/Stage2.h
+iostream
+-
+string
+-
+State.h
+/mnt/c/Users/Ishe/Desktop/Ishe/1. COS 214 - Software Modelling/Google Test/State.h
+
+/mnt/c/Users/Ishe/Desktop/Ishe/1. COS 214 - Software Modelling/Google Test/Starlink.h
+
+/mnt/c/Users/Ishe/Desktop/Ishe/1. COS 214 - Software Modelling/Google Test/State.h
+iostream
+-
+string
+-
+
+/mnt/c/Users/Ishe/Desktop/Ishe/1. COS 214 - Software Modelling/Google Test/WinningShuttle.h
+ShuttleState.h
+/mnt/c/Users/Ishe/Desktop/Ishe/1. COS 214 - Software Modelling/Google Test/ShuttleState.h
+Rocket.h
+/mnt/c/Users/Ishe/Desktop/Ishe/1. COS 214 - Software Modelling/Google Test/Rocket.h
+SpaceCraft.h
+/mnt/c/Users/Ishe/Desktop/Ishe/1. COS 214 - Software Modelling/Google Test/SpaceCraft.h
+SpaceShuttle.h
+/mnt/c/Users/Ishe/Desktop/Ishe/1. COS 214 - Software Modelling/Google Test/SpaceShuttle.h
+

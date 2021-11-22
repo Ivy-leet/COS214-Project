@@ -1,0 +1,230 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6"/>
+	<Project>
+		<Option title="Task_2"/>
+		<Option makefile_is_custom="1"/>
+		<Option compiler="gcc"/>
+		<Option virtualFolders="CMake Files\;"/>
+		<Build>
+			<Target title="all">
+				<Option working_dir="/mnt/c/Users/Ishe/Desktop/Ishe/1. COS 214 - Software Modelling/Google Test/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/mnt/c/Users/Ishe/Desktop/Ishe/1.\ COS\ 214\ -\ Software\ Modelling/Google\ Test/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/mnt/c/Users/Ishe/Desktop/Ishe/1.\ COS\ 214\ -\ Software\ Modelling/Google\ Test/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/mnt/c/Users/Ishe/Desktop/Ishe/1.\ COS\ 214\ -\ Software\ Modelling/Google\ Test/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/mnt/c/Users/Ishe/Desktop/Ishe/1.\ COS\ 214\ -\ Software\ Modelling/Google\ Test/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="rebuild_cache">
+				<Option working_dir="/mnt/c/Users/Ishe/Desktop/Ishe/1. COS 214 - Software Modelling/Google Test/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/mnt/c/Users/Ishe/Desktop/Ishe/1.\ COS\ 214\ -\ Software\ Modelling/Google\ Test/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/mnt/c/Users/Ishe/Desktop/Ishe/1.\ COS\ 214\ -\ Software\ Modelling/Google\ Test/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/mnt/c/Users/Ishe/Desktop/Ishe/1.\ COS\ 214\ -\ Software\ Modelling/Google\ Test/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/mnt/c/Users/Ishe/Desktop/Ishe/1.\ COS\ 214\ -\ Software\ Modelling/Google\ Test/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="edit_cache">
+				<Option working_dir="/mnt/c/Users/Ishe/Desktop/Ishe/1. COS 214 - Software Modelling/Google Test/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/mnt/c/Users/Ishe/Desktop/Ishe/1.\ COS\ 214\ -\ Software\ Modelling/Google\ Test/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/mnt/c/Users/Ishe/Desktop/Ishe/1.\ COS\ 214\ -\ Software\ Modelling/Google\ Test/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/mnt/c/Users/Ishe/Desktop/Ishe/1.\ COS\ 214\ -\ Software\ Modelling/Google\ Test/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/mnt/c/Users/Ishe/Desktop/Ishe/1.\ COS\ 214\ -\ Software\ Modelling/Google\ Test/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="builderTest">
+				<Option output="/mnt/c/Users/Ishe/Desktop/Ishe/1. COS 214 - Software Modelling/Google Test/cmake-build-debug/builderTest" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/mnt/c/Users/Ishe/Desktop/Ishe/1. COS 214 - Software Modelling/Google Test/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/include/c++/9"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/9"/>
+					<Add directory="/usr/include/c++/9/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/9/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/mnt/c/Users/Ishe/Desktop/Ishe/1.\ COS\ 214\ -\ Software\ Modelling/Google\ Test/cmake-build-debug/Makefile&quot;  VERBOSE=1 builderTest"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/mnt/c/Users/Ishe/Desktop/Ishe/1.\ COS\ 214\ -\ Software\ Modelling/Google\ Test/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/mnt/c/Users/Ishe/Desktop/Ishe/1.\ COS\ 214\ -\ Software\ Modelling/Google\ Test/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/mnt/c/Users/Ishe/Desktop/Ishe/1.\ COS\ 214\ -\ Software\ Modelling/Google\ Test/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="builderTest/fast">
+				<Option output="/mnt/c/Users/Ishe/Desktop/Ishe/1. COS 214 - Software Modelling/Google Test/cmake-build-debug/builderTest" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/mnt/c/Users/Ishe/Desktop/Ishe/1. COS 214 - Software Modelling/Google Test/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/include/c++/9"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/9"/>
+					<Add directory="/usr/include/c++/9/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/9/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/mnt/c/Users/Ishe/Desktop/Ishe/1.\ COS\ 214\ -\ Software\ Modelling/Google\ Test/cmake-build-debug/Makefile&quot;  VERBOSE=1 builderTest/fast"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/mnt/c/Users/Ishe/Desktop/Ishe/1.\ COS\ 214\ -\ Software\ Modelling/Google\ Test/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/mnt/c/Users/Ishe/Desktop/Ishe/1.\ COS\ 214\ -\ Software\ Modelling/Google\ Test/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/mnt/c/Users/Ishe/Desktop/Ishe/1.\ COS\ 214\ -\ Software\ Modelling/Google\ Test/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+		</Build>
+		<Unit filename="/mnt/c/Users/Ishe/Desktop/Ishe/1. COS 214 - Software Modelling/Google Test/BuilderPattern_Test.cpp">
+			<Option target="builderTest"/>
+		</Unit>
+		<Unit filename="/mnt/c/Users/Ishe/Desktop/Ishe/1. COS 214 - Software Modelling/Google Test/Command.cpp">
+			<Option target="builderTest"/>
+		</Unit>
+		<Unit filename="/mnt/c/Users/Ishe/Desktop/Ishe/1. COS 214 - Software Modelling/Google Test/Command.h">
+			<Option target="builderTest"/>
+		</Unit>
+		<Unit filename="/mnt/c/Users/Ishe/Desktop/Ishe/1. COS 214 - Software Modelling/Google Test/Controller.cpp">
+			<Option target="builderTest"/>
+		</Unit>
+		<Unit filename="/mnt/c/Users/Ishe/Desktop/Ishe/1. COS 214 - Software Modelling/Google Test/Controller.h">
+			<Option target="builderTest"/>
+		</Unit>
+		<Unit filename="/mnt/c/Users/Ishe/Desktop/Ishe/1. COS 214 - Software Modelling/Google Test/CrewDragon.cpp">
+			<Option target="builderTest"/>
+		</Unit>
+		<Unit filename="/mnt/c/Users/Ishe/Desktop/Ishe/1. COS 214 - Software Modelling/Google Test/CrewDragon.h">
+			<Option target="builderTest"/>
+		</Unit>
+		<Unit filename="/mnt/c/Users/Ishe/Desktop/Ishe/1. COS 214 - Software Modelling/Google Test/CrewDragonCreator.cpp">
+			<Option target="builderTest"/>
+		</Unit>
+		<Unit filename="/mnt/c/Users/Ishe/Desktop/Ishe/1. COS 214 - Software Modelling/Google Test/CrewDragonCreator.h">
+			<Option target="builderTest"/>
+		</Unit>
+		<Unit filename="/mnt/c/Users/Ishe/Desktop/Ishe/1. COS 214 - Software Modelling/Google Test/Dragon.cpp">
+			<Option target="builderTest"/>
+		</Unit>
+		<Unit filename="/mnt/c/Users/Ishe/Desktop/Ishe/1. COS 214 - Software Modelling/Google Test/Dragon.h">
+			<Option target="builderTest"/>
+		</Unit>
+		<Unit filename="/mnt/c/Users/Ishe/Desktop/Ishe/1. COS 214 - Software Modelling/Google Test/DragonCreator.cpp">
+			<Option target="builderTest"/>
+		</Unit>
+		<Unit filename="/mnt/c/Users/Ishe/Desktop/Ishe/1. COS 214 - Software Modelling/Google Test/DragonCreator.h">
+			<Option target="builderTest"/>
+		</Unit>
+		<Unit filename="/mnt/c/Users/Ishe/Desktop/Ishe/1. COS 214 - Software Modelling/Google Test/FalconHeavy.cpp">
+			<Option target="builderTest"/>
+		</Unit>
+		<Unit filename="/mnt/c/Users/Ishe/Desktop/Ishe/1. COS 214 - Software Modelling/Google Test/FalconHeavy.h">
+			<Option target="builderTest"/>
+		</Unit>
+		<Unit filename="/mnt/c/Users/Ishe/Desktop/Ishe/1. COS 214 - Software Modelling/Google Test/FalconNine.cpp">
+			<Option target="builderTest"/>
+		</Unit>
+		<Unit filename="/mnt/c/Users/Ishe/Desktop/Ishe/1. COS 214 - Software Modelling/Google Test/FalconNine.h">
+			<Option target="builderTest"/>
+		</Unit>
+		<Unit filename="/mnt/c/Users/Ishe/Desktop/Ishe/1. COS 214 - Software Modelling/Google Test/HaltCommand.cpp">
+			<Option target="builderTest"/>
+		</Unit>
+		<Unit filename="/mnt/c/Users/Ishe/Desktop/Ishe/1. COS 214 - Software Modelling/Google Test/HaltCommand.h">
+			<Option target="builderTest"/>
+		</Unit>
+		<Unit filename="/mnt/c/Users/Ishe/Desktop/Ishe/1. COS 214 - Software Modelling/Google Test/LaunchCommand.cpp">
+			<Option target="builderTest"/>
+		</Unit>
+		<Unit filename="/mnt/c/Users/Ishe/Desktop/Ishe/1. COS 214 - Software Modelling/Google Test/LaunchCommand.h">
+			<Option target="builderTest"/>
+		</Unit>
+		<Unit filename="/mnt/c/Users/Ishe/Desktop/Ishe/1. COS 214 - Software Modelling/Google Test/Rocket.cpp">
+			<Option target="builderTest"/>
+		</Unit>
+		<Unit filename="/mnt/c/Users/Ishe/Desktop/Ishe/1. COS 214 - Software Modelling/Google Test/Rocket.h">
+			<Option target="builderTest"/>
+		</Unit>
+		<Unit filename="/mnt/c/Users/Ishe/Desktop/Ishe/1. COS 214 - Software Modelling/Google Test/ShuttleBuilder.h">
+			<Option target="builderTest"/>
+		</Unit>
+		<Unit filename="/mnt/c/Users/Ishe/Desktop/Ishe/1. COS 214 - Software Modelling/Google Test/ShuttleState.cpp">
+			<Option target="builderTest"/>
+		</Unit>
+		<Unit filename="/mnt/c/Users/Ishe/Desktop/Ishe/1. COS 214 - Software Modelling/Google Test/ShuttleState.h">
+			<Option target="builderTest"/>
+		</Unit>
+		<Unit filename="/mnt/c/Users/Ishe/Desktop/Ishe/1. COS 214 - Software Modelling/Google Test/SpaceCraft.cpp">
+			<Option target="builderTest"/>
+		</Unit>
+		<Unit filename="/mnt/c/Users/Ishe/Desktop/Ishe/1. COS 214 - Software Modelling/Google Test/SpaceCraft.h">
+			<Option target="builderTest"/>
+		</Unit>
+		<Unit filename="/mnt/c/Users/Ishe/Desktop/Ishe/1. COS 214 - Software Modelling/Google Test/SpaceCraftCreator.h">
+			<Option target="builderTest"/>
+		</Unit>
+		<Unit filename="/mnt/c/Users/Ishe/Desktop/Ishe/1. COS 214 - Software Modelling/Google Test/SpaceShuttle.cpp">
+			<Option target="builderTest"/>
+		</Unit>
+		<Unit filename="/mnt/c/Users/Ishe/Desktop/Ishe/1. COS 214 - Software Modelling/Google Test/SpaceShuttle.h">
+			<Option target="builderTest"/>
+		</Unit>
+		<Unit filename="/mnt/c/Users/Ishe/Desktop/Ishe/1. COS 214 - Software Modelling/Google Test/SpaceShuttleBuilder.cpp">
+			<Option target="builderTest"/>
+		</Unit>
+		<Unit filename="/mnt/c/Users/Ishe/Desktop/Ishe/1. COS 214 - Software Modelling/Google Test/SpaceShuttleBuilder.h">
+			<Option target="builderTest"/>
+		</Unit>
+		<Unit filename="/mnt/c/Users/Ishe/Desktop/Ishe/1. COS 214 - Software Modelling/Google Test/SpaceX.cpp">
+			<Option target="builderTest"/>
+		</Unit>
+		<Unit filename="/mnt/c/Users/Ishe/Desktop/Ishe/1. COS 214 - Software Modelling/Google Test/SpaceX.h">
+			<Option target="builderTest"/>
+		</Unit>
+		<Unit filename="/mnt/c/Users/Ishe/Desktop/Ishe/1. COS 214 - Software Modelling/Google Test/Stage1.cpp">
+			<Option target="builderTest"/>
+		</Unit>
+		<Unit filename="/mnt/c/Users/Ishe/Desktop/Ishe/1. COS 214 - Software Modelling/Google Test/Stage1.h">
+			<Option target="builderTest"/>
+		</Unit>
+		<Unit filename="/mnt/c/Users/Ishe/Desktop/Ishe/1. COS 214 - Software Modelling/Google Test/Stage2.cpp">
+			<Option target="builderTest"/>
+		</Unit>
+		<Unit filename="/mnt/c/Users/Ishe/Desktop/Ishe/1. COS 214 - Software Modelling/Google Test/Stage2.h">
+			<Option target="builderTest"/>
+		</Unit>
+		<Unit filename="/mnt/c/Users/Ishe/Desktop/Ishe/1. COS 214 - Software Modelling/Google Test/Starlink.cpp">
+			<Option target="builderTest"/>
+		</Unit>
+		<Unit filename="/mnt/c/Users/Ishe/Desktop/Ishe/1. COS 214 - Software Modelling/Google Test/Starlink.h">
+			<Option target="builderTest"/>
+		</Unit>
+		<Unit filename="/mnt/c/Users/Ishe/Desktop/Ishe/1. COS 214 - Software Modelling/Google Test/State.cpp">
+			<Option target="builderTest"/>
+		</Unit>
+		<Unit filename="/mnt/c/Users/Ishe/Desktop/Ishe/1. COS 214 - Software Modelling/Google Test/State.h">
+			<Option target="builderTest"/>
+		</Unit>
+		<Unit filename="/mnt/c/Users/Ishe/Desktop/Ishe/1. COS 214 - Software Modelling/Google Test/WinningConfig.cpp">
+			<Option target="builderTest"/>
+		</Unit>
+		<Unit filename="/mnt/c/Users/Ishe/Desktop/Ishe/1. COS 214 - Software Modelling/Google Test/WinningConfig.h">
+			<Option target="builderTest"/>
+		</Unit>
+		<Unit filename="/mnt/c/Users/Ishe/Desktop/Ishe/1. COS 214 - Software Modelling/Google Test/WinningShuttle.cpp">
+			<Option target="builderTest"/>
+		</Unit>
+		<Unit filename="/mnt/c/Users/Ishe/Desktop/Ishe/1. COS 214 - Software Modelling/Google Test/WinningShuttle.h">
+			<Option target="builderTest"/>
+		</Unit>
+		<Unit filename="/mnt/c/Users/Ishe/Desktop/Ishe/1. COS 214 - Software Modelling/Google Test/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\"/>
+		</Unit>
+	</Project>
+</CodeBlocks_project_file>

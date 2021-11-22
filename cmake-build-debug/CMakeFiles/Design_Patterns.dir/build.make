@@ -43,10 +43,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = "/mnt/c/Users/Ishe/Desktop/Ishe/1. COS 214 - Software Modelling/Project/Design Patterns"
+CMAKE_SOURCE_DIR = "/mnt/c/Users/Ishe/Desktop/Ishe/1. COS 214 - Software Modelling/Google Test"
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = "/mnt/c/Users/Ishe/Desktop/Ishe/1. COS 214 - Software Modelling/Project/Design Patterns/cmake-build-debug"
+CMAKE_BINARY_DIR = "/mnt/c/Users/Ishe/Desktop/Ishe/1. COS 214 - Software Modelling/Google Test/cmake-build-debug"
 
 # Include any dependencies generated for this target.
 include CMakeFiles/Design_Patterns.dir/depend.make
@@ -59,172 +59,172 @@ include CMakeFiles/Design_Patterns.dir/flags.make
 
 CMakeFiles/Design_Patterns.dir/SpaceShuttle.cpp.o: CMakeFiles/Design_Patterns.dir/flags.make
 CMakeFiles/Design_Patterns.dir/SpaceShuttle.cpp.o: ../SpaceShuttle.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/mnt/c/Users/Ishe/Desktop/Ishe/1. COS 214 - Software Modelling/Project/Design Patterns/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/Design_Patterns.dir/SpaceShuttle.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Design_Patterns.dir/SpaceShuttle.cpp.o -c "/mnt/c/Users/Ishe/Desktop/Ishe/1. COS 214 - Software Modelling/Project/Design Patterns/SpaceShuttle.cpp"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/mnt/c/Users/Ishe/Desktop/Ishe/1. COS 214 - Software Modelling/Google Test/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/Design_Patterns.dir/SpaceShuttle.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Design_Patterns.dir/SpaceShuttle.cpp.o -c "/mnt/c/Users/Ishe/Desktop/Ishe/1. COS 214 - Software Modelling/Google Test/SpaceShuttle.cpp"
 
 CMakeFiles/Design_Patterns.dir/SpaceShuttle.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Design_Patterns.dir/SpaceShuttle.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/mnt/c/Users/Ishe/Desktop/Ishe/1. COS 214 - Software Modelling/Project/Design Patterns/SpaceShuttle.cpp" > CMakeFiles/Design_Patterns.dir/SpaceShuttle.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/mnt/c/Users/Ishe/Desktop/Ishe/1. COS 214 - Software Modelling/Google Test/SpaceShuttle.cpp" > CMakeFiles/Design_Patterns.dir/SpaceShuttle.cpp.i
 
 CMakeFiles/Design_Patterns.dir/SpaceShuttle.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Design_Patterns.dir/SpaceShuttle.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/mnt/c/Users/Ishe/Desktop/Ishe/1. COS 214 - Software Modelling/Project/Design Patterns/SpaceShuttle.cpp" -o CMakeFiles/Design_Patterns.dir/SpaceShuttle.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/mnt/c/Users/Ishe/Desktop/Ishe/1. COS 214 - Software Modelling/Google Test/SpaceShuttle.cpp" -o CMakeFiles/Design_Patterns.dir/SpaceShuttle.cpp.s
 
 CMakeFiles/Design_Patterns.dir/Rocket.cpp.o: CMakeFiles/Design_Patterns.dir/flags.make
 CMakeFiles/Design_Patterns.dir/Rocket.cpp.o: ../Rocket.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/mnt/c/Users/Ishe/Desktop/Ishe/1. COS 214 - Software Modelling/Project/Design Patterns/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/Design_Patterns.dir/Rocket.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Design_Patterns.dir/Rocket.cpp.o -c "/mnt/c/Users/Ishe/Desktop/Ishe/1. COS 214 - Software Modelling/Project/Design Patterns/Rocket.cpp"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/mnt/c/Users/Ishe/Desktop/Ishe/1. COS 214 - Software Modelling/Google Test/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/Design_Patterns.dir/Rocket.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Design_Patterns.dir/Rocket.cpp.o -c "/mnt/c/Users/Ishe/Desktop/Ishe/1. COS 214 - Software Modelling/Google Test/Rocket.cpp"
 
 CMakeFiles/Design_Patterns.dir/Rocket.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Design_Patterns.dir/Rocket.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/mnt/c/Users/Ishe/Desktop/Ishe/1. COS 214 - Software Modelling/Project/Design Patterns/Rocket.cpp" > CMakeFiles/Design_Patterns.dir/Rocket.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/mnt/c/Users/Ishe/Desktop/Ishe/1. COS 214 - Software Modelling/Google Test/Rocket.cpp" > CMakeFiles/Design_Patterns.dir/Rocket.cpp.i
 
 CMakeFiles/Design_Patterns.dir/Rocket.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Design_Patterns.dir/Rocket.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/mnt/c/Users/Ishe/Desktop/Ishe/1. COS 214 - Software Modelling/Project/Design Patterns/Rocket.cpp" -o CMakeFiles/Design_Patterns.dir/Rocket.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/mnt/c/Users/Ishe/Desktop/Ishe/1. COS 214 - Software Modelling/Google Test/Rocket.cpp" -o CMakeFiles/Design_Patterns.dir/Rocket.cpp.s
 
 CMakeFiles/Design_Patterns.dir/SpaceCraft.cpp.o: CMakeFiles/Design_Patterns.dir/flags.make
 CMakeFiles/Design_Patterns.dir/SpaceCraft.cpp.o: ../SpaceCraft.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/mnt/c/Users/Ishe/Desktop/Ishe/1. COS 214 - Software Modelling/Project/Design Patterns/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/Design_Patterns.dir/SpaceCraft.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Design_Patterns.dir/SpaceCraft.cpp.o -c "/mnt/c/Users/Ishe/Desktop/Ishe/1. COS 214 - Software Modelling/Project/Design Patterns/SpaceCraft.cpp"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/mnt/c/Users/Ishe/Desktop/Ishe/1. COS 214 - Software Modelling/Google Test/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/Design_Patterns.dir/SpaceCraft.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Design_Patterns.dir/SpaceCraft.cpp.o -c "/mnt/c/Users/Ishe/Desktop/Ishe/1. COS 214 - Software Modelling/Google Test/SpaceCraft.cpp"
 
 CMakeFiles/Design_Patterns.dir/SpaceCraft.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Design_Patterns.dir/SpaceCraft.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/mnt/c/Users/Ishe/Desktop/Ishe/1. COS 214 - Software Modelling/Project/Design Patterns/SpaceCraft.cpp" > CMakeFiles/Design_Patterns.dir/SpaceCraft.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/mnt/c/Users/Ishe/Desktop/Ishe/1. COS 214 - Software Modelling/Google Test/SpaceCraft.cpp" > CMakeFiles/Design_Patterns.dir/SpaceCraft.cpp.i
 
 CMakeFiles/Design_Patterns.dir/SpaceCraft.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Design_Patterns.dir/SpaceCraft.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/mnt/c/Users/Ishe/Desktop/Ishe/1. COS 214 - Software Modelling/Project/Design Patterns/SpaceCraft.cpp" -o CMakeFiles/Design_Patterns.dir/SpaceCraft.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/mnt/c/Users/Ishe/Desktop/Ishe/1. COS 214 - Software Modelling/Google Test/SpaceCraft.cpp" -o CMakeFiles/Design_Patterns.dir/SpaceCraft.cpp.s
 
 CMakeFiles/Design_Patterns.dir/SpaceShuttleBuilder.cpp.o: CMakeFiles/Design_Patterns.dir/flags.make
 CMakeFiles/Design_Patterns.dir/SpaceShuttleBuilder.cpp.o: ../SpaceShuttleBuilder.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/mnt/c/Users/Ishe/Desktop/Ishe/1. COS 214 - Software Modelling/Project/Design Patterns/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/Design_Patterns.dir/SpaceShuttleBuilder.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Design_Patterns.dir/SpaceShuttleBuilder.cpp.o -c "/mnt/c/Users/Ishe/Desktop/Ishe/1. COS 214 - Software Modelling/Project/Design Patterns/SpaceShuttleBuilder.cpp"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/mnt/c/Users/Ishe/Desktop/Ishe/1. COS 214 - Software Modelling/Google Test/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/Design_Patterns.dir/SpaceShuttleBuilder.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Design_Patterns.dir/SpaceShuttleBuilder.cpp.o -c "/mnt/c/Users/Ishe/Desktop/Ishe/1. COS 214 - Software Modelling/Google Test/SpaceShuttleBuilder.cpp"
 
 CMakeFiles/Design_Patterns.dir/SpaceShuttleBuilder.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Design_Patterns.dir/SpaceShuttleBuilder.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/mnt/c/Users/Ishe/Desktop/Ishe/1. COS 214 - Software Modelling/Project/Design Patterns/SpaceShuttleBuilder.cpp" > CMakeFiles/Design_Patterns.dir/SpaceShuttleBuilder.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/mnt/c/Users/Ishe/Desktop/Ishe/1. COS 214 - Software Modelling/Google Test/SpaceShuttleBuilder.cpp" > CMakeFiles/Design_Patterns.dir/SpaceShuttleBuilder.cpp.i
 
 CMakeFiles/Design_Patterns.dir/SpaceShuttleBuilder.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Design_Patterns.dir/SpaceShuttleBuilder.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/mnt/c/Users/Ishe/Desktop/Ishe/1. COS 214 - Software Modelling/Project/Design Patterns/SpaceShuttleBuilder.cpp" -o CMakeFiles/Design_Patterns.dir/SpaceShuttleBuilder.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/mnt/c/Users/Ishe/Desktop/Ishe/1. COS 214 - Software Modelling/Google Test/SpaceShuttleBuilder.cpp" -o CMakeFiles/Design_Patterns.dir/SpaceShuttleBuilder.cpp.s
 
 CMakeFiles/Design_Patterns.dir/SpaceX.cpp.o: CMakeFiles/Design_Patterns.dir/flags.make
 CMakeFiles/Design_Patterns.dir/SpaceX.cpp.o: ../SpaceX.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/mnt/c/Users/Ishe/Desktop/Ishe/1. COS 214 - Software Modelling/Project/Design Patterns/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/Design_Patterns.dir/SpaceX.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Design_Patterns.dir/SpaceX.cpp.o -c "/mnt/c/Users/Ishe/Desktop/Ishe/1. COS 214 - Software Modelling/Project/Design Patterns/SpaceX.cpp"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/mnt/c/Users/Ishe/Desktop/Ishe/1. COS 214 - Software Modelling/Google Test/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/Design_Patterns.dir/SpaceX.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Design_Patterns.dir/SpaceX.cpp.o -c "/mnt/c/Users/Ishe/Desktop/Ishe/1. COS 214 - Software Modelling/Google Test/SpaceX.cpp"
 
 CMakeFiles/Design_Patterns.dir/SpaceX.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Design_Patterns.dir/SpaceX.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/mnt/c/Users/Ishe/Desktop/Ishe/1. COS 214 - Software Modelling/Project/Design Patterns/SpaceX.cpp" > CMakeFiles/Design_Patterns.dir/SpaceX.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/mnt/c/Users/Ishe/Desktop/Ishe/1. COS 214 - Software Modelling/Google Test/SpaceX.cpp" > CMakeFiles/Design_Patterns.dir/SpaceX.cpp.i
 
 CMakeFiles/Design_Patterns.dir/SpaceX.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Design_Patterns.dir/SpaceX.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/mnt/c/Users/Ishe/Desktop/Ishe/1. COS 214 - Software Modelling/Project/Design Patterns/SpaceX.cpp" -o CMakeFiles/Design_Patterns.dir/SpaceX.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/mnt/c/Users/Ishe/Desktop/Ishe/1. COS 214 - Software Modelling/Google Test/SpaceX.cpp" -o CMakeFiles/Design_Patterns.dir/SpaceX.cpp.s
 
 CMakeFiles/Design_Patterns.dir/CrewDragon.cpp.o: CMakeFiles/Design_Patterns.dir/flags.make
 CMakeFiles/Design_Patterns.dir/CrewDragon.cpp.o: ../CrewDragon.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/mnt/c/Users/Ishe/Desktop/Ishe/1. COS 214 - Software Modelling/Project/Design Patterns/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/Design_Patterns.dir/CrewDragon.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Design_Patterns.dir/CrewDragon.cpp.o -c "/mnt/c/Users/Ishe/Desktop/Ishe/1. COS 214 - Software Modelling/Project/Design Patterns/CrewDragon.cpp"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/mnt/c/Users/Ishe/Desktop/Ishe/1. COS 214 - Software Modelling/Google Test/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/Design_Patterns.dir/CrewDragon.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Design_Patterns.dir/CrewDragon.cpp.o -c "/mnt/c/Users/Ishe/Desktop/Ishe/1. COS 214 - Software Modelling/Google Test/CrewDragon.cpp"
 
 CMakeFiles/Design_Patterns.dir/CrewDragon.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Design_Patterns.dir/CrewDragon.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/mnt/c/Users/Ishe/Desktop/Ishe/1. COS 214 - Software Modelling/Project/Design Patterns/CrewDragon.cpp" > CMakeFiles/Design_Patterns.dir/CrewDragon.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/mnt/c/Users/Ishe/Desktop/Ishe/1. COS 214 - Software Modelling/Google Test/CrewDragon.cpp" > CMakeFiles/Design_Patterns.dir/CrewDragon.cpp.i
 
 CMakeFiles/Design_Patterns.dir/CrewDragon.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Design_Patterns.dir/CrewDragon.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/mnt/c/Users/Ishe/Desktop/Ishe/1. COS 214 - Software Modelling/Project/Design Patterns/CrewDragon.cpp" -o CMakeFiles/Design_Patterns.dir/CrewDragon.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/mnt/c/Users/Ishe/Desktop/Ishe/1. COS 214 - Software Modelling/Google Test/CrewDragon.cpp" -o CMakeFiles/Design_Patterns.dir/CrewDragon.cpp.s
 
 CMakeFiles/Design_Patterns.dir/Dragon.cpp.o: CMakeFiles/Design_Patterns.dir/flags.make
 CMakeFiles/Design_Patterns.dir/Dragon.cpp.o: ../Dragon.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/mnt/c/Users/Ishe/Desktop/Ishe/1. COS 214 - Software Modelling/Project/Design Patterns/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/Design_Patterns.dir/Dragon.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Design_Patterns.dir/Dragon.cpp.o -c "/mnt/c/Users/Ishe/Desktop/Ishe/1. COS 214 - Software Modelling/Project/Design Patterns/Dragon.cpp"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/mnt/c/Users/Ishe/Desktop/Ishe/1. COS 214 - Software Modelling/Google Test/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/Design_Patterns.dir/Dragon.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Design_Patterns.dir/Dragon.cpp.o -c "/mnt/c/Users/Ishe/Desktop/Ishe/1. COS 214 - Software Modelling/Google Test/Dragon.cpp"
 
 CMakeFiles/Design_Patterns.dir/Dragon.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Design_Patterns.dir/Dragon.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/mnt/c/Users/Ishe/Desktop/Ishe/1. COS 214 - Software Modelling/Project/Design Patterns/Dragon.cpp" > CMakeFiles/Design_Patterns.dir/Dragon.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/mnt/c/Users/Ishe/Desktop/Ishe/1. COS 214 - Software Modelling/Google Test/Dragon.cpp" > CMakeFiles/Design_Patterns.dir/Dragon.cpp.i
 
 CMakeFiles/Design_Patterns.dir/Dragon.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Design_Patterns.dir/Dragon.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/mnt/c/Users/Ishe/Desktop/Ishe/1. COS 214 - Software Modelling/Project/Design Patterns/Dragon.cpp" -o CMakeFiles/Design_Patterns.dir/Dragon.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/mnt/c/Users/Ishe/Desktop/Ishe/1. COS 214 - Software Modelling/Google Test/Dragon.cpp" -o CMakeFiles/Design_Patterns.dir/Dragon.cpp.s
 
 CMakeFiles/Design_Patterns.dir/CrewDragonCreator.cpp.o: CMakeFiles/Design_Patterns.dir/flags.make
 CMakeFiles/Design_Patterns.dir/CrewDragonCreator.cpp.o: ../CrewDragonCreator.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/mnt/c/Users/Ishe/Desktop/Ishe/1. COS 214 - Software Modelling/Project/Design Patterns/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/Design_Patterns.dir/CrewDragonCreator.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Design_Patterns.dir/CrewDragonCreator.cpp.o -c "/mnt/c/Users/Ishe/Desktop/Ishe/1. COS 214 - Software Modelling/Project/Design Patterns/CrewDragonCreator.cpp"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/mnt/c/Users/Ishe/Desktop/Ishe/1. COS 214 - Software Modelling/Google Test/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/Design_Patterns.dir/CrewDragonCreator.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Design_Patterns.dir/CrewDragonCreator.cpp.o -c "/mnt/c/Users/Ishe/Desktop/Ishe/1. COS 214 - Software Modelling/Google Test/CrewDragonCreator.cpp"
 
 CMakeFiles/Design_Patterns.dir/CrewDragonCreator.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Design_Patterns.dir/CrewDragonCreator.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/mnt/c/Users/Ishe/Desktop/Ishe/1. COS 214 - Software Modelling/Project/Design Patterns/CrewDragonCreator.cpp" > CMakeFiles/Design_Patterns.dir/CrewDragonCreator.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/mnt/c/Users/Ishe/Desktop/Ishe/1. COS 214 - Software Modelling/Google Test/CrewDragonCreator.cpp" > CMakeFiles/Design_Patterns.dir/CrewDragonCreator.cpp.i
 
 CMakeFiles/Design_Patterns.dir/CrewDragonCreator.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Design_Patterns.dir/CrewDragonCreator.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/mnt/c/Users/Ishe/Desktop/Ishe/1. COS 214 - Software Modelling/Project/Design Patterns/CrewDragonCreator.cpp" -o CMakeFiles/Design_Patterns.dir/CrewDragonCreator.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/mnt/c/Users/Ishe/Desktop/Ishe/1. COS 214 - Software Modelling/Google Test/CrewDragonCreator.cpp" -o CMakeFiles/Design_Patterns.dir/CrewDragonCreator.cpp.s
 
 CMakeFiles/Design_Patterns.dir/DragonCreator.cpp.o: CMakeFiles/Design_Patterns.dir/flags.make
 CMakeFiles/Design_Patterns.dir/DragonCreator.cpp.o: ../DragonCreator.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/mnt/c/Users/Ishe/Desktop/Ishe/1. COS 214 - Software Modelling/Project/Design Patterns/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object CMakeFiles/Design_Patterns.dir/DragonCreator.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Design_Patterns.dir/DragonCreator.cpp.o -c "/mnt/c/Users/Ishe/Desktop/Ishe/1. COS 214 - Software Modelling/Project/Design Patterns/DragonCreator.cpp"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/mnt/c/Users/Ishe/Desktop/Ishe/1. COS 214 - Software Modelling/Google Test/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object CMakeFiles/Design_Patterns.dir/DragonCreator.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Design_Patterns.dir/DragonCreator.cpp.o -c "/mnt/c/Users/Ishe/Desktop/Ishe/1. COS 214 - Software Modelling/Google Test/DragonCreator.cpp"
 
 CMakeFiles/Design_Patterns.dir/DragonCreator.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Design_Patterns.dir/DragonCreator.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/mnt/c/Users/Ishe/Desktop/Ishe/1. COS 214 - Software Modelling/Project/Design Patterns/DragonCreator.cpp" > CMakeFiles/Design_Patterns.dir/DragonCreator.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/mnt/c/Users/Ishe/Desktop/Ishe/1. COS 214 - Software Modelling/Google Test/DragonCreator.cpp" > CMakeFiles/Design_Patterns.dir/DragonCreator.cpp.i
 
 CMakeFiles/Design_Patterns.dir/DragonCreator.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Design_Patterns.dir/DragonCreator.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/mnt/c/Users/Ishe/Desktop/Ishe/1. COS 214 - Software Modelling/Project/Design Patterns/DragonCreator.cpp" -o CMakeFiles/Design_Patterns.dir/DragonCreator.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/mnt/c/Users/Ishe/Desktop/Ishe/1. COS 214 - Software Modelling/Google Test/DragonCreator.cpp" -o CMakeFiles/Design_Patterns.dir/DragonCreator.cpp.s
 
 CMakeFiles/Design_Patterns.dir/FalconNine.cpp.o: CMakeFiles/Design_Patterns.dir/flags.make
 CMakeFiles/Design_Patterns.dir/FalconNine.cpp.o: ../FalconNine.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/mnt/c/Users/Ishe/Desktop/Ishe/1. COS 214 - Software Modelling/Project/Design Patterns/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object CMakeFiles/Design_Patterns.dir/FalconNine.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Design_Patterns.dir/FalconNine.cpp.o -c "/mnt/c/Users/Ishe/Desktop/Ishe/1. COS 214 - Software Modelling/Project/Design Patterns/FalconNine.cpp"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/mnt/c/Users/Ishe/Desktop/Ishe/1. COS 214 - Software Modelling/Google Test/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object CMakeFiles/Design_Patterns.dir/FalconNine.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Design_Patterns.dir/FalconNine.cpp.o -c "/mnt/c/Users/Ishe/Desktop/Ishe/1. COS 214 - Software Modelling/Google Test/FalconNine.cpp"
 
 CMakeFiles/Design_Patterns.dir/FalconNine.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Design_Patterns.dir/FalconNine.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/mnt/c/Users/Ishe/Desktop/Ishe/1. COS 214 - Software Modelling/Project/Design Patterns/FalconNine.cpp" > CMakeFiles/Design_Patterns.dir/FalconNine.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/mnt/c/Users/Ishe/Desktop/Ishe/1. COS 214 - Software Modelling/Google Test/FalconNine.cpp" > CMakeFiles/Design_Patterns.dir/FalconNine.cpp.i
 
 CMakeFiles/Design_Patterns.dir/FalconNine.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Design_Patterns.dir/FalconNine.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/mnt/c/Users/Ishe/Desktop/Ishe/1. COS 214 - Software Modelling/Project/Design Patterns/FalconNine.cpp" -o CMakeFiles/Design_Patterns.dir/FalconNine.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/mnt/c/Users/Ishe/Desktop/Ishe/1. COS 214 - Software Modelling/Google Test/FalconNine.cpp" -o CMakeFiles/Design_Patterns.dir/FalconNine.cpp.s
 
 CMakeFiles/Design_Patterns.dir/FalconHeavy.cpp.o: CMakeFiles/Design_Patterns.dir/flags.make
 CMakeFiles/Design_Patterns.dir/FalconHeavy.cpp.o: ../FalconHeavy.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/mnt/c/Users/Ishe/Desktop/Ishe/1. COS 214 - Software Modelling/Project/Design Patterns/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_11) "Building CXX object CMakeFiles/Design_Patterns.dir/FalconHeavy.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Design_Patterns.dir/FalconHeavy.cpp.o -c "/mnt/c/Users/Ishe/Desktop/Ishe/1. COS 214 - Software Modelling/Project/Design Patterns/FalconHeavy.cpp"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/mnt/c/Users/Ishe/Desktop/Ishe/1. COS 214 - Software Modelling/Google Test/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_11) "Building CXX object CMakeFiles/Design_Patterns.dir/FalconHeavy.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Design_Patterns.dir/FalconHeavy.cpp.o -c "/mnt/c/Users/Ishe/Desktop/Ishe/1. COS 214 - Software Modelling/Google Test/FalconHeavy.cpp"
 
 CMakeFiles/Design_Patterns.dir/FalconHeavy.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Design_Patterns.dir/FalconHeavy.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/mnt/c/Users/Ishe/Desktop/Ishe/1. COS 214 - Software Modelling/Project/Design Patterns/FalconHeavy.cpp" > CMakeFiles/Design_Patterns.dir/FalconHeavy.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/mnt/c/Users/Ishe/Desktop/Ishe/1. COS 214 - Software Modelling/Google Test/FalconHeavy.cpp" > CMakeFiles/Design_Patterns.dir/FalconHeavy.cpp.i
 
 CMakeFiles/Design_Patterns.dir/FalconHeavy.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Design_Patterns.dir/FalconHeavy.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/mnt/c/Users/Ishe/Desktop/Ishe/1. COS 214 - Software Modelling/Project/Design Patterns/FalconHeavy.cpp" -o CMakeFiles/Design_Patterns.dir/FalconHeavy.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/mnt/c/Users/Ishe/Desktop/Ishe/1. COS 214 - Software Modelling/Google Test/FalconHeavy.cpp" -o CMakeFiles/Design_Patterns.dir/FalconHeavy.cpp.s
 
 CMakeFiles/Design_Patterns.dir/Starlink.cpp.o: CMakeFiles/Design_Patterns.dir/flags.make
 CMakeFiles/Design_Patterns.dir/Starlink.cpp.o: ../Starlink.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/mnt/c/Users/Ishe/Desktop/Ishe/1. COS 214 - Software Modelling/Project/Design Patterns/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_12) "Building CXX object CMakeFiles/Design_Patterns.dir/Starlink.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Design_Patterns.dir/Starlink.cpp.o -c "/mnt/c/Users/Ishe/Desktop/Ishe/1. COS 214 - Software Modelling/Project/Design Patterns/Starlink.cpp"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/mnt/c/Users/Ishe/Desktop/Ishe/1. COS 214 - Software Modelling/Google Test/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_12) "Building CXX object CMakeFiles/Design_Patterns.dir/Starlink.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Design_Patterns.dir/Starlink.cpp.o -c "/mnt/c/Users/Ishe/Desktop/Ishe/1. COS 214 - Software Modelling/Google Test/Starlink.cpp"
 
 CMakeFiles/Design_Patterns.dir/Starlink.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Design_Patterns.dir/Starlink.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/mnt/c/Users/Ishe/Desktop/Ishe/1. COS 214 - Software Modelling/Project/Design Patterns/Starlink.cpp" > CMakeFiles/Design_Patterns.dir/Starlink.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/mnt/c/Users/Ishe/Desktop/Ishe/1. COS 214 - Software Modelling/Google Test/Starlink.cpp" > CMakeFiles/Design_Patterns.dir/Starlink.cpp.i
 
 CMakeFiles/Design_Patterns.dir/Starlink.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Design_Patterns.dir/Starlink.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/mnt/c/Users/Ishe/Desktop/Ishe/1. COS 214 - Software Modelling/Project/Design Patterns/Starlink.cpp" -o CMakeFiles/Design_Patterns.dir/Starlink.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/mnt/c/Users/Ishe/Desktop/Ishe/1. COS 214 - Software Modelling/Google Test/Starlink.cpp" -o CMakeFiles/Design_Patterns.dir/Starlink.cpp.s
 
 CMakeFiles/Design_Patterns.dir/Main.cpp.o: CMakeFiles/Design_Patterns.dir/flags.make
 CMakeFiles/Design_Patterns.dir/Main.cpp.o: ../Main.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/mnt/c/Users/Ishe/Desktop/Ishe/1. COS 214 - Software Modelling/Project/Design Patterns/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_13) "Building CXX object CMakeFiles/Design_Patterns.dir/Main.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Design_Patterns.dir/Main.cpp.o -c "/mnt/c/Users/Ishe/Desktop/Ishe/1. COS 214 - Software Modelling/Project/Design Patterns/Main.cpp"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/mnt/c/Users/Ishe/Desktop/Ishe/1. COS 214 - Software Modelling/Google Test/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_13) "Building CXX object CMakeFiles/Design_Patterns.dir/Main.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Design_Patterns.dir/Main.cpp.o -c "/mnt/c/Users/Ishe/Desktop/Ishe/1. COS 214 - Software Modelling/Google Test/Main.cpp"
 
 CMakeFiles/Design_Patterns.dir/Main.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Design_Patterns.dir/Main.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/mnt/c/Users/Ishe/Desktop/Ishe/1. COS 214 - Software Modelling/Project/Design Patterns/Main.cpp" > CMakeFiles/Design_Patterns.dir/Main.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/mnt/c/Users/Ishe/Desktop/Ishe/1. COS 214 - Software Modelling/Google Test/Main.cpp" > CMakeFiles/Design_Patterns.dir/Main.cpp.i
 
 CMakeFiles/Design_Patterns.dir/Main.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Design_Patterns.dir/Main.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/mnt/c/Users/Ishe/Desktop/Ishe/1. COS 214 - Software Modelling/Project/Design Patterns/Main.cpp" -o CMakeFiles/Design_Patterns.dir/Main.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/mnt/c/Users/Ishe/Desktop/Ishe/1. COS 214 - Software Modelling/Google Test/Main.cpp" -o CMakeFiles/Design_Patterns.dir/Main.cpp.s
 
 # Object files for target Design_Patterns
 Design_Patterns_OBJECTS = \
@@ -260,7 +260,7 @@ Design_Patterns: CMakeFiles/Design_Patterns.dir/Starlink.cpp.o
 Design_Patterns: CMakeFiles/Design_Patterns.dir/Main.cpp.o
 Design_Patterns: CMakeFiles/Design_Patterns.dir/build.make
 Design_Patterns: CMakeFiles/Design_Patterns.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir="/mnt/c/Users/Ishe/Desktop/Ishe/1. COS 214 - Software Modelling/Project/Design Patterns/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_14) "Linking CXX executable Design_Patterns"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir="/mnt/c/Users/Ishe/Desktop/Ishe/1. COS 214 - Software Modelling/Google Test/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_14) "Linking CXX executable Design_Patterns"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/Design_Patterns.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -273,6 +273,6 @@ CMakeFiles/Design_Patterns.dir/clean:
 .PHONY : CMakeFiles/Design_Patterns.dir/clean
 
 CMakeFiles/Design_Patterns.dir/depend:
-	cd "/mnt/c/Users/Ishe/Desktop/Ishe/1. COS 214 - Software Modelling/Project/Design Patterns/cmake-build-debug" && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" "/mnt/c/Users/Ishe/Desktop/Ishe/1. COS 214 - Software Modelling/Project/Design Patterns" "/mnt/c/Users/Ishe/Desktop/Ishe/1. COS 214 - Software Modelling/Project/Design Patterns" "/mnt/c/Users/Ishe/Desktop/Ishe/1. COS 214 - Software Modelling/Project/Design Patterns/cmake-build-debug" "/mnt/c/Users/Ishe/Desktop/Ishe/1. COS 214 - Software Modelling/Project/Design Patterns/cmake-build-debug" "/mnt/c/Users/Ishe/Desktop/Ishe/1. COS 214 - Software Modelling/Project/Design Patterns/cmake-build-debug/CMakeFiles/Design_Patterns.dir/DependInfo.cmake" --color=$(COLOR)
+	cd "/mnt/c/Users/Ishe/Desktop/Ishe/1. COS 214 - Software Modelling/Google Test/cmake-build-debug" && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" "/mnt/c/Users/Ishe/Desktop/Ishe/1. COS 214 - Software Modelling/Google Test" "/mnt/c/Users/Ishe/Desktop/Ishe/1. COS 214 - Software Modelling/Google Test" "/mnt/c/Users/Ishe/Desktop/Ishe/1. COS 214 - Software Modelling/Google Test/cmake-build-debug" "/mnt/c/Users/Ishe/Desktop/Ishe/1. COS 214 - Software Modelling/Google Test/cmake-build-debug" "/mnt/c/Users/Ishe/Desktop/Ishe/1. COS 214 - Software Modelling/Google Test/cmake-build-debug/CMakeFiles/Design_Patterns.dir/DependInfo.cmake" --color=$(COLOR)
 .PHONY : CMakeFiles/Design_Patterns.dir/depend
 

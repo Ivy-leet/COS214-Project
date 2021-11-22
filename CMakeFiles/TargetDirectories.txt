@@ -1,0 +1,3 @@
+/mnt/c/Users/Ishe/Desktop/Ishe/1. COS 214 - Software Modelling/Google Test/CMakeFiles/rebuild_cache.dir
+/mnt/c/Users/Ishe/Desktop/Ishe/1. COS 214 - Software Modelling/Google Test/CMakeFiles/edit_cache.dir
+/mnt/c/Users/Ishe/Desktop/Ishe/1. COS 214 - Software Modelling/Google Test/CMakeFiles/builderTest.dir

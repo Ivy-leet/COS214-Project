@@ -1,7 +1,6 @@
 #include "SpaceX.h"
 
 
-
 SpaceX::SpaceX(ShuttleBuilder *sb) {
     shuttleBuilder = sb;
 }

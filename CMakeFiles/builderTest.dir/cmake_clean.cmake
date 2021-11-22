@@ -1,0 +1,32 @@
+file(REMOVE_RECURSE
+  "CMakeFiles/builderTest.dir/BuilderPattern_Test.cpp.o"
+  "CMakeFiles/builderTest.dir/Command.cpp.o"
+  "CMakeFiles/builderTest.dir/Controller.cpp.o"
+  "CMakeFiles/builderTest.dir/CrewDragon.cpp.o"
+  "CMakeFiles/builderTest.dir/CrewDragonCreator.cpp.o"
+  "CMakeFiles/builderTest.dir/Dragon.cpp.o"
+  "CMakeFiles/builderTest.dir/DragonCreator.cpp.o"
+  "CMakeFiles/builderTest.dir/FalconHeavy.cpp.o"
+  "CMakeFiles/builderTest.dir/FalconNine.cpp.o"
+  "CMakeFiles/builderTest.dir/HaltCommand.cpp.o"
+  "CMakeFiles/builderTest.dir/LaunchCommand.cpp.o"
+  "CMakeFiles/builderTest.dir/Rocket.cpp.o"
+  "CMakeFiles/builderTest.dir/ShuttleState.cpp.o"
+  "CMakeFiles/builderTest.dir/SpaceCraft.cpp.o"
+  "CMakeFiles/builderTest.dir/SpaceShuttle.cpp.o"
+  "CMakeFiles/builderTest.dir/SpaceShuttleBuilder.cpp.o"
+  "CMakeFiles/builderTest.dir/SpaceX.cpp.o"
+  "CMakeFiles/builderTest.dir/Stage1.cpp.o"
+  "CMakeFiles/builderTest.dir/Stage2.cpp.o"
+  "CMakeFiles/builderTest.dir/Starlink.cpp.o"
+  "CMakeFiles/builderTest.dir/State.cpp.o"
+  "CMakeFiles/builderTest.dir/WinningConfig.cpp.o"
+  "CMakeFiles/builderTest.dir/WinningShuttle.cpp.o"
+  "builderTest"
+  "builderTest.pdb"
+)
+
+# Per-language clean rules from dependency scanning.
+foreach(lang CXX)
+  include(CMakeFiles/builderTest.dir/cmake_clean_${lang}.cmake OPTIONAL)
+endforeach()

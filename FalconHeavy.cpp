@@ -12,7 +12,7 @@ FalconHeavy::~FalconHeavy() {
     list<Rocket*>::iterator it;
 
     for (it=falcon_nines.begin();it!=falcon_nines.end();it++)
-        *it=nullptr;
+        delete *it;
 }
 
 void FalconHeavy::rocketInfo() {
