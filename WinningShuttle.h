@@ -30,7 +30,6 @@ class WinningShuttle
 	
 /**
  * @brief Returns the WinningShuttle(SpaceShuttle)
- * @param None
  * @return SpaceShuttle pointer
  */
 		SpaceShuttle* getWinningShuttle();
