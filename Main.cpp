@@ -95,8 +95,6 @@ int main(int argc, char **argv) {
 
     SpaceShuttleBuilder *builder = new SpaceShuttleBuilder;;
     SpaceX *director = new SpaceX(builder);
-    Command* launch;
-    Command* halt;
 
     while (option==0) {
         int typeOfTrip=-1;

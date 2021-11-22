@@ -2,7 +2,7 @@
 #define COMMAND_H
 
 #include <iostream>
-#include "Rocket.h"
+#include "SpaceShuttle.h"
 using namespace std;
 
 /**
@@ -13,9 +13,9 @@ using namespace std;
 class Command
 {
     private:
-        Rocket* rocket;
+        SpaceShuttle* shuttle;
     public:
-        Command(Rocket* r);
+        Command(SpaceShuttle* r);
         virtual void execute()=0;
 };
 #endif 

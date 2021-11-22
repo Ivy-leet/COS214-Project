@@ -21,11 +21,7 @@ class SpaceShuttle : public Subject{
         Handler* starlinks;
         int numOfStarlinks;
 
-        /**
-         * @brief Makes copy of the current space shuttle object
-         * @return SpaceShuttle*
-        */
-        SpaceShuttle* clone();
+        
         
     public:
         SpaceShuttle();
@@ -89,6 +85,12 @@ class SpaceShuttle : public Subject{
          * @return vector<Starlink*>
         */
         Handler* getStarlinks();
+
+        /**
+         * @brief Makes copy of the current space shuttle object
+         * @return SpaceShuttle*
+        */
+        SpaceShuttle* clone();
 
         
 
