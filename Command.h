@@ -14,6 +14,10 @@ class Command
 {
     private:
         SpaceShuttle* shuttle;
+<<<<<<< HEAD
+=======
+
+>>>>>>> af7f5905369ffd88758adef6e125ee9a93df51ce
     public:
         Command(SpaceShuttle* r);
         virtual void execute()=0;

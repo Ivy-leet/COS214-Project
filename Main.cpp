@@ -145,7 +145,6 @@ int main(int argc, char **argv) {
         option=menu();
 
         delete sp->getSpaceCraft();
-        // delete missioncontrol;
 
     }
     
