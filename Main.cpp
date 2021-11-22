@@ -6,6 +6,7 @@
 #include "Command.h"
 #include "LaunchCommand.h"
 #include "HaltCommand.h"
+#include "MissionControl.h"
 
 
 int menu() {
@@ -125,10 +126,10 @@ int main(int argc, char **argv) {
         sp->shuttleInfo();
         
         cout<<"-----------\tLaunch\t--------------\n";
-        launch = new LaunchCommand(sp->getRocket());
-        halt = new HaltCommand(sp->getRocket());
-        Controller controller(launch, halt);
-        controller.launch();
+        MissionControl* missioncontrol = new MissionControl(sp);
+
+        missioncontrol->startMission();
+        missioncontrol->rett();
 
         builder->rocketReuse(sp->getRocket());
         
