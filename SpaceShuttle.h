@@ -46,7 +46,7 @@ class SpaceShuttle : public Subject{
          * @param num Number of starlinks to create
          * @return void
         */
-        void addStarlinks(int);
+        void addStarlinks(int, Handler*);
 
         int getNumOfStarlinks();
 
@@ -91,6 +91,8 @@ class SpaceShuttle : public Subject{
          * @return SpaceShuttle*
         */
         SpaceShuttle* clone();
+
+        void release();
 
         
 

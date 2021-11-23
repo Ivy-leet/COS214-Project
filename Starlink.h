@@ -2,6 +2,7 @@
 #define STARLINK_H
 
 #include "Handler.h"
+#include <ctime>
 
 class Starlink : public Handler //ConcretePrototype
 {
@@ -11,12 +12,12 @@ static int StarLinkIDInc ; //to give each starlink satellite a unique identifict
 private:
     /* data */
     int StarlinkID = 0;
-    Handler *successor; //the next object to handle request
+    Coordinate* coord;
+			 //the next object to handle request
 public:
     Handler* clone();
-    virtual void setNextHandler(Handler *nextH); //If the current object cannot handle the request, send it to the next
-    virtual Handler* getNextHandler();
-    virtual void HandleRequest(Message inMes); //if the message can be handled, notify client
+    void sendRequest();
+    void HandleRequest(Message*); //if the message can be handled, notify client
     Starlink(/* args */);
     Starlink(int a);
     Starlink(const Starlink& StarL);

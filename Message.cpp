@@ -3,18 +3,20 @@
 
 using namespace std;
 
-Message::Message(string commMedium)
+Message::Message(string commMedium, Coordinate* c, int idd) : CommunicationMedium(commMedium), coord(c), id_sent(idd)
 {
-    CommunicationMedium = commMedium;
+   
 }
 
 Message::~Message()
 {
+	delete coord;
 }
 
-void Message::SetText(string inText)
+void Message::disapprove(int idd)
 {
-    ActualMessage = inText;
+	isApprov=false;
+	id_disapprove=idd;    
 }
 
 string Message::getCommMedium()
@@ -22,7 +24,29 @@ string Message::getCommMedium()
     return CommunicationMedium;
 }
 
+Coordinate* Message::getCoord()
+{
+	return coord;
+}
+
 string Message::getText()
 {
-    return ActualMessage;
+    string st= string(to_string(id_sent)+" is at Coordinates: (") +to_string(coord->getX())+ ", " + to_string(coord->getY())+")";
+    return st;
+}
+
+bool Message::getApprov(){
+	return isApprov;
+}
+
+bool Message::isHandled(){
+	return hand;
+}
+
+void Message::handled(){
+	hand=true;
+}
+
+int Message::getID() {
+	return id_sent;
 }

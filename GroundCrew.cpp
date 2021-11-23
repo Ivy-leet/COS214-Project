@@ -3,15 +3,18 @@
 
 using namespace std;
 
-void GroundCrew::setNextHandler(Handler *nextH)
+GroundCrew::GroundCrew(){}
+
+void GroundCrew::HandleRequest(Message* inMes)
 {
-    this->successor = nextH;
+    if (inMes->getCommMedium() == "Radio"){
+        cout<<"The message sent to the ground crew is: "<<inMes->getCoord()->confirm()<<" "<<inMes->getID()<<endl;
+	inMes->handled();
+    }else{
+        successor->HandleRequest(inMes);
+    }
 }
 
-void GroundCrew::HandleRequest(Message inMes)
-{
-    if (inMes.getCommMedium() == "Radio")
-        cout<<"The message sent to the ground crew is: "<<inMes.getText()<<endl;
-    else
-        successor->HandleRequest(inMes);
-}
+Handler* GroundCrew::clone(){}
+
+void GroundCrew::sendRequest(){}

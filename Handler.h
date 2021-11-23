@@ -5,14 +5,16 @@
 
 class Handler //Interface for Chain of Responsibility
 {
-private:
+protected:
     /* data */
     Handler* successor;
+
 public:
-    virtual void HandleRequest(Message request) = 0;
-    virtual void setNextHandler(Handler* nextH) = 0;
-    virtual Handler* getNextHandler() = 0;
+    virtual void HandleRequest(Message* request) = 0;
+    virtual void setNextHandler(Handler* nextH);
+    virtual Handler* getNextHandler();
     virtual Handler* clone() = 0;
+    virtual void sendRequest() = 0;
     Handler(/* args */);
     ~Handler();
 };

@@ -7,12 +7,14 @@ class GroundCrew : public Handler
 {
 private:
     /* data */
-    Handler* successor;
+    
 public:
     GroundCrew(/* args */);
-    void HandleRequest(Message request); //if the message can be handled, notify client
-    void setNextHandler(Handler* nextH); //If the current object cannot handle the request, send it to the next
+    void HandleRequest(Message* request); //if the message can be handled, notify client
+					 //If the current object cannot handle the request, send it to the next
     ~GroundCrew();
+    Handler* clone();
+    void sendRequest();
 };
 
 #endif

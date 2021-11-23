@@ -11,4 +11,6 @@ LaunchCommand::LaunchCommand(SpaceShuttle* r): Command(r)
 void LaunchCommand::execute()
 {
     rocket->mission();
+
+    if (shuttle->getStarlinks()!=nullptr) shuttle->release();
 }

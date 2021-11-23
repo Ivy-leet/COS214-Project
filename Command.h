@@ -12,7 +12,7 @@ using namespace std;
 
 class Command
 {
-    private:
+    protected:
         SpaceShuttle* shuttle;
     public:
         Command(SpaceShuttle* r);

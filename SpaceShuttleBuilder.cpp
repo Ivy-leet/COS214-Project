@@ -88,10 +88,10 @@ void SpaceShuttleBuilder::buildSpaceCraft(bool hasSpaceCraft, int type) {
     delete spaceCraft;
 }
 
-void SpaceShuttleBuilder::buildStarlinks(bool hasStarlinks, int num) {
+void SpaceShuttleBuilder::buildStarlinks(bool hasStarlinks, int num, Handler* gCrew) {
     if (!hasStarlinks) return;
 
-    spaceShuttle->addStarlinks(num);
+    spaceShuttle->addStarlinks(num, gCrew);
 }
 
 

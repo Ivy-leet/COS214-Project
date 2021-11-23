@@ -11,6 +11,11 @@
 #include "FalconHeavy.h"
 #include "WinningShuttle.h"
 
+/**
+ * @class SpaceShuttleBuilder "SpaceShuttleBuilder.h"
+ * @brief Concrete Builder responsible for building the space shuttle
+*/
+
 
 class SpaceShuttleBuilder : public ShuttleBuilder {
     private:
@@ -70,7 +75,7 @@ class SpaceShuttleBuilder : public ShuttleBuilder {
         * @param type - integer (0=CrewDragon and 1=Dragon)
         * @return void
         */
-        void buildStarlinks(bool hasStarlinks, int numOfStarlinks) override;
+        void buildStarlinks(bool hasStarlinks, int numOfStarlinks, Handler*) override;
 
         /**
          * @brief Returns pointer to space shuttle object

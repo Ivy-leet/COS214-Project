@@ -30,7 +30,7 @@ class SpaceX {
         * @brief Method is used to build the shuttle using our assigned builder
         * @return void
         */
-        void construct(int rocketType, int craftType, int);
+        void construct(int rocketType, int craftType, int, Handler*);
         
 };
 

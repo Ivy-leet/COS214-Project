@@ -8,6 +8,8 @@
 #include "HaltCommand.h"
 #include "Starlink.h"
 #include "MissionControl.h"
+#include "Handler.h"
+#include "GroundCrew.h"
 
 int Starlink::StarLinkIDInc=0;
 
@@ -28,17 +30,12 @@ int validateCrew() {
     cout<<"Enter the number of crew members (0 if none): ";
     cin>>numOfCrew;
 
-    if (!isdigit(numOfCrew)) {
-        cout<<"Invalid input! Please re-enter the number of crew members.\n";
-        validateCargo();
-    }
-
     if (numOfCrew>7)
     {
         cout<<"Maximum number of crew members is 7. Please re-enter the number of crew members.\n";
         validateCrew();
     }
-    else 
+    else
     return numOfCrew;
 
 }
@@ -48,11 +45,6 @@ int validateCargo() {
 
     cout<<"Enter the weight of cargo (0 if none): ";
     cin>>weightOfCargo;
-
-    if (!isdigit(weightOfCargo)) {
-        cout<<"Invalid input! Please re-enter the weight of cargo.\n";
-        validateCargo();
-    }
 
     if (weightOfCargo>6000) {
         cout<<"Maximum weight of cargo is 6000 kg. Please re-enter the weight of cargo.\n";
@@ -68,30 +60,26 @@ int validateStarlinks() {
     cout<<"Enter the number of starlinks: ";
     cin>>numOfStarlinks;
 
-    if (!isdigit(numOfStarlinks)) {
-        cout<<"Invalid input! Please re-enter the number of starlinks.\n";
-        validateCargo();
-    }
-
     if (numOfStarlinks>180) {
         cout<<"Maximum number of starinks is 180. Please re-enter the number of starlinks.\n";
-        validateCargo();
+        validateStarlinks();
     }
+    else return numOfStarlinks;
     
 
 }
 
-void simulation(WinningConfig& config, SpaceX* spaceX, SpaceShuttleBuilder* b, int numOfCrew, int weightOfCargo, int numOfStarlinks) {
+void simulation(WinningConfig& config, SpaceX* spaceX, SpaceShuttleBuilder* b, Handler* g, int numOfCrew, int weightOfCargo, int numOfStarlinks) {
     int type[2]={0,1};
 
     if (numOfStarlinks!=-1) {
-        if (numOfStarlinks>60) spaceX->construct(1, numOfCrew, numOfStarlinks);
-        else spaceX->construct(0,numOfCrew, numOfStarlinks);
+        if (numOfStarlinks>90) spaceX->construct(1, numOfCrew, numOfStarlinks,g);
+        else spaceX->construct(0,numOfCrew, numOfStarlinks, g);
         return;
     }
 
     for (int i=0; i<2; i++) {
-        spaceX->construct(i, numOfCrew, numOfStarlinks);
+        spaceX->construct(i, numOfCrew, numOfStarlinks, g);
         SpaceShuttle* sp=b->getShuttle();
 
         if (numOfStarlinks==-1) {
@@ -105,12 +93,46 @@ void simulation(WinningConfig& config, SpaceX* spaceX, SpaceShuttleBuilder* b, i
 
 
 int main(int argc, char **argv) {
+    // cout<<R"(
+//        !
+//        !
+//        ^
+//       / \
+//      /___\
+//     |=   =|
+//     |     |
+//     |     |
+//     |     |
+//     |     |
+//     |     |
+//     |     |
+//     |     |
+//     |     |
+//     |     |
+//    /|##!##|\
+//   / |##!##| \
+//  /  |##!##|  \
+// |  / ^ | ^ \  |
+// | /  ( | )  \ |
+// |/   ( | )   \|
+//     ((   ))
+//    ((  :  ))
+//    ((  :  ))
+//     ((   ))
+//      (( ))
+//       ( )
+//        .
+//        .
+//        .)"<<endl;
+
     cout<<"\033[37m"<<"WELCOME TO SPACEX of the MISFITS!!\n\n";
 
     int option=menu();
 
     SpaceShuttleBuilder *builder = new SpaceShuttleBuilder;;
     SpaceX *director = new SpaceX(builder);
+
+    Handler* groundCrew=new GroundCrew();
 
     while (option==0) {
         int typeOfTrip=-1;
@@ -137,7 +159,7 @@ int main(int argc, char **argv) {
     
         WinningConfig winner;
 
-        simulation(winner, director, builder, numOfCrew, weightOfCargo, numOfStarlinks);
+        simulation(winner, director, builder, groundCrew, numOfCrew, weightOfCargo, numOfStarlinks);
         
         SpaceShuttle* sp=builder->getShuttle();
         cout<<"-----------\tSHUTTLE TO BE LAUNCHED\t--------------\n";
@@ -160,6 +182,7 @@ int main(int argc, char **argv) {
 
         delete sp->getSpaceCraft();
         delete sp;
+        // delete missioncontrol;
 
     }
     
