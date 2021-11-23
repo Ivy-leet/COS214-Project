@@ -2,7 +2,9 @@
 
 Handler::Handler() {}
 
-Handler::~Handler() {}
+Handler::~Handler() {
+    delete successor;
+}
 
 void Handler::setNextHandler(Handler *nextH)
 {

@@ -6,3 +6,8 @@ Command::Command(SpaceShuttle* r)
 {
     shuttle = r;
 }
+
+Command::~Command() 
+{
+    shuttle=nullptr;
+}

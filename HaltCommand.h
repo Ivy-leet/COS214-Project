@@ -18,6 +18,7 @@ class HaltCommand: public Command
         Rocket* rocket;
     public:
         HaltCommand(SpaceShuttle* r);
+        ~HaltCommand();
         
         /**
          * @brief Calls the dock function of the rocket

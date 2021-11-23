@@ -8,6 +8,10 @@ LaunchCommand::LaunchCommand(SpaceShuttle* r): Command(r)
     rocket = r->getRocket();
 }
 
+LaunchCommand::~LaunchCommand()
+{
+    rocket=nullptr;
+}
 void LaunchCommand::execute()
 {
     rocket->mission();

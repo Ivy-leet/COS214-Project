@@ -11,6 +11,13 @@ Controller::Controller(Command* l, Command* h, Command* r)
     returnC = r;
 }
 
+Controller::~Controller()
+{
+    delete launchC;
+    delete haltC;
+    delete returnC;
+}
+
 void Controller::launch()
 {
     launchC->execute();

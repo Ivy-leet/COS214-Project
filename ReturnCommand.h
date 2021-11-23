@@ -18,6 +18,7 @@ class ReturnCommand: public Command
 
     public:
         ReturnCommand(SpaceShuttle* r);
+        ~ReturnCommand();
 
         /**
          * @brief Calls the rett function of the rocket

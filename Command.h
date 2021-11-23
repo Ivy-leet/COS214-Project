@@ -16,6 +16,7 @@ class Command
         SpaceShuttle* shuttle;
     public:
         Command(SpaceShuttle* r);
+        virtual ~Command();
         virtual void execute()=0;
 };
 #endif 

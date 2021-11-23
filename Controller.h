@@ -24,6 +24,8 @@ class Controller
         //Controller(LaunchCommand* l , HaltCommand* h );
         Controller(Command*, Command*, Command*);
 
+        ~Controller();
+
         /**
          * @brief Executes the launch command
          * @return void

@@ -11,6 +11,7 @@ SpaceShuttle::SpaceShuttle() : spaceCraft(nullptr), rocket(nullptr), starlinks(n
 SpaceShuttle::~SpaceShuttle() {
     rocket=nullptr;
     spaceCraft=nullptr;
+    starlinks=nullptr;
 }
 
 SpaceShuttle* SpaceShuttle::clone() {
@@ -45,10 +46,8 @@ void SpaceShuttle::addStarlinks(int num, Handler* gCrew) {
     {
         s->setNextHandler(s->clone());
         s=s->getNextHandler();
-        // cout<<s<<endl;
     }
     s->setNextHandler(gCrew);
-    // cout<<starlinks->getNextHandler()->getNextHandler()<<endl;
 }
 
 int SpaceShuttle::getNumOfStarlinks() {
@@ -84,20 +83,17 @@ Handler* SpaceShuttle::getStarlinks() {
 }
 
 void SpaceShuttle::release() {
+    cout<<"Starlink Release Sequence Initiated"<<endl<<endl;
     Handler* s=starlinks;
 
     while (s->getNextHandler()!=starlinks) {
         s->sendRequest();
         s=s->getNextHandler();
     }
-    // for (int i=0;i<numOfStarlinks; i++)
-    // {
-    //     // s->setNextHandler(s->clone());
-    //     // s=s->getNextHandler();
-    //     cout<<s<<endl;
-    //     s->sendRequest();
-    //     s=s->getNextHandler();
-    // }
+
+    cout<<endl;
+
+    cout<<"Starlink Release has Ended"<<endl<<endl;
 }
 
 

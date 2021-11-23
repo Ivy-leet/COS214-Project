@@ -31,7 +31,7 @@ Coordinate* Message::getCoord()
 
 string Message::getText()
 {
-    string st= string(to_string(id_sent)+" is at Coordinates: (") +to_string(coord->getX())+ ", " + to_string(coord->getY())+")";
+    string st= string(to_string(id_disapprove)+" is at Coordinates (") +to_string(coord->getX())+ ", " + to_string(coord->getY())+")";
     return st;
 }
 

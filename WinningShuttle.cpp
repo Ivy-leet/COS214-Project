@@ -6,7 +6,6 @@ WinningShuttle::WinningShuttle(SpaceShuttle* s) : spaceShuttle(s)
 
 WinningShuttle::~WinningShuttle()
 {
-	delete spaceShuttle;
 	spaceShuttle=nullptr;
 }
 

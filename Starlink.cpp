@@ -55,7 +55,7 @@ void Starlink::sendRequest(){
 		return;
         }else{
 
-                cout<<"The message sent to the Starlink satellite "<<this->StarlinkID<<" is: "+mes->getText()<<endl;
+                cout<<"The message sent to the Starlink satellite "<<mes->getID()<<" is: "+mes->getText()<<endl<<endl;
         }
 
     // if (coord->getX()==-9999)
@@ -64,11 +64,11 @@ void Starlink::sendRequest(){
 
 void Starlink::HandleRequest(Message* inMes)
 {
-    
-    if (inMes->getCommMedium() == "Laser"){
+        if (inMes->getCommMedium() == "Laser"){
         if(inMes->getCoord()->compare(coord)){
 		inMes->disapprove(StarlinkID);
-        	cout<<"The message sent to the Starlink sattelite is: "+inMes->getText()<<endl;
+		cout<<endl;
+        	cout<<"The message sent to the Starlink "<<StarlinkID<<" is: "+inMes->getCoord()->request()<<" by Starlink "<<inMes->getID()<<endl;
 	}
     }else{
         if (successor==nullptr) return;

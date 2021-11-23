@@ -70,7 +70,6 @@ int validateStarlinks() {
 }
 
 void simulation(WinningConfig& config, SpaceX* spaceX, SpaceShuttleBuilder* b, Handler* g, int numOfCrew, int weightOfCargo, int numOfStarlinks) {
-    int type[2]={0,1};
 
     if (numOfStarlinks!=-1) {
         if (numOfStarlinks>90) spaceX->construct(1, numOfCrew, numOfStarlinks,g);
@@ -185,6 +184,8 @@ int main(int argc, char **argv) {
         // delete missioncontrol;
 
     }
+
+    // delete groundCrew;
     
     delete director;
     delete builder;

@@ -18,9 +18,9 @@ int Coordinate::getY(){
 
 string Coordinate::request(){
 	// string m="Are Coordinates: ("+to_string(x)+", "+to_string(y)+") Available.";
-	return string("Are Coordinates: ")+to_string(x)+", "+to_string(y)+") Avaible.";
+	return string("Are Coordinates (")+to_string(x)+", "+to_string(y)+") Available?";
 }
 
 string Coordinate::confirm(){
-        return string("Coordinates: ")+to_string(x)+", "+to_string(y)+") Are Reserved by: ";
+        return string("Coordinates (")+to_string(x)+", "+to_string(y)+") are reserved by Starlink: with ID = ";
 }

@@ -19,6 +19,7 @@ class LaunchCommand: public Command
 
     public:
         LaunchCommand(SpaceShuttle* r);
+        ~LaunchCommand();
 
         /**
          * @brief Calls the mission function of the rocket
