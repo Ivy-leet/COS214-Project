@@ -1,5 +1,6 @@
 #include "State.h"
 
+
 using namespace std;
 State::State(std::string m) : message(m)
 {

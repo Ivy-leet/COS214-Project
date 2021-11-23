@@ -1,7 +1,6 @@
 #include "Subject.h"
 #include <algorithm>
 
-
 void Subject::attach(Observer* observer){
 	observers.push_back(observer);
 }

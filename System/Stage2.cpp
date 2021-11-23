@@ -1,4 +1,5 @@
 #include "Stage2.h"
+
 Stage2::Stage2(string msg): State(msg)
 {
   setMessage(msg);

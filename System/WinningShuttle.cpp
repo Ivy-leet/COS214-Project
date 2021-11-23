@@ -1,5 +1,6 @@
 #include "WinningShuttle.h"
 
+
 WinningShuttle::WinningShuttle(SpaceShuttle* s) : spaceShuttle(s)
 {
 }

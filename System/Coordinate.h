@@ -11,6 +11,7 @@ using namespace std;
  * @brief Stores the coordinates of the starlink
 */
 
+
 class Coordinate{
 	private:
 		int x;

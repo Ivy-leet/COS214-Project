@@ -6,6 +6,7 @@
 #include "Command.h"
 using namespace std;
 
+
 /**
  * @class ReturnCommand "ReturnCommand.h"
  * @brief Responsible for calling the function that will return the spacecraft to earth

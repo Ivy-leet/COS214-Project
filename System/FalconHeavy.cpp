@@ -4,7 +4,7 @@ FalconHeavy::FalconHeavy() : Rocket("FalconHeavy") {
     cores = 3;
     numMerlinEngines = 27;
     cost = 150000000;
-    payload = 80000;                         // You decide
+    payload = 80000;                         
     weight = 20000;
 }
 

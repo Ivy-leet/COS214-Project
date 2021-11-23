@@ -3,7 +3,6 @@
 
 #include "WinningShuttle.h"
 
-
 /**
  * @class WinningConfig "WinningConfig.h"
  * @brief A class which stores the Memento WinningShuttle. This class is the Caretaker participant in the Memento DP

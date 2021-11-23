@@ -17,7 +17,6 @@ int Coordinate::getY(){
 }
 
 string Coordinate::request(){
-	// string m="Are Coordinates: ("+to_string(x)+", "+to_string(y)+") Available.";
 	return string("Are Coordinates (")+to_string(x)+", "+to_string(y)+") Available?";
 }
 

@@ -4,12 +4,11 @@
 using namespace std;
 
 
-
 Starlink::Starlink()
 {
     StarLinkIDInc++;
     StarlinkID = StarLinkIDInc;
-    cout<<"Starlink satellite has been created wtith ID: " <<StarlinkID<<endl;
+    cout<<"Starlink satellite has been created with ID: " <<StarlinkID<<endl;
     coord=new Coordinate(-9999,-9999);
 }
 

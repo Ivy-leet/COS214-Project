@@ -1,6 +1,7 @@
 #include <iostream>
 #include "Message.h"
 
+
 using namespace std;
 
 Message::Message(string commMedium, Coordinate* c, int idd) : CommunicationMedium(commMedium), coord(c), id_sent(idd)

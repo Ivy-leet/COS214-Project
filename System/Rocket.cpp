@@ -1,5 +1,6 @@
 #include "Rocket.h"
 
+
 int Rocket::getNumReuses() {
     return this->num_reuses;
 }

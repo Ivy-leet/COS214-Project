@@ -3,8 +3,6 @@
 #include "Rocket.h"
 #include "SpaceCraft.h"
 #include "Starlink.h"
-#include <vector>
-#include <queue>
 #include <math.h>
 #include <ctime>
 #include "Subject.h"

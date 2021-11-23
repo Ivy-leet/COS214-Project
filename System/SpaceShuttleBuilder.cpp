@@ -1,5 +1,6 @@
 #include "SpaceShuttleBuilder.h"
 
+
 SpaceShuttleBuilder::SpaceShuttleBuilder() {
     // spaceShuttle = new SpaceShuttle;
     srand((unsigned) time(0));

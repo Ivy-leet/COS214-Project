@@ -2,6 +2,7 @@
 #include "HaltCommand.h"
 using namespace std;
 
+
 HaltCommand::HaltCommand(SpaceShuttle* r): Command(r)
 {
     rocket = r->getRocket();

@@ -2,7 +2,6 @@
 #define FALCONHEAVY_H
 #include "Rocket.h"
 #include <list>
-#include <vector>
 
 class Rocket;
 

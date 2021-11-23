@@ -3,6 +3,7 @@
 #include "LaunchCommand.h"
 #include "ReturnCommand.h"
 
+
 MissionControl::MissionControl(SpaceShuttle* sh){
 	subject=sh;	
 	subject->attach(this);

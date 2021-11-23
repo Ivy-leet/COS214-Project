@@ -92,39 +92,40 @@ void simulation(WinningConfig& config, SpaceX* spaceX, SpaceShuttleBuilder* b, H
 
 
 int main(int argc, char **argv) {
-    // cout<<R"(
-//        !
-//        !
-//        ^
-//       / \
-//      /___\
-//     |=   =|
-//     |     |
-//     |     |
-//     |     |
-//     |     |
-//     |     |
-//     |     |
-//     |     |
-//     |     |
-//     |     |
-//    /|##!##|\
-//   / |##!##| \
-//  /  |##!##|  \
-// |  / ^ | ^ \  |
-// | /  ( | )  \ |
-// |/   ( | )   \|
-//     ((   ))
-//    ((  :  ))
-//    ((  :  ))
-//     ((   ))
-//      (( ))
-//       ( )
-//        .
-//        .
-//        .)"<<endl;
+    cout<<"\033[37m";
+    cout<<R"(
+       !
+       !
+       ^
+      / \
+     /___\
+    |=   =|
+    |     |
+    |     |
+    |     |
+    |     |
+    |     |
+    |     |
+    |     |
+    |     |
+    |     |
+   /|##!##|\
+  / |##!##| \
+ /  |##!##|  \
+|  / ^ | ^ \  |
+| /  ( | )  \ |
+|/   ( | )   \|
+    ((   ))
+   ((  :  ))
+   ((  :  ))
+    ((   ))
+     (( ))
+      ( )
+       .
+       .
+       .)"<<endl;
 
-    cout<<"\033[37m"<<"WELCOME TO SPACEX of the MISFITS!!\n\n";
+    cout<<"WELCOME TO SPACEX of the MISFITS!!\n\n";
 
     int option=menu();
 
@@ -168,7 +169,7 @@ int main(int argc, char **argv) {
         MissionControl* missioncontrol = new MissionControl(sp);
 
         missioncontrol->startMission();
-        missioncontrol->rett();
+        if (sp->getSpaceCraft()!=nullptr) missioncontrol->rett();
 
         builder->rocketReuse(sp->getRocket());
         

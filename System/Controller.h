@@ -21,7 +21,6 @@ class Controller
 	Command* returnC;
 
     public:
-        //Controller(LaunchCommand* l , HaltCommand* h );
         Controller(Command*, Command*, Command*);
 
         ~Controller();

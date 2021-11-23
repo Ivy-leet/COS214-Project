@@ -4,6 +4,7 @@
 
 using namespace std;
 
+
 /**
  * @class ShuttleBuilder "ShuttleBuilder.h"
  * @brief Builder responsible for building the space shuttle

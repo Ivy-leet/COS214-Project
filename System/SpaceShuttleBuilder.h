@@ -1,6 +1,5 @@
 #ifndef SPACESHUTTLEBUILDER_H
 #define SPACESHUTTLEBUILDER_H
-#include <queue>
 #include <stack>
 #include <ctime>
 #include <math.h>

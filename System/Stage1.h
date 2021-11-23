@@ -7,6 +7,7 @@
 #include "Stage2.h"
 using namespace std;
 
+
 /**
  * @class Stage1 "Stage1.h"
  * @brief A class which implements the behaviour of the Engine rockets. This class is the ConcreteState participant in the State DP
